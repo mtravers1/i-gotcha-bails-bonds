@@ -21,7 +21,7 @@ const Navbar = () =>{
       <div className={styled.navbar}>
         <ul>
           <span className={styled.title}>
-            <span className={styled.pink}> I Gotcha</span>
+            <span className={styled.pink}> I Gotcha'</span>
             <br /> Bail Bond
           </span>
 
