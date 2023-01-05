@@ -27,7 +27,7 @@ const Navbar = () =>{
 
           <span className={styled.navlist}>
             <li>
-              <Link href="./home">Home</Link>
+              <Link href="./">Home</Link>
             </li>
             <li>
               <Link href="./bailresources">Bail Resources</Link>

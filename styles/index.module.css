@@ -332,6 +332,7 @@
 
   .navbar li {
     font-size: 10px;
+    cursor: pointer;
   }
 
   .navbar a {
@@ -435,7 +436,6 @@
   width:100%;
   display: flex;
   flex-wrap: wrap;
-  height: 20px;
 }
 .tnavbar ul{
   list-style: none;
@@ -457,7 +457,7 @@
   justify-content: center;
 }
 .navlist a:hover{
-  text-decoration: none;
+  /* text-decoration: none; */
   color:#fc6c57
 
 }

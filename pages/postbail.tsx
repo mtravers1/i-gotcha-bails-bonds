@@ -1,9 +1,11 @@
 import Navbar from '../components/navbar';
 import styled from '../styles/index.module.css'
-
+import Togglebutton from '../components/togglebutton';
 const Postbail = ()=>{
     return (
       <div>
+                    <Togglebutton/>
+
         <Navbar/>
         <span className={styled.banner}>
           <h1>Post Bail Online</h1>

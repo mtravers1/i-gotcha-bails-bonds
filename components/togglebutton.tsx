@@ -30,24 +30,25 @@ const Togglebutton = () => {
         <div id="tog">
           {togglenav && (
             <span className={styled.navlist}>
-              <li>
-                <Link href="./home">Home</Link>
-              </li>
-              <li>
-                <Link href="./bailresources">Bail Resources</Link>
-              </li>
-              <li>
-                <Link href="./postbail">Post Bail Option</Link>
-              </li>
-              <li>
-                <Link href="./">About</Link>
-              </li>
-              <li>
-                <Link href="./contact">Contact</Link>
-              </li>
-              <li>
-                <Link href="./">Reviews</Link>
-              </li>
+             <li>
+              <Link href="./">Home</Link>
+            </li>
+            <li>
+              <Link href="./bailresources">Bail Resources</Link>
+            </li>
+            <li>
+              <Link href="./postbail">Post Bail Option</Link>
+             
+            </li>
+            <li>
+              <Link href='./'>About</Link>
+            </li>
+            <li>
+              <Link href='./contactus'>Contact</Link>
+            </li>
+            <li>
+              <Link href='./'>Reviews</Link>
+            </li>
 
               {/* <button>
                     <FaTimes/>

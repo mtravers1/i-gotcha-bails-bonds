@@ -1,10 +1,12 @@
 import Navbar from "../components/navbar";
 import styled from "../styles/index.module.css"
-
+import Togglebutton from "../components/togglebutton";
 
 const Contact = ()=>{
     return (
       <div>
+                    <Togglebutton/>
+
         <Navbar/>
         <span className={styled.banner}>
           <h1>Contact Us</h1>

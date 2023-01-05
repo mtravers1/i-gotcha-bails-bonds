@@ -2,9 +2,12 @@ import woman from "../public/woman.png";
 import Image from "next/image";
 import styled from '../styles/index.module.css'
 import Navbar from "../components/navbar";
+import Togglebutton from "../components/togglebutton";
 const Bailresources = () => {
   return (
     <div>
+                  <Togglebutton/>
+
       <Navbar/>
       <span className={styled.banner}>
         <h1>Bail Resources</h1>

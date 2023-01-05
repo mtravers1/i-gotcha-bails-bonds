@@ -12,8 +12,9 @@ import Navbar from '../components/navbar'
 const Home = ()=>{
     return(
         <div className={styled.home}>
+            <Togglebutton/>
           <Navbar/>
-          <Togglebutton/>
+          
             <div className={styled.mainpic}>
                 
                 <div style={{width:"100%", textAlign:"center"}}>
