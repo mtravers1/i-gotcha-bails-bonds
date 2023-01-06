@@ -1,0 +1,97 @@
+{
+    "header":[
+        {"image":"", 
+        "head":"The Go to Bail Bonds Agency Broward, Palm Beach and Miami", 
+        "subhead":"The Best choice bail bonds agency in Flordia! Our areas of focus include; Reliability, Peofessionalism and Quality car",
+        "call":" Call us 800 444-4444",
+        "callbackground":"white",
+        "fsize":"", 
+        "color":""}
+    
+    ],
+    "nav":[
+        {"nav":"Home", 
+        "nav1":"Bail Resources", 
+        "nav2":"Post Bail Option", 
+        "nav3":"About", 
+        "nav4":"Contact", 
+        "nav5":"Reviews", 
+        "nav6":"Log in",
+        "color":"",
+        "fsize":""}
+      ],
+      "left":[
+        { 
+         "main":"Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+         "button1":"WATCH LIVE HEARINGS",
+         "button2":"ZOOM LINK FOR HEARINGS",
+         "img":""
+        }
+    ],
+    "right":[
+        { 
+         "main":"View the arrest information and phtot of a curren incarcerated inmate in Broward County",
+         "button1":"BROWARD COUNTY",
+         "button2":"PALM BEACH COUNTY",
+         "button3":"MIAMI-DADE COUNTY",
+         "img":""
+        }
+    ],
+    "middle":[
+        { 
+         "main":"View the arrest information and phtot of a curren incarcerated inmate in Broward County",
+         "button1":"BROWARD COUNTY INMATE",
+         "button2":"PALM BEACH COUNTY INMATE",
+         "button3":"MIAMI-DADE COUNTY INMATE",
+         "img":""
+        }],
+        "footer":[
+            {
+                "img":"",
+                "fsize":"",
+                "tcolor":"",
+                "bcolor":"",
+                "ffamily":"",
+                "text":""
+            }
+        ],
+        "bail":[
+            {"title":"Bail Resources", 
+            "description":"", 
+            "descriptioncolor":"", 
+            "button1":"Send us A text", 
+            "ffmaily":""}
+          ],
+        
+          "cases":[
+            {"title":"Case, Arrest, Search Warrent", 
+            "name":"Browdard", 
+            "jail":"Jail: Click here", 
+            "search":"Case Search: Clickhere",
+            "name1":"Date", 
+            "jail1":"Jail: Click here", 
+            "search1":"Case Search: Clickhere", 
+            "name2":"Browdard", 
+            "jail2":"Jail: Click here", 
+            "search2":"Case Search: Clickhere",
+          "img":""}
+          ],
+          "links":[
+            {
+            "title":"Quick Bail Links", 
+            "link1":"Bail Bonds: (954)-463-6363", 
+            "link2":"  Bail Bond Resources Post", 
+            "link3":"Bail Online Watch Live Court Hearings", 
+            "link4":"Contact Page Pretrial Release", 
+            "link5":"Inmate Arrest Search", 
+            "link6":"Public Court Case Search", 
+            "img":""}
+          ]
+
+}
+
+
+
+
+    
+        

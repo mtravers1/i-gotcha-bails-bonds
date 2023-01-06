@@ -7,13 +7,142 @@ import bar from '../public/bar.png'
 import styled from '../styles/index.module.css'
 import Togglebutton from '../components/togglebutton'
 import Navbar from '../components/navbar'
-
+import { useState,useEffect } from 'react'
 
 const Home = ()=>{
-    return(
+    const [header, setHeader]=useState([
+        {image:"", head:"The Go to Bail Bonds Agency Broward, Palm Beach and Miami", 
+        subhead:"The Best choice bail bonds agency in Flordia! Our areas of focus include; Reliability, Peofessionalism and Quality car",
+        call:" Call us 800 444-4444", fsize:"", color:"", callbackground:"white"}
+    ])
+
+    const [left, setLeft]=useState([
+        { 
+         main:"Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+         button1:"WATCH LIVE HEARINGS",
+         button2:"ZOOM LINK FOR HEARINGS",
+         img:""
+        }])
+
+        const [middle, setMiddle]=useState([
+            { 
+             main:"Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+             button1:"WATCH LIVE HEARINGS",
+             button2:"ZOOM LINK FOR HEARINGS",
+             img:""
+            }])
+
+            const [right, setRight]=useState([
+                { 
+                 main:"Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+                 button1:"WATCH LIVE HEARINGS",
+                 button2:"ZOOM LINK FOR HEARINGS",
+                 img:""
+                }])
+                
+            const [footer, setFooter]=useState([
+                {img:"",
+                 text:"Necesita una finza? Se Habla Espanol Haga clik en este enlace para visrae nuestro sitio web enespanol",
+                button:"Espanol",
+            fsize:"", tcolor:"", bcolor:"", ffamily:""}
+            ])
+    // const URL_API=''
+    // useEffect(()=>{
+    //     const fetchdata=async()=>{
+    //         try{
+    //             let res = await fetch('')
+    //             let data = await res.json()
+    //             setHeader(data)
+    //         }catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     (async()=>fetchdata())()
+    // })
+
+     // const URL_API='http://localhost:8000/left'
+    // useEffect(()=>{
+    //     const fetchdata=async()=>{
+    //         try{
+    //             let res = await fetch(API_URL)
+    //             let data = await res.json()
+    //             setLeft(data)
+    //         }catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     (async()=>fetchdata())()
+    // })
+
+     // const URL_API='http://localhost:8000/middle'
+    // useEffect(()=>{
+    //     const fetchdata=async()=>{
+    //         try{
+    //             let res = await fetch(API_URL)
+    //             let data = await res.json()
+    //             setMiddle(data)
+    //         }catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     (async()=>fetchdata())()
+    // })
+
+     // const URL_API='http://localhost:8000/right'
+    // useEffect(()=>{
+    //     const fetchdata=async()=>{
+    //         try{
+    //             let res = await fetch(API_URL)
+    //             let data = await res.json()
+    //             setRight(data)
+    //         }catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     (async()=>fetchdata())()
+    // })
+
+     // const URL_API='http://localhost:8000/footer'
+    // useEffect(()=>{
+    //     const fetchdata=async()=>{
+    //         try{
+    //             let res = await fetch(API_URL)
+    //             let data = await res.json()
+    //             setFooter(data)
+    //         }catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     (async()=>fetchdata())()
+    // })
+        return(
         <div className={styled.home}>
             <Togglebutton/>
           <Navbar/>
+          {/* {header.map((h,index)=>(
+            <>
+                        <div className={styled.mainpic} key={index}>
+                
+                <div style={{width:"100%", textAlign:"center"}}>
+                <span>
+                <Image width={200} height={200} className={styled.logo} src={woman} alt="logo" />
+                </span>
+                <span className={styled.maintext} style={{fontSize:h.fsize, color:h.color, display:"flex", justifyContent:"center"}} >
+                    <p >{h.head}<br/> 
+                    
+                    </p>
+                </span>
+                <span className={styled.secondarytext}>
+                    <p>{h.subhead}</p>
+                </span>
+                <span style={{height:"30px", display:"flex", justifyContent:"center", marginBottom:"50px"}} >
+                    <span style={{backgroundColor:h.callbackground}}className={styled.call}> {h.call}</span>
+
+                </span>
+                </div>
+            </div>
+            </>
+          ))} */}
           
             <div className={styled.mainpic}>
                 
@@ -36,7 +165,31 @@ const Home = ()=>{
                 </div>
             </div>
 
+
+
+
+
             <div className={styled.info}>
+          {/* {left.map((l)=>(
+            <>
+             <span>
+                    <Image alt="g1"height={200} width={200} src={g1}/>
+                    
+                    <p>{l.main}</p>
+                    <div>
+                    <button>{l.button1}</button>
+                    </div>
+                    <div>
+
+                    <button>{l.button2}</button>
+                    </div>
+                    
+                    
+                    
+                </span>
+            </>
+          ))} */}
+            
                 <span>
                     <Image alt="g1"height={200} width={200} src={g1}/>
                     
@@ -55,22 +208,75 @@ const Home = ()=>{
                     
                     
                 </span>
+
+
+
+
+
+                {/* {middle.map((m)=>(
+            <>
+            
+            <span>
+                <Image alt="g1"height={200} width={200} src={g3}/>
+                    <p>{m.main}
+                    </p>
+                    <div>
+                    <button>{m.button1}</button>
+                    </div>
+                    <div>
+
+                    <button>{m.button2}</button>
+                    </div>
+                    <div>
+
+                    <button>MIAMI-DADE COUNTY</button>
+                    </div>
+                </span>
+            </>
+          ))} */}
+
+          {/* {right.map((r)=>(
+            <>
+                   
+            
+            <span>
+                <Image alt="g1"height={200} width={200} src={g3}/>
+                    <p>{r.main}
+                    </p>
+                    <div>
+                    <button>{r.button1}</button>
+                    </div>
+                    <div>
+
+                    <button>{r.button2}</button>
+                    </div>
+                    <div>
+
+                    <button>MIAMI-DADE COUNTY</button>
+                    </div>
+                </span>
+            
+            
+            
+            </>
+          ))} */}
+                
                 <span>
-                <Image alt="g1"height={200} width={200} src={g2}/>
+                <Image alt="g1"height={200} width={200} src={g3}/>
                     <p>View the arrest information <br/>
                     and phtot of a curren incarcerated<br/>
                     inmate in Broward County<br/>
                     </p>
                     <div>
-                    <button>BROWARD COUNTY INFOR</button>
+                    <button>BROWARD COUNTY</button>
                     </div>
                     <div>
 
-                    <button>PALM BEACH COUNTY INFO</button>
+                    <button>PALM BEACH COUNTY</button>
                     </div>
                     <div>
 
-                    <button>MIAMI-DADE COUNTY INFO</button>
+                    <button>MIAMI-DADE COUNTY</button>
                     </div>
                 </span>
                 <span>
@@ -91,8 +297,20 @@ const Home = ()=>{
                     <button>MIAMI-DADE COUNTY</button>
                     </div>
                 </span>
+              
                 
             </div>
+           
+            {/* {footer.map((f)=>(
+                <>
+                 <img className={styled.bottomimage}/>
+
+<div className={styled.bottom} style={{backgroundColor:f.bcolor}}>
+    <p style={{fontSize:f.fsize, fontFamily:f.ffamily, color:f.tcolor}}>{f.text}</p>
+    <button className={styled.button}>{f.button}</button>
+    </div>
+                </>
+            ))} */}
             <img className={styled.bottomimage}/>
 
             <div className={styled.bottom}>
