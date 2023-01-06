@@ -68,8 +68,16 @@
 .secondarytext {
   font-size: 16px;
   color:white;
+  justify-content: center;
+  display: flex;
+  
   /* font-weight: 600; */
 }
+
+.secondarytext p{
+  width: 27%;
+}
+
 .call {
   width: 30%;
   height: 50px;

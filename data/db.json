@@ -10,7 +10,7 @@
     
     ],
     "nav":[
-        {"nav":"Home", 
+        {"nav0":"Home", 
         "nav1":"Bail Resources", 
         "nav2":"Post Bail Option", 
         "nav3":"About", 
@@ -52,12 +52,13 @@
                 "tcolor":"",
                 "bcolor":"",
                 "ffamily":"",
-                "text":""
+                "text":"Necesita una finza? Se Habla Espanol Haga clik en este enlace para visrae nuestro sitio web enespanol",
+                "button":"Espanol"
             }
         ],
         "bail":[
             {"title":"Bail Resources", 
-            "description":"", 
+            "description":"Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.", 
             "descriptioncolor":"", 
             "button1":"Send us A text", 
             "ffmaily":""}
@@ -74,7 +75,9 @@
             "name2":"Browdard", 
             "jail2":"Jail: Click here", 
             "search2":"Case Search: Clickhere",
-          "img":""}
+          "img":"",
+          "button1":"",
+            "button2":""}
           ],
           "links":[
             {

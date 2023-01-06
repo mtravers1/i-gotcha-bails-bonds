@@ -4,29 +4,32 @@ import styled from '../styles/index.module.css'
 import Navbar from "../components/navbar";
 import Togglebutton from "../components/togglebutton";
 import { useState,useEffect } from "react";
-
+import data from '../data/db.json'
 
 const Bailresources = () => {
-  const [bail, setBail]=useState([
-    {title:"Bail Resources", 
-    description:" Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.", 
-    descriptioncolor:"", button1:"Send us A text", button2:"Give us a call", button3:"Send us a Email",ffmaily:""}
-  ])
+  // const [bail, setBail]=useState([
+  //   {title:"Bail Resources", 
+  //   description:" Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.", 
+  //   descriptioncolor:"", button1:"Send us A text", button2:"Give us a call", button3:"Send us a Email",ffmaily:""}
+  // ])
+  const [bail, setBail]=useState(data.bail)
+  
 
-  const [links, setLinks]=useState([
-    {title:"Quick Bail Links", link1:"Bail Bonds: (954)-463-6363", link2:"  Bail Bond Resources Post", link3:"Bail Online Watch Live Court Hearings", 
-    link4:"Contact Page Pretrial Release", link5:"Inmate Arrest Search", link6:"Public Court Case Search", img:""}
-  ])
-
+  // const [links, setLinks]=useState([
+  //   {title:"Quick Bail Links", link1:"Bail Bonds: (954)-463-6363", link2:"  Bail Bond Resources Post", link3:"Bail Online Watch Live Court Hearings", 
+  //   link4:"Contact Page Pretrial Release", link5:"Inmate Arrest Search", link6:"Public Court Case Search", img:""}
+  // ])
+  const [links, setLinks]=useState(data.links)
   
   
 
   
-  const [cases, setCases]=useState([
-    {title:"Case, Arrest, Search Warrent", name:"Browdard", jail:"Jail: Click here", search:"Case Search: Clickhere",
-    name1:"Date", jail1:"Jail: Click here", search1:"Case Search: Clickhere", name2:"Browdard", jail2:"Jail: Click here", search2:"Case Search: Clickhere",
-  img:"", button1:"Bail Bonds: 000-000-0000", button2:"Email us: email@email.com", button3:""}
-  ])
+  // const [cases, setCases]=useState([
+  //   {title:"Case, Arrest, Search Warrent", name:"Browdard", jail:"Jail: Click here", search:"Case Search: Clickhere",
+  //   name1:"Date", jail1:"Jail: Click here", search1:"Case Search: Clickhere", name2:"Browdard", jail2:"Jail: Click here", search2:"Case Search: Clickhere",
+  // img:"", button1:"Bail Bonds: 000-000-0000", button2:"Email us: email@email.com", button3:""}
+  // ])
+  const [cases, setCases]=useState(data.cases)
   // let API_URL = 'http://localhost:8000/bail'
   // useEffect(()=>{
   //   const fetchdata=async()=>{
@@ -77,18 +80,18 @@ const Bailresources = () => {
       </span>
       <div className={styled.post}>
         <span className={styled.resources}>
-          {/* {bail.map((b,index)=>(
+          {bail.map((b,index)=>(
             <>
             <h1>{b.title}</h1>
           <p style={{color:b.descriptioncolor, fontFamily:b.ffmaily}}>
            {b.description}
           </p>
           <button>{b.button1}</button>
-          <button>{b.button2}</button>
-          <button>{b.button3}</button>
+          <button>{b.button1}</button>
+          <button>{b.button1}</button>
             </>
-          ))} */}
-          <h1>Bail Resources</h1>
+          ))}
+          {/* <h1>Bail Resources</h1>
           <p>
             Bail Bond Resources We know that getting arrested, or having a loved
             one get arrested, can be a daunting and scary experience. Our bail
@@ -100,9 +103,9 @@ const Bailresources = () => {
           </p>
           <button>Send us a Text</button>
           <button>Give us a Call</button>
-          <button>Send us on Email</button>
-        </span>
-        {/* {links.map((l, index)=>(
+          <button>Send us on Email</button>*/}
+        </span> 
+        {links.map((l, index)=>(
           <>
           <span className={styled.download}>
           
@@ -118,8 +121,8 @@ const Bailresources = () => {
           </span>
         </span>
           </>
-        ))} */}
-        <span className={styled.download}>
+        ))}
+        {/* <span className={styled.download}>
           
           <h1>Quick Bail Links</h1>
           <a href="">Bail Bonds: (954)-463-6363</a>
@@ -131,7 +134,7 @@ const Bailresources = () => {
           <span>
             <Image width={200} height={200}  src={woman} alt="logo"/>
           </span>
-        </span>
+        </span> */}
       </div>
       {/* {cases.map((i,index)=>(
         <>
@@ -241,6 +244,7 @@ const Bailresources = () => {
         </span>
       </div>
     </div>
+    
   );
 };
 

@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import styled from "../styles/index.module.css"
 import Togglebutton from "../components/togglebutton";
 import { useState, useEffect } from "react";
+import data from "../data/db.json"
 const Contact = ()=>{
   // const [contact, setContact]=useState([
   //   {ffamily:"", title:"Contact Us", tcolor:"blue", tb:"green", 
@@ -22,12 +23,16 @@ const Contact = ()=>{
   //   }
   //   (async()=>fetchdata())()
   // })
+
+  const [contact, setContact]=useState(data.contact)
+  
+    
     return (
       <div>
                     <Togglebutton/>
 
         <Navbar/>
-        {/* {contact.map((c,index)=>(
+        {contact.map((c,index)=>(
           <div style={{fontFamily:c.ffamily}}>
           <span className={styled.banner}>
           <h1>{c.title}</h1>
@@ -57,8 +62,8 @@ const Contact = ()=>{
           </span>
         </div>
           </div>
-        ))} */}
-        <span className={styled.banner}>
+        ))}
+        {/* <span className={styled.banner}>
           <h1>Contact Us</h1>
         </span>
        
@@ -85,9 +90,9 @@ const Contact = ()=>{
               If you need a bail bond, you can call us anytime. Night or Day,
               we’re here to help you through this difficult process.
             </p>
-          </span>
+          </span> */}
         </div>
-      </div>
+      
     );
 }
 export default Contact
