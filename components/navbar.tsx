@@ -35,7 +35,7 @@ const Navbar = () =>{
     return (
       <div className={styled.navbar}>
         <ul>
-          {nav.map((n:{
+          {/* {nav.map((n:{
             fsize: string;
             nav: string;
             nav1: string;
@@ -72,15 +72,13 @@ const Navbar = () =>{
             <li>
               <Link style={{color:n.color, fontSize:n.fsize}} href={'./'}>{n.nav5}</Link>
             </li>
-            {/* <button>
-                    <FaTimes/>
-                </button> */}
+         
           </span>
           <Link href="https://admin.i-gotchabailbonds.com/">{n.nav6}</Link>
             
             </>
-          ))}
-          {/* <span className={styled.title}>
+          ))} */}
+          <span className={styled.title}>
             <span className={styled.pink}> I Gotcha'</span>
             <br /> Bail Bond
           </span>
@@ -107,7 +105,7 @@ const Navbar = () =>{
             </li>
             
           </span>
-          <Link href="https://admin.i-gotchabailbonds.com/">login</Link> */}
+          <Link href="https://admin.i-gotchabailbonds.com/">login</Link>
         </ul>
       </div>
     );
