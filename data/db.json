@@ -86,9 +86,62 @@
             "link5":"Inmate Arrest Search", 
             "link6":"Public Court Case Search", 
             "img":""}
-          ]
+          ],
+          "contact":[
+            {
+                "ffamily":"", 
+                "title":"Contact Us", 
+                "tcolor":"blue", 
+                "tb":"green", 
+                "subtitle":"Bail Bond Office Location", 
+                "description":"  0000 Address Road, Florida County, Florida USA (000) 000-0000 Mail@mail.com",
+                "background":"", 
+                "bcolor1":"", 
+                "bcolor2":"",
+                "button1":"Bail Bonds: 000-000-0000", 
+                "button2":"Email us: email@email.com",
+                "subtitle1":"We're available 24/7/365", 
+                "description1":"If you need a bail bond, you can call us anytime. Night or Day, we’re here to help you through this difficult process." }
+          ],
+          "postbail":[
+            {
+              "ffamily":"",
+              "title":"Post Bail Online", 
+              "tb":"", 
+              "subtitle":"Post Nationwid Bail Bonds Online", 
+              "subdescription":"Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND. WHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA. This service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin. Fill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone",
+          "subtitle1":"Download Forms", 
+          "item1":"Downloadable Forms Application Appearance Bond Form (PDF)",
+          "item2":"Application Appearance Bond Form (Print) Indemitor Information Form", 
+          "item3":"Promissory Note", 
+          "item4":"Mortgage Agreement", 
+          "item5":"A Aabbott and Cathy Bail Bonds Credit Card", 
+          "item6":"Authorization Form by Phone/Fax/Email", 
+          "phone":"Phone: (954)463-6363",
+        "email":"Email: bondmeout@aol.com"}
+          ],
+          "quikbaillinks":[
+            { 
+        
+              "title":"Quick Bail Links",
+              "itemcolor":"",
+              "item1":"Quick Bail Links Nationwide Bail Bonds: 954-463-6363 Bail Bond",
+              "item2":"Resources Post Bail Online",
+              "item3":"Watch Live Court Hearings Contact Page",
+              "item4":"Pretrial Release",
+              "item5":"Inmate Arrest Search",
+              "item6":"Public Court Case Search"
+            }
+        ]
+
+
 
 }
+
+
+
+
+
 
 
 
