@@ -1,12 +1,16 @@
 {
     "header":[
-        {"image":"", 
+        {
+        "logo":"", 
         "head":"The Go to Bail Bonds Agency Broward, Palm Beach and Miami", 
         "subhead":"The Best choice bail bonds agency in Flordia! Our areas of focus include; Reliability, Peofessionalism and Quality car",
         "call":" Call us 800 444-4444",
         "callbackground":"white",
         "fsize":"", 
-        "color":""}
+        "color":"",
+        "footerimg":"",
+        "backgroundimg":""
+      }
     
     ],
     "nav":[
@@ -25,7 +29,8 @@
          "main":"Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
          "button1":"WATCH LIVE HEARINGS",
          "button2":"ZOOM LINK FOR HEARINGS",
-         "img":""
+         "img":"",
+         "color":""
         }
     ],
     "right":[
@@ -34,7 +39,8 @@
          "button1":"BROWARD COUNTY",
          "button2":"PALM BEACH COUNTY",
          "button3":"MIAMI-DADE COUNTY",
-         "img":""
+         "img":"",
+         "color":""
         }
     ],
     "middle":[
@@ -43,7 +49,8 @@
          "button1":"BROWARD COUNTY INMATE",
          "button2":"PALM BEACH COUNTY INMATE",
          "button3":"MIAMI-DADE COUNTY INMATE",
-         "img":""
+         "img":"",
+         "color":""
         }],
         "footer":[
             {
@@ -53,7 +60,8 @@
                 "bcolor":"",
                 "ffamily":"",
                 "text":"Necesita una finza? Se Habla Espanol Haga clik en este enlace para visrae nuestro sitio web enespanol",
-                "button":"Espanol"
+                "button":"Espanol",
+                "backgroundimg":""
             }
         ],
         "bail":[

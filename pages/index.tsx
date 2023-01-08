@@ -126,17 +126,17 @@ const Home = ()=>{
           <Navbar/>
           {header.map((h,index)=>(
             <>
-                        <div className={styled.mainpic} key={index}>
+                        <div className={styled.mainpic} style={{backgroundImage:h.backgroundimg}} key={index}>
                 
                 <div style={{width:"100%", textAlign:"center"}}>
                 <span>
-                <Image width={200} height={200} className={styled.logo} src={woman} alt="logo" />
+                <Image width={200} height={200} className={styled.logo} style={{}} src={woman} alt="logo" />
                 </span>
-                <span className={styled.maintext} style={{fontSize:h.fsize, color:h.color, display:"flex", justifyContent:"center"}} >
+                <span className={styled.maintext} style={{color:h.color, display:"flex", justifyContent:"center"}} >
                     {/* <p style={{width:"60%", textAlign:"center"}}>{h.head}<br/> 
                     
                     </p> */}
-                    <span className={styled.maintext} >
+                    <span className={styled.maintext} style={{fontSize:h.fsize, color:h.color}} >
                     <p >The Go to Bail Bonds Agency <br/> 
                     <span className={styled.pink}> Broward</span>, <span className={styled.pink}>Palm Beach</span> and <span className={styled.pink}>Miami</span></p>
                 </span>
@@ -181,16 +181,16 @@ const Home = ()=>{
             <div className={styled.info}>
           {left.map((l)=>(
             <>
-             <span>
-                    <Image alt="g1"height={200} width={200} src={g1}/>
+             <span >
+                    <Image alt="g1"height={200} width={200} style={{}}  src={g1}/>
                     
                     <p>{l.main}</p>
                     <div>
-                    <button>{l.button1}</button>
+                    <button style={{backgroundColor:l.color, border:"none"}}>{l.button1}</button>
                     </div>
                     <div>
 
-                    <button>{l.button2}</button>
+                    <button style={{backgroundColor:l.color, border:"none"}}>{l.button2}</button>
                     </div>
                     
                     
@@ -226,19 +226,19 @@ const Home = ()=>{
             <>
             
             <span>
-                <Image alt="g1"height={200} width={200} src={g3}/>
+                <Image alt="g1"height={200} width={200} style={{}}  src={g3}/>
                     <p>{m.main}
                     </p>
-                    <div>
-                    <button>{m.button1}</button>
+                    <div >
+                    <button style={{backgroundColor:m.color, border:"none"}} >{m.button1}</button>
                     </div>
                     <div>
 
-                    <button>{m.button2}</button>
+                    <button style={{backgroundColor:m.color, border:"none"}}>{m.button2}</button>
                     </div>
                     <div>
 
-                    <button>MIAMI-DADE COUNTY</button>
+                    <button style={{backgroundColor:m.color, border:"none"}}>MIAMI-DADE COUNTY</button>
                     </div>
                 </span>
             </>
@@ -249,19 +249,19 @@ const Home = ()=>{
                    
             
             <span>
-                <Image alt="g1"height={200} width={200} src={g3}/>
+                <Image alt="g1"height={200} width={200}  style={{}}  src={g3}/>
                     <p>{r.main}
                     </p>
                     <div>
-                    <button>{r.button1}</button>
+                    <button style={{backgroundColor:r.color, border:"none"}}>{r.button1}</button>
                     </div>
                     <div>
 
-                    <button>{r.button2}</button>
+                    <button style={{backgroundColor:r.color, border:"none"}}>{r.button2}</button>
                     </div>
                     <div>
 
-                    <button>MIAMI-DADE COUNTY</button>
+                    <button style={{backgroundColor:r.color, border:"none"}}>MIAMI-DADE COUNTY</button>
                     </div>
                 </span>
             
@@ -312,7 +312,7 @@ const Home = ()=>{
            
             {footer.map((f)=>(
                 <>
-                 <img className={styled.bottomimage}/>
+                 <img className={styled.bottomimage} style={{backgroundImage:f.backgroundimg}} />
 
 <div className={styled.bottom} style={{backgroundColor:f.bcolor}}>
     <p style={{fontSize:f.fsize, fontFamily:f.ffamily, color:f.tcolor}}>{f.text}</p>
