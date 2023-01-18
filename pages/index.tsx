@@ -9,6 +9,7 @@ import Togglebutton from '../components/togglebutton'
 import Navbar from '../components/navbar'
 import { useState,useEffect } from 'react'
 import data from '../data/db.json'
+import Link from 'next/link'
 const Home = ()=>{
     // const [header, setHeader]=useState([
     //     {image:"", head:"The Go to Bail Bonds Agency Broward, Palm Beach and Miami", 
@@ -124,6 +125,7 @@ const Home = ()=>{
         <div className={styled.home}>
             <Togglebutton/>
           <Navbar/>
+          
           {header.map((h,index)=>(
             <>
                         <div className={styled.mainpic} style={{backgroundImage:h.backgroundimg}} key={index}>
@@ -318,8 +320,28 @@ const Home = ()=>{
     <p style={{fontSize:f.fsize, fontFamily:f.ffamily, color:f.tcolor}}>{f.text}</p>
     <button className={styled.button}>{f.button}</button>
     </div>
+    <h1 className='text-center'><b>Forms</b></h1>
+    <div className='flex justify-center   '>
+            <Link href="./form1">Bail Bond Application and Agreement</Link>
+            <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link>
+            <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
+            <Link href="./form4">Premium Receipt And Statement of Charges</Link>
+            <Link href="./form5">COLLATERAL RECEIPT</Link>
+            <Link href="./form6">ROMISSORY NOTE & INSTALLMENT PAYMENT PLAN FOR UNPAID PREMIUM</Link>
+            <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATION Policy</Link>
+            <Link href="./form8">INDEMNITOR APPLICATION AND AGGREEMENT</Link>
+           <Link href="./form9">ELECTRONIC MONITORING ADDENDUM TO yBAIL BOND APPLICATION AND AGREEMENT</Link>
+            <Link href="./form10">PROMISSORY NOTE FOR ADDITIONAL FUTURE PAYMENTS OF COLLATERAL
+</Link>
+
+
+
+          </div>
+
                 </>
+
             ))}
+
             {/* <img className={styled.bottomimage}/>
 
             <div className={styled.bottom}>
