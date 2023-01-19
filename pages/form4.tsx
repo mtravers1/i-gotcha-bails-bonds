@@ -5,12 +5,14 @@ const Form4 = ()=>{
     return(
         <div className={styles.form}>
             
-            <div className="flex justify-between w-1/2 ml-[840px] font-bold mb-12">
+            <div className="flex justify-end" >
+                <div className="flex justify-between w-1/2  font-bold mb-12">
                 <span className="">BAIL BOND PREMIUM RECEIPT RECEIPT<br/>
 AND STATEMENT OF CHARGES</span>
 <span>
     Recipt NO:<input/>
 </span>
+</div>
             
 
             </div>

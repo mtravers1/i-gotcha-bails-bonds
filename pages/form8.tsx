@@ -5,14 +5,14 @@ import { useState } from "react";
 const Form8 = ()=>{
     // const [ email, setEmail]=useState([{id:1, company:''}])
 
-    const [ refrence, setRefrence]=useState([{id:1, company:''}])
+    const [ refrence, setRefrence]=useState([{}])
     const addRefrence=(e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
      e.preventDefault()
       const object=[...refrence, []]
       setRefrence(object)
     }
 
-    const deleteRefrence = (e)=>{
+    const deleteRefrence = (e:any)=>{
         e.preventDefault()
         const remove=[...refrence]
         remove.splice(e, 1)
