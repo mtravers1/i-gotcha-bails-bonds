@@ -43,11 +43,11 @@
 .mainpic {
   display: flex;
   justify-content: center;
-  background-image: url("../public/background.png");
-  background-size: cover;
+  background-image: url("../public/background1.png");
   flex-direction: column;
   font-family: "Assistant", sans-serif;
   align-items: center;
+  background-size: cover;
 }
 
 .logo {
@@ -206,8 +206,13 @@
   padding: 30px 50px 50px 50px;
   font-size: 12px;
   flex-wrap: wrap;
+
+
 }
 
+.bail input{
+  border:solid 
+}
 .links {
   display: flex;
   flex-direction: column;

@@ -10,6 +10,9 @@ import Navbar from '../components/navbar'
 import { useState,useEffect } from 'react'
 import data from '../data/db.json'
 import Link from 'next/link'
+import g4 from '../public/4.png'
+import g5 from '../public/5.png'
+
 const Home = ()=>{
     // const [header, setHeader]=useState([
     //     {image:"", head:"The Go to Bail Bonds Agency Broward, Palm Beach and Miami", 
@@ -128,10 +131,10 @@ const Home = ()=>{
           
           {header.map((h,index)=>(
             <>
-                        <div className={styled.mainpic} style={{backgroundImage:h.backgroundimg}} key={index}>
+                        <div className={styled.mainpic} style={{ backgroundImage:h.backgroundimg}} key={index}>
                 
                 <div style={{width:"100%", textAlign:"center"}}>
-                <span>
+                <span className='flex justify-center'>
                 <Image width={200} height={200} className={styled.logo} style={{}} src={woman} alt="logo" />
                 </span>
                 <span className={styled.maintext} style={{color:h.color, display:"flex", justifyContent:"center"}} >
@@ -271,6 +274,15 @@ const Home = ()=>{
             
             </>
           ))}
+          <span>
+          <Image height={200} width={200} src={g4} alt="g4" />
+
+          </span>
+          <span>
+                      <Image height={200} width={200} src={g5} alt="g5" />
+
+          </span>
+
                 
                 {/* <span>
                 <Image alt="g1"height={200} width={200} src={g3}/>
@@ -321,7 +333,7 @@ const Home = ()=>{
     <button className={styled.button}>{f.button}</button>
     </div>
     <h1 className='text-center'><b>Forms</b></h1>
-    <div className='flex justify-center   '>
+    <div className='flex-wrap justify-center  '>
             <Link href="./form1">Bail Bond Application and Agreement</Link>
             <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link>
             <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>

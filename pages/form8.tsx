@@ -1,7 +1,23 @@
 import React from "react";
 import styles from '../styles/forms.module.css'
+import { useState } from "react";
 
 const Form8 = ()=>{
+    // const [ email, setEmail]=useState([{id:1, company:''}])
+
+    const [ refrence, setRefrence]=useState([{id:1, company:''}])
+    const addRefrence=(e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
+     e.preventDefault()
+      const object=[...refrence, []]
+      setRefrence(object)
+    }
+
+    const deleteRefrence = (e)=>{
+        e.preventDefault()
+        const remove=[...refrence]
+        remove.splice(e, 1)
+        setRefrence(remove)
+      }
     return(
         <div>
                     <div className="m-5 font-serif">
@@ -450,7 +466,59 @@ How Long Resided in Current City <input className=" pt-3 w-1/4 m-1"/>
             </span>
 
 </div>
+{refrence.map((com, i)=>{
+              console.log(i)
+              i+=1
+          return(
+
+            <><h1 className="mt-7 font-bold ">REFERENCE {i+1}</h1>
+            
+            <div key={i} className="border-2 border-black p-2 mt-5">
+
+                  <span className="flex items-end justify-between">
+                      <span className="w-2/4 flex">
+                          <p>Name</p><input className="w-full" />
+                      </span>
+                      <span className="w-2/4 flex">
+                          <p>Relationship</p><input className="w-full" />
+                      </span>
+                  </span>
+
+                  <span className="flex items-end justify-between">
+                      <span className="w-1/2 flex">
+                          <p>Address</p><input className="w-full" />
+                      </span>
+                      <span className="w-1/2 flex">
+                          <p>Employer</p><input className="w-full" />
+                      </span>
+                  </span>
+
+                  <span className="flex items-end justify-between">
+                      <span className="w-1/3 flex">
+                          <p className="w-1/4">Home Phone #</p><input className="w-full" />
+                      </span>
+                      <span className="w-1/3 flex">
+                          <p className="w-1/4">Cell Phone #</p><input className="w-full" />
+                      </span>
+                      <span className="w-1/3 flex">
+                          <p className="w-1/4">Work Phone</p><input className="w-full" />
+                      </span>
+                  </span>
+
+              </div>
+              <button onClick={(e)=>deleteRefrence(e)}>Delete</button>
+
+              </>
+            )
+            
+          })
+          }
+        
+<div className="flex justify-between mb-10 mt-10">
+          <button className="border-2 border-black"  onClick={(e)=>addRefrence(e)}>Add Refrence</button>
+          </div>
 </div>
+
     
             
                 

@@ -114,7 +114,7 @@ State<input className=" pt-3  w-1/8 m-1"/> </span>
                    <p className="w-1/8 pl-2">Issuesing State</p> <input className="w-4/5"/>
                     </span>
             </span>
-            <span className="flex items-end justify-between">
+            <span className="flex-wrap items-end justify-between">
                 <span className="w-1/6">
                     Height<input className="w-9/12"/>
                 </span>
@@ -275,8 +275,9 @@ State<input className=" pt-3  w-1/8 m-1"/> </span>
     <span className="flex justify-between font-bold mt-3 mb-1">
     <h1 className="mt-7 font-bold" >4. MARITAL STATUS</h1>
     <span>
-
+<span className="flex-wrap">
     <input type="radio"/>Married<input type="radio"/>Divorced<input type="radio"/>Separated<input type="radio"/>Widowed<input type="radio"/>Sinlge<input type="radio"/> Cohab 
+    </span>
     </span>
     <span>
     How Long married/together<input/>
@@ -458,21 +459,21 @@ State<input className=" pt-3  w-1/8 m-1"/> </span>
                 Pending Charges in Other Countries<input className="w-10/12"/>
             </span>
             <span>
-                <span className="flex justify-between mr-20">
+                <span className="flex-wrap justify-between mr-20">
                 <span className="w-1/4 ">
                     Are you on parole/probation
-                    <span className=""><input className="ml-3" type="radio"/>Yes<input type="radio"/>No</span>
+                    <span className="flex-wrap"><input className="ml-3" type="radio"/>Yes<input type="radio"/>No</span>
                     </span>
                     <span className="w-8/12">
                     Parole/Probation officer name and phone #<input className="w-8/12"/>
                 </span>
                 </span>
-                <span className="flex justify mr-20">
-                <span className="w-1/4 ">
+                <span className="flex-wrap justify mr-20">
+                <span className="w-1/4 flex-wrap">
                     Are you on under any bond 
-                    <span className=""><input className="ml-3" type="radio"/>Yes<input type="radio"/>No</span>
+                    <span className="flex-wrap"><input className="ml-3" type="radio"/>Yes<input type="radio"/>No</span>
                     </span>
-                    <span className="w-1/4 ">
+                    <span className="w-1/4 flex-wrap">
                     Are you on under any bond 
                     <span className=""><input className="ml-3" type="radio"/>Yes<input type="radio"/>No</span>
                     </span>
