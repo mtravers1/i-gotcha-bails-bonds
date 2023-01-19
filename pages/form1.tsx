@@ -114,7 +114,7 @@ State<input className=" pt-3  w-1/8 m-1"/> </span>
                    <p className="w-1/8 pl-2">Issuesing State</p> <input className="w-4/5"/>
                     </span>
             </span>
-            <span className="flex-wrap items-end justify-between">
+            <span className="flex items-end justify-between">
                 <span className="w-1/6">
                     Height<input className="w-9/12"/>
                 </span>
