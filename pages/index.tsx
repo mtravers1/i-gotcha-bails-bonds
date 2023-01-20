@@ -392,7 +392,7 @@ const Home = ()=>{
     <button className={styled.button}>{f.button}</button>
     </div>
     <h1 className='text-center'><b>Forms</b></h1>
-    <div className='flex justify-center  '>
+    <div className='flex justify-center flex-wrap '>
             {/* <Link href="./form1">Bail Bond Application and Agreement</Link> */}
             <Link href="./form2">IMPORTANT FRAUD WARNINGS  |</Link>
             {/* <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link> */}
