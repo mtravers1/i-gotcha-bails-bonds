@@ -47,7 +47,9 @@
   flex-direction: column;
   font-family: "Assistant", sans-serif;
   align-items: center;
-  background-size: cover;
+  background-size: 1700px 700px;
+  background-position: center;
+
 }
 
 .logo {
@@ -114,8 +116,9 @@
 }
 
 .info button {
+  padding: 5px;
   width: 80%;
-  height: 40px;
+  /* height: 40px; */
   border-radius: 30px;
   margin-top: 10px;
   color: white;
@@ -315,6 +318,7 @@
 
 .bailfooter {
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
   background-color: #fc6c57;
   flex-wrap: wrap;

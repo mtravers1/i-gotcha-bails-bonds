@@ -150,7 +150,10 @@ const Home = ()=>{
                     <p >{h.subhead}</p>
                 </span>
                 <span style={{height:"30px", display:"flex", justifyContent:"center", marginBottom:"50px"}} >
-                    <span style={{backgroundColor:h.callbackground}}className={styled.call}> {h.call}</span>
+                    <span style={{backgroundColor:h.callbackground}}className={styled.call}> {h.office} <br/>
+                    {h.cell}</span>
+                    {/* <span style={{backgroundColor:h.callbackground}}className={styled.call}> {h.cell}</span> */}
+
 
                 </span>
                 </div>
@@ -274,12 +277,68 @@ const Home = ()=>{
             
             </>
           ))}
-          <span>
-          <Image height={200} width={200} src={g4} alt="g4" />
+          
+             <span >
+                    <Image alt="g1"height={200} width={200} style={{}}  src={g5}/>
+                    
+                    <p>Defendent Forms</p>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form1">Bail Bond Application </Link></button>
+                    </div>
+                    {/* <div>
 
-          </span>
+                    <button style={{backgroundColor:"black", border:"none"}}> <Link href="./form2">--IMPORTANT FRAUD WARNINGS</Link>
+</button>
+                    </div> */}
+                    <div>
+
+                    <button className='' >             <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
+
+</button>
+                    </div>
+                    <div>
+
+                    <button style={{backgroundColor:"black", border:"none"}}>             <Link href="./form9">Terms and condition of bail release</Link>
+
+</button>
+                    </div>
+                    {/* <div>
+
+                    <button style={{backgroundColor:"black", border:"none"}}>            <Link href="./form5">COLLATERAL RECEIPT</Link>
+
+</button>
+                    </div> */}
+            {/* <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
+            <Link href="./form4">Premium Receipt And Statement of Charges</Link>
+            <Link href="./form5">COLLATERAL RECEIPT</Link>
+            <Link href="./form6">ROMISSORY NOTE & INSTALLMENT PAYMENT PLAN FOR UNPAID PREMIUM</Link>
+            <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATION Policy</Link>
+            <Link href="./form8">INDEMNITOR APPLICATION AND AGGREEMENT</Link>
+           <Link href="./form9">ELECTRONIC MONITORING ADDENDUM TO yBAIL BOND APPLICATION AND AGREEMENT</Link>
+            <Link href="./form10">PROMISSORY NOTE FOR ADDITIONAL FUTURE PAYMENTS OF COLLATERAL
+</Link>
+                     */}
+                    
+                    
+                </span>
+            
           <span>
-                      <Image height={200} width={200} src={g5} alt="g5" />
+                      <Image height={200} width={200} src={g4} alt="g5" />
+                      <p>Indemitor Forms</p>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form8">Indemnitor Application and Aggreement</Link></button>
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form10">Contingent Promisary Note</Link></button>
+                    </div>
+                    <div>
+                    <button><Link href="./reciept">Florida addendum indemnitor application credit card authorization</Link></button>
+
+                    </div>
+
 
           </span>
 
@@ -333,21 +392,20 @@ const Home = ()=>{
     <button className={styled.button}>{f.button}</button>
     </div>
     <h1 className='text-center'><b>Forms</b></h1>
-    <div className='flex-wrap justify-center  '>
-            <Link href="./form1">Bail Bond Application and Agreement</Link>
-            <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link>
-            <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
-            <Link href="./form4">Premium Receipt And Statement of Charges</Link>
-            <Link href="./form5">COLLATERAL RECEIPT</Link>
-            <Link href="./form6">ROMISSORY NOTE & INSTALLMENT PAYMENT PLAN FOR UNPAID PREMIUM</Link>
-            <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATION Policy</Link>
-            <Link href="./form8">INDEMNITOR APPLICATION AND AGGREEMENT</Link>
-           <Link href="./form9">ELECTRONIC MONITORING ADDENDUM TO yBAIL BOND APPLICATION AND AGREEMENT</Link>
-            <Link href="./form10">PROMISSORY NOTE FOR ADDITIONAL FUTURE PAYMENTS OF COLLATERAL
-</Link>
+    <div className='flex justify-center  '>
+            {/* <Link href="./form1">Bail Bond Application and Agreement</Link> */}
+            <Link href="./form2">IMPORTANT FRAUD WARNINGS  |</Link>
+            {/* <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link> */}
+            <Link href="./form4">Premium Receipt And Statement of Charges  |</Link>
+            <Link href="./form5">COLLATERAL RECEIPT  |</Link>
+            <Link href="./form6">ROMISSORY NOTE & INSTALLMENT PAYMENT PLAN FOR UNPAID PREMIUM  |</Link>
+            <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATION Policy   |</Link>
+            {/* <Link href="./form8">INDEMNITOR APPLICATION AND AGGREEMENT</Link> */}
+           {/* <Link href="./form9">ELECTRONIC MONITORING ADDENDUM TO yBAIL BOND APPLICATION AND AGREEMENT</Link> */}
+            {/* <Link href="./form10">PROMISSORY NOTE FOR ADDITIONAL FUTURE PAYMENTS OF COLLATERAL</Link> */}
 
-
-
+                <Link href="./premium">Premium Reciept    | </Link>
+                <Link href="./sab">GENERAL SURETY APPEARANCE BOND   |</Link>
           </div>
 
                 </>
