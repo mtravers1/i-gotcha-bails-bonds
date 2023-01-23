@@ -38,7 +38,9 @@
 .ttitle{
   display:none
 }
-
+.home{
+  font-weight: 600;
+}
 
 .mainpic {
   display: flex;
@@ -370,8 +372,9 @@
   }
 
   .call {
-    height: 100%;
+    /* height: 100%; */
     font-size: 12px;
+    border-radius: 10px;
   }
 
   .info img {
