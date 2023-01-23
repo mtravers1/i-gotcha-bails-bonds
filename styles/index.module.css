@@ -43,12 +43,13 @@
 .mainpic {
   display: flex;
   justify-content: center;
-  background-image: url("../public/background1.png");
+  background-image: url("../public/background3.png");
   flex-direction: column;
   font-family: "Assistant", sans-serif;
   align-items: center;
-  background-size: 1700px 700px;
+  background-size: cover;
   background-position: center;
+  
 
 }
 

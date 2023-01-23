@@ -12,6 +12,10 @@ import data from '../data/db.json'
 import Link from 'next/link'
 import g4 from '../public/4.png'
 import g5 from '../public/5.png'
+import g6 from '../public/6.png'
+import g8 from '../public/8.png'
+
+
 
 const Home = ()=>{
     // const [header, setHeader]=useState([
@@ -190,16 +194,24 @@ const Home = ()=>{
           {left.map((l)=>(
             <>
              <span >
-                    <Image alt="g1"height={200} width={200} style={{}}  src={g1}/>
+                    <Image alt="g1"height={200} width={200} style={{}}  src={g8}/>
                     
                     <p>{l.main}</p>
                     <div>
-                    <button style={{backgroundColor:l.color, border:"none"}}>{l.button1}</button>
+                    <button style={{backgroundColor:l.color, border:"none"}}>LIVE COURT CASES</button>
                     </div>
                     <div>
 
-                    <button style={{backgroundColor:l.color, border:"none"}}>{l.button2}</button>
+                    <button style={{backgroundColor:l.color, border:"none"}}>IMATE SEARCH</button>
+                    
+
+                    
                     </div>
+                    <div>
+                    <button style={{backgroundColor:l.color, border:"none"}}>ZOOM LINK HEARING</button>
+
+                    </div>
+                    
                     
                     
                     
@@ -255,21 +267,20 @@ const Home = ()=>{
           {right.map((r)=>(
             <>
                    
-            
             <span>
-                <Image alt="g1"height={200} width={200}  style={{}}  src={g3}/>
-                    <p>{r.main}
+                <Image alt="g1"height={200} width={200}  style={{}}  src={g6}/>
+                    <p>Live feed from Palm-Beach Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM
                     </p>
                     <div>
-                    <button style={{backgroundColor:r.color, border:"none"}}>{r.button1}</button>
+                    <button style={{backgroundColor:r.color, border:"none"}}>LIVE COURT CASES</button>
                     </div>
                     <div>
 
-                    <button style={{backgroundColor:r.color, border:"none"}}>{r.button2}</button>
+                    <button style={{backgroundColor:r.color, border:"none"}}>INMATE SEARCH</button>
                     </div>
                     <div>
 
-                    <button style={{backgroundColor:r.color, border:"none"}}>MIAMI-DADE COUNTY</button>
+                    <button style={{backgroundColor:r.color, border:"none"}}>ZOOM LINK HEARING</button>
                     </div>
                 </span>
             
@@ -284,14 +295,31 @@ const Home = ()=>{
                     <p>Defendent Forms</p>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link></button>
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form1">Bail Bond Application </Link></button>
                     </div>
+                    
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form6">PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN</Link></button>
+                    </div>
+                    
+                    
                     {/* <div>
 
                     <button style={{backgroundColor:"black", border:"none"}}> <Link href="./form2">--IMPORTANT FRAUD WARNINGS</Link>
 </button>
                     </div> */}
+                    
                     <div>
+                        
 
                     <button className='' >             <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
 
@@ -326,6 +354,14 @@ const Home = ()=>{
           <span>
                       <Image height={200} width={200} src={g4} alt="g5" />
                       <p>Indemitor Forms</p>
+                      <div>
+                    <button>
+                        <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link></button>
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
+                    </div>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form8">Indemnitor Application and Aggreement</Link></button>
@@ -334,11 +370,32 @@ const Home = ()=>{
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form10">Contingent Promisary Note</Link></button>
                     </div>
+                    
                     <div>
-                    <button><Link href="./reciept">Florida addendum indemnitor application credit card authorization</Link></button>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form6">PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN</Link></button>
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
+                    </div>
+                    <div>
+                    <button><Link href="./reciept">Credit card authorization</Link></button>
 
                     </div>
+                    
+                    <div>
+                        
 
+                    <button className='' >             <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
+
+</button>
+                    </div>
+                    <div>
+                        
+
+                        <button className='' > <Link href="./form5">COLLATERAL RECEIPT</Link> </button>
+                        </div>
 
           </span>
 
@@ -394,18 +451,18 @@ const Home = ()=>{
     <h1 className='text-center'><b>Forms</b></h1>
     <div className='flex justify-center flex-wrap '>
             {/* <Link href="./form1">Bail Bond Application and Agreement</Link> */}
-            <Link href="./form2">IMPORTANT FRAUD WARNINGS  |</Link>
+            {/* <Link href="./form2">IMPORTANT FRAUD WARNINGS  |</Link> */}
             {/* <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link> */}
             <Link href="./form4">Premium Receipt And Statement of Charges  |</Link>
-            <Link href="./form5">COLLATERAL RECEIPT  |</Link>
-            <Link href="./form6">ROMISSORY NOTE & INSTALLMENT PAYMENT PLAN FOR UNPAID PREMIUM  |</Link>
-            <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATION Policy   |</Link>
+            {/* <Link href="./form5">COLLATERAL RECEIPT  |</Link> */}
+            {/* <Link href="./form6">ROMISSORY NOTE & INSTALLMENT PAYMENT PLAN FOR UNPAID PREMIUM  |</Link> */}
+            {/* <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATION Policy   |</Link> */}
             {/* <Link href="./form8">INDEMNITOR APPLICATION AND AGGREEMENT</Link> */}
            {/* <Link href="./form9">ELECTRONIC MONITORING ADDENDUM TO yBAIL BOND APPLICATION AND AGREEMENT</Link> */}
             {/* <Link href="./form10">PROMISSORY NOTE FOR ADDITIONAL FUTURE PAYMENTS OF COLLATERAL</Link> */}
 
-                <Link href="./premium">Premium Reciept    | </Link>
-                <Link href="./sab">GENERAL SURETY APPEARANCE BOND   |</Link>
+                <Link href="./premium">*****Premium Reciept*******</Link>
+                <Link href="./sab">****GENERAL SURETY APPEARANCE BOND****</Link>
           </div>
 
                 </>
