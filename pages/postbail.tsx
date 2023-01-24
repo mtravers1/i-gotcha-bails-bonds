@@ -94,11 +94,16 @@ const Postbail = ()=>{
           </>
         ))} */}
         <span className={styled.banner}>
-          <h1>Post Bail Online</h1>
+          <h1>Post Bail Online
+
+
+          </h1>
         </span>
         <div className={styled.post}>
           <span style={{ width: "50%", padding: "50px" }}>
             <h1>Post Nationwide Bail Bonds Online</h1>
+            <h1 style={{fontSize:"12px", padding:"0px"}} >Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia</h1>
+
             <p>
               Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM
               PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN
@@ -123,16 +128,13 @@ const Postbail = ()=>{
           </span>
           <span className={styled.download}>
             <h1>Downloadable Forms</h1>
+            
             <a href="">
-              Downloadable Forms Application Appearance Bond Form (PDF)
-            </a>
-            <a href="">
-              Application Appearance Bond Form (Print) Indemitor Information
+              Indemitor Information
               Form
             </a>
             <a href="">Promissory Note</a>
             <a href="">Mortgage Agreement</a>
-            <a href="">A Aabbott and Cathy Bail Bonds Credit Card</a>
             <a href="">Authorization Form by Phone/Fax/Email</a>
             <p>Phone: (954)463-6363</p>
             <p>Email: bondmeout@aol.com</p>
@@ -167,9 +169,7 @@ const Postbail = ()=>{
 
           <span className={styled.links}>
             <h1>Quick Bail Links</h1>
-            <a href="">
-              Quick Bail Links Nationwide Bail Bonds: 954-463-6363 Bail Bond
-            </a>
+            
             <a href="">Resources Post Bail Online </a>
             <a href="">Watch Live Court Hearings Contact Page</a>
             <a href="">Pretrial Release </a>

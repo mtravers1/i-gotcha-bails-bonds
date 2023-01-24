@@ -172,6 +172,13 @@ const Bailresources = () => {
         </>
       ))} */}
       <div className={styled.case}>
+        <span>
+          <span>
+            <p>Broward County clerk of courts</p>
+          </span>
+
+
+        </span>
         <span  className={styled.case} style={{flexDirection:"column"}}>
           <h1>Case, Arrest and Search warrenr</h1>
           <h2>Browdard</h2>
@@ -187,12 +194,12 @@ const Bailresources = () => {
             <button className={styled.greenbutton}
               
             >
-              Bail Bonds: 000-000-0000
+              Bail Bonds: 954-290-7235
             </button>
             <button className= {styled.blackbutton}
               
             >
-              Email us: email@email.com
+              Email us: info@i-gotchabailbonds.com
             </button>
           </span>
         </span>

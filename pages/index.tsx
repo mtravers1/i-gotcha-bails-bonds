@@ -190,7 +190,7 @@ const Home = ()=>{
 
 
 
-            <div className={styled.info}>
+            <div className={styled.info} id="boxes">
           {left.map((l)=>(
             <>
              <span >
@@ -327,7 +327,8 @@ const Home = ()=>{
                     </div>
                     <div>
 
-                    <button style={{backgroundColor:"black", border:"none"}}>             <Link href="./form9">Terms and condition of bail release</Link>
+                    <button style={{backgroundColor:"black", border:"none"}}>             
+                    <Link href="./terms">Terms and condition of bail release</Link>
 
 </button>
                     </div>
@@ -353,7 +354,7 @@ const Home = ()=>{
             
           <span>
                       <Image height={200} width={200} src={g4} alt="g5" />
-                      <p>Indemitor Forms</p>
+                      <p>Indemnitor Forms</p>
                       <div>
                     <button>
                         <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link></button>
@@ -375,10 +376,11 @@ const Home = ()=>{
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form6">PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN</Link></button>
                     </div>
-                    <div>
+                    
+                    {/* <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
-                    </div>
+                    </div> */}
                     <div>
                     <button><Link href="./reciept">Credit card authorization</Link></button>
 
@@ -396,6 +398,13 @@ const Home = ()=>{
 
                         <button className='' > <Link href="./form5">COLLATERAL RECEIPT</Link> </button>
                         </div>
+                        <div>
+
+                    <button style={{backgroundColor:"black", border:"none"}}>             
+                    <Link href="./terms">Terms and condition of bail release</Link>
+
+</button>
+                    </div>
 
           </span>
 
@@ -447,9 +456,13 @@ const Home = ()=>{
 <div className={styled.bottom} style={{backgroundColor:f.bcolor}}>
     <p style={{fontSize:f.fsize, fontFamily:f.ffamily, color:f.tcolor}}>{f.text}</p>
     <button className={styled.button}>{f.button}</button>
+    
     </div>
-    <h1 className='text-center'><b>Forms</b></h1>
-    <div className='flex justify-center flex-wrap '>
+    <div className='bg-footer-pink' >
+    
+
+    <h1 className=''><b>Forms</b></h1>
+    <div className='flex justify-center flex-wrap flex-col'>
             {/* <Link href="./form1">Bail Bond Application and Agreement</Link> */}
             {/* <Link href="./form2">IMPORTANT FRAUD WARNINGS  |</Link> */}
             {/* <Link href="./form3">FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link> */}
@@ -461,9 +474,12 @@ const Home = ()=>{
            {/* <Link href="./form9">ELECTRONIC MONITORING ADDENDUM TO yBAIL BOND APPLICATION AND AGREEMENT</Link> */}
             {/* <Link href="./form10">PROMISSORY NOTE FOR ADDITIONAL FUTURE PAYMENTS OF COLLATERAL</Link> */}
 
-                <Link href="./premium">*****Premium Reciept*******</Link>
-                <Link href="./sab">****GENERAL SURETY APPEARANCE BOND****</Link>
+                <Link href="./premium">Premium Reciept</Link>
+                <Link href="./sab">GENERAL SURETY APPEARANCE BOND</Link>
+                
           </div>
+          </div>
+    
 
                 </>
 

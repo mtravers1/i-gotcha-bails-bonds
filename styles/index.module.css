@@ -57,7 +57,7 @@
 
 .logo {
   margin-top: 50px;
-  width: 203px;
+  width: 300px;
 }
 .maintext {
   font-size: 57px;
@@ -107,10 +107,13 @@
 
 .info span {
   width: 30%;
+  margin-right:10px
 }
 
 .info img {
   width: 100%;
+  margin:auto;
+
 }
 
 .info div{
@@ -122,7 +125,7 @@
   padding: 5px;
   width: 80%;
   /* height: 40px; */
-  border-radius: 30px;
+  border-radius: 20px;
   margin-top: 10px;
   color: white;
   background-color: black;
@@ -338,11 +341,16 @@
   display:none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 790px) {
   .info {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info span{
+    width: 100%;
   }
 
   .ttitle {
@@ -350,6 +358,9 @@
     flex-direction: column;
     font-size: 12px;
   }
+
+ 
+  
 
   .navbar li {
     font-size: 10px;
@@ -368,9 +379,13 @@
     font-size: 24px;
   }
   .secondarytext {
-    font-size: 12px;
+    font-size: 24px;
+   
   }
-
+  .secondarytext p{
+    width:max-content
+   
+  }
   .call {
     /* height: 100%; */
     font-size: 12px;
@@ -378,13 +393,17 @@
   }
 
   .info img {
-    margin-top: 10px;
+    margin-top: 40px;
+    width: 75%;
+    /* position: relative;
+    left: 100px; */
+    margin-bottom: 20px;
+   
   }
   .post {
     background-color: black;
     color: white;
-    display: flex;
-   
+    display: flex; 
     text-align: left;
     font-size: 12px;
     justify-content: center;
@@ -459,11 +478,13 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+
 .tnavbar ul{
   list-style: none;
-      width: 100%;
-    padding: 0;
-    justify-content: center;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
 }
 
 .navlist {
