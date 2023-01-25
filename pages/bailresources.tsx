@@ -86,11 +86,41 @@ const Bailresources = () => {
           <p style={{color:b.descriptioncolor, fontFamily:b.ffmaily}}>
            {b.description}
           </p>
-          <button>{b.button1}</button>
-          <button>{b.button1}</button>
-          <button>{b.button1}</button>
+          <button className="w-3/4">{b.button1}</button>
+          
+          <button className="w-3/4">{b.button2}</button>
             </>
           ))}
+          {/* <span>
+            <span>
+              <h1>
+                Broward  county clerk of courts
+              </h1>
+              <p>
+              201 SE 6th Street
+Fort Lauderdale
+Florida, US 33301
+              </p>
+              <p>
+              Phone: (954) 831-6565
+              </p>
+
+            </span>
+            <span>
+              <h1>
+                Broward  county clerk of courts
+              </h1>
+              <p>
+              201 SE 6th Street
+Fort Lauderdale
+Florida, US 33301
+              </p>
+              <p>
+              Phone: (954) 831-6565
+              </p>
+
+            </span>            
+          </span> */}
           {/* <h1>Bail Resources</h1>
           <p>
             Bail Bond Resources We know that getting arrested, or having a loved
@@ -109,15 +139,15 @@ const Bailresources = () => {
           <>
           <span className={styled.download}>
           
-          <h1>{l.title}</h1>
+          {/* <h1>{l.title}</h1>
           <a href="">{l.link1}</a>
           <a href="">{l.link2}</a>
           <a href="">{l.link3}</a>
           <a href="">{l.link4}</a>
           <a href="">{l.link5}</a>
-          <a href="">{l.link6}</a>
+          <a href="">{l.link6}</a> */}
           <span>
-            <Image width={200} height={200}  src={woman} alt="logo"/>
+            <Image width={350} height={350}  src={woman} alt="logo"/>
           </span>
         </span>
           </>
@@ -172,13 +202,7 @@ const Bailresources = () => {
         </>
       ))} */}
       <div className={styled.case}>
-        <span>
-          <span>
-            <p>Broward County clerk of courts</p>
-          </span>
-
-
-        </span>
+       
         <span  className={styled.case} style={{flexDirection:"column"}}>
           <h1>Case, Arrest and Search warrenr</h1>
           <h2>Browdard</h2>
@@ -205,49 +229,89 @@ const Bailresources = () => {
         </span>
 
         <span>
-          <img />
+          <img className="w-80"/>
         </span>
       </div>
       <div className={styled.bailfooter}>
         <span>
+          <span>
           <h1>Jail</h1>
           <p>
             Main
             <br />
             555 SE 1st Ave, Fort Lauderdate, FL 33301
           </p>
-
+          </span>
+          <span>
           <p>
-            Main
+          Broward  county clerk of courts 
             <br />
-            555 SE 1st Ave, Fort Lauderdate, FL 33301
+            201 SE 6th Street
+            Fort Lauderdale
+            Florida, US 33301
           </p>
-
+          </span>
+          <span>
           <p>
-            Main
+          Palm Beach The Main Detention Center 
             <br />
-            555 SE 1st Ave, Fort Lauderdate, FL 33301
+            228 Gun Club Road
+            West Palm Beach, FL 33406-3001 
           </p>
+          <p>
+          Phone (561) 688-4401
+          </p>
+          </span>
+          <span>
+          <p>Miami dade jail Turner Guilford Knight Correctional Center
+          
+            <br />
+            TGK, 7000 NW 41st St, Miami, FL 33166          
+            </p>
+            <p>
+            phone: (786) 263-5600
+            </p>
+
+
+          </span>
         </span>
         <span>
+        <span className="mb-2">
           <h1>Court House</h1>
           <p>
-            Main
+          Palm Beach County Clerk of the Circuit Court 
             <br />
-            555 SE 1st Ave, Fort Lauderdate, FL 33301
+            05 N Dixie Hwy, West Palm Beach, FL 33401
           </p>
-
           <p>
-            Main
-            <br />
-            555 SE 1st Ave, Fort Lauderdate, FL 33301
+          Hours: 8am to 4pm
           </p>
-
           <p>
-            Main
-            <br />
-            555 SE 1st Ave, Fort Lauderdate, FL 33301
+          phone (561) 355-2996
           </p>
+          </span>
+          <span>
+          <p>
+          Miami Dade County clerk of courts
+            <br />
+            73 W. Flagler Street
+            Miami, Florida 33130
+          </p>
+          <p>
+          Phone: 305-275-1155
+          </p>
+          </span>
+          <span>
+          <p>
+          Miami Dade Criminal Court Office
+            <br />
+            1351 NW 12th Street, 9th Floor
+            Miami, Florida 33125
+          </p>
+          <p>
+          Phone: 305-275-1155
+          </p>
+          </span>
         </span>
       </div>
     </div>

@@ -91,6 +91,9 @@ const Contact = ()=>{
               we’re here to help you through this difficult process.
             </p>
           </span> */}
+          <div className="h-24 bg-slate-200">
+            <span className="h-24 bg-blue"/>dsf
+          </div>
         </div>
       
     );
