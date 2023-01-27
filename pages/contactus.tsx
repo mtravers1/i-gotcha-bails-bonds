@@ -92,7 +92,7 @@ const Contact = ()=>{
             </p>
           </span> */}
           <div className="h-24 bg-slate-200">
-            <span className="h-24 bg-blue"/>dsf
+            <span className="h-24 bg-blue"/>
           </div>
         </div>
       

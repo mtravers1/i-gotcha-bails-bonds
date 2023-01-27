@@ -146,8 +146,8 @@ Florida, US 33301
           <a href="">{l.link4}</a>
           <a href="">{l.link5}</a>
           <a href="">{l.link6}</a> */}
-          <span>
-            <Image width={350} height={350}  src={woman} alt="logo"/>
+          <span >
+            <Image width={300} height={300}  src={woman} alt="logo" className="relative bottom-20"/>
           </span>
         </span>
           </>
