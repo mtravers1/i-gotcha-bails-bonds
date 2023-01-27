@@ -476,6 +476,8 @@ const Home = ()=>{
 
                 <Link href="./premium">Premium Reciept</Link>
                 <Link href="./sab">GENERAL SURETY APPEARANCE BOND</Link>
+                <Link href="./checklist">Checklist</Link>
+
                 
           </div>
           </div>

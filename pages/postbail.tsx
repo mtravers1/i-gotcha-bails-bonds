@@ -87,18 +87,18 @@ const Postbail = ()=>{
   }
 
 
-  const handleDelete= (e:any)=>{
-    // method:"DELETE"
-    // url:"http//:localhost:"
-    setIspending(true)
-    fetch('http://localhost:8000/form/2',{
-      method:"DELETE",
+  // const handleDelete= (e:any)=>{
+  //   // method:"DELETE"
+  //   // url:"http//:localhost:"
+  //   setIspending(true)
+  //   fetch('http://localhost:8000/form/2',{
+  //     method:"DELETE",
       
-    }).then(()=>{
-      console.log('deleted')
-      setIspending(false)
-    })
-  }
+  //   }).then(()=>{
+  //     console.log('deleted')
+  //     setIspending(false)
+  //   })
+  // }
 
     return (
       <div>

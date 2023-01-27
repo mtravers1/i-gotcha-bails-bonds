@@ -1,0 +1,14 @@
+.checklist span{
+    display: flex;
+
+    
+}
+
+.checklist p{
+    margin-left: 20px;
+}
+
+
+.checklist input{
+    border-bottom: solid;
+}
