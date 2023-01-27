@@ -1,162 +1,234 @@
 {
-    "header":[
-        {
-        "logo":"", 
-        "head":"The Go to Bail Bonds Agency Broward, Palm Beach and Miami", 
-        "subhead":"The Best choice bail bonds agency in Flordia! Our areas of focus include; Reliability, Peofessionalism and Quality car",
-        "office":" Office #: 954-530-0166",
-        "cell":"Cell #: 954-290-7235",
-        "callbackground":"white",
-        "fsize":"", 
-        "color":"",
-        "footerimg":"",
-        "backgroundimg":""
-      }
-    
-    ],
-    "nav":[
-        {"nav0":"Home", 
-        "nav1":"Bail Resources", 
-        "nav2":"Post Bail Option", 
-        "nav3":"About", 
-        "nav4":"Contact", 
-        "nav5":"Reviews", 
-        "nav6":"Log in",
-        "color":"",
-        "fsize":""}
-      ],
-      "left":[
-        { 
-         "main":"Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
-         "button1":"WATCH LIVE HEARINGS",
-         "button2":"ZOOM LINK FOR HEARINGS",
-         "img":"",
-         "color":""
-        }
-    ],
-    "right":[
-        { 
-          "main":"Live feed from Palm Beach Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
-          "button1":"BROWARD COUNTY",
-         "button2":"PALM BEACH COUNTY",
-         "button3":"MIAMI-DADE COUNTY",
-         "img":"",
-         "color":""
-        }
-    ],
-    "middle":[
-        { 
-         "main":"View the arrest information and phtot of a curren incarcerated inmate in Broward County",
-         "button1":"BROWARD COUNTY INMATE",
-         "button2":"PALM BEACH COUNTY INMATE",
-         "button3":"MIAMI-DADE COUNTY INMATE",
-         "img":"",
-         "color":""
-        }],
-        "footer":[
-            {
-                "img":"",
-                "fsize":"",
-                "tcolor":"",
-                "bcolor":"",
-                "ffamily":"",
-                "text":"Necesita una finza? Se Habla Espanol Haga clik en este enlace para visrae nuestro sitio web enespanol",
-                "button":"Espanol",
-                "backgroundimg":""
-            }
-        ],
-        "bail":[
-            {"title":"Bail Resources", 
-            "description":"Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.", 
-            "descriptioncolor":"", 
-            "button1":"Send us A text: 954-290-7235", 
-            "button2":"Send  us A email: info@i-gotchabailbonds.com",
-            "ffmaily":""}
-          ],
-        
-          "cases":[
-            {"title":"Case, Arrest, Search Warrent", 
-            "name":"Browdard", 
-            "jail":"Jail: Click here", 
-            "search":"Case Search: Clickhere",
-            "name1":"Date", 
-            "jail1":"Jail: Click here", 
-            "search1":"Case Search: Clickhere", 
-            "name2":"Browdard", 
-            "jail2":"Jail: Click here", 
-            "search2":"Case Search: Clickhere",
-          "img":"",
-          "button1":"",
-            "button2":""}
-          ],
-          "links":[
-            {
-            "title":"Quick Bail Links", 
-            "link1":"Bail Bonds: (954)-463-6363", 
-            "link2":"  Bail Bond Resources Post", 
-            "link3":"Bail Online Watch Live Court Hearings", 
-            "link4":"Contact Page Pretrial Release", 
-            "link5":"Inmate Arrest Search", 
-            "link6":"Public Court Case Search", 
-            "img":""}
-          ],
-          "contact":[
-            {
-                "ffamily":"", 
-                "title":"Contact Us", 
-                "tcolor":"blue", 
-                "tb":"green", 
-                "subtitle":"Bail Bond Office Location", 
-                "description":"  1431 NW 31st Ave Suite 2 Lauderhill, Fl 33311  954-530-0166  info@i-gotchabailbonds.com",
-                "background":"", 
-                "bcolor1":"", 
-                "bcolor2":"",
-                "button1":"Bail Bonds: 000-000-0000", 
-                "button2":"Email us: email@email.com",
-                "subtitle1":"We're available 24/7/365", 
-                "description1":"If you need a bail bond, you can call us anytime. Night or Day, we’re here to help you through this difficult process." }
-          ],
-          "postbail":[
-            {
-              "ffamily":"",
-              "title":"Post Bail Online", 
-              "tb":"", 
-              "subtitle":"Post Nationwid Bail Bonds Online", 
-              "subdescription":"Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND. WHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA. This service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin. Fill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone",
-          "subtitle1":"Download Forms", 
-          "item1":"Downloadable Forms Application Appearance Bond Form (PDF)",
-          "item2":"Application Appearance Bond Form (Print) Indemitor Information Form", 
-          "item3":"Promissory Note", 
-          "item4":"Mortgage Agreement", 
-          "item5":"A Aabbott and Cathy Bail Bonds Credit Card", 
-          "item6":"Authorization Form by Phone/Fax/Email", 
-          "phone":"Phone: (954)463-6363",
-        "email":"Email: bondmeout@aol.com"}
-          ],
-          "quikbaillinks":[
-            { 
-        
-              "title":"Quick Bail Links",
-              "itemcolor":"",
-              "item1":"Quick Bail Links Nationwide ",
-              "item3":"",
-              "item4":"",
-              "item5":"",
-              "item6":""
-            }
-        ]
-
-
-
+  "form": [
+    {
+      "id": 1,
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "streetaddress": "",
+      "city": "",
+      "zip": "",
+      "credit": "",
+      "exdate": ""
+    },
+    {
+      "firstname": "2022880295",
+      "lastname": "",
+      "email": "",
+      "phonenumber": "",
+      "streetaddress": "4117 Beck st SE 20019 Washington Linkedin",
+      "city": "Washington",
+      "state": "DC",
+      "zip": "20019",
+      "credit": "",
+      "exdate": "",
+      "id": 3
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phonenumber": "",
+      "streetaddress": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "credit": "",
+      "exdate": "",
+      "id": 4
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phonenumber": "",
+      "streetaddress": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "credit": "",
+      "exdate": "",
+      "id": 5
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phonenumber": "",
+      "streetaddress": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "credit": "",
+      "exdate": "",
+      "id": 6
+    },
+    {
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phonenumber": "",
+      "streetaddress": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "credit": "",
+      "exdate": "",
+      "id": 7
+    }
+  ],
+  "header": [
+    {
+      "logo": "",
+      "head": "The Go to Bail Bonds Agency Broward, Palm Beach and Miami",
+      "subhead": "The Best choice bail bonds agency in Flordia! Our areas of focus include; Reliability, Peofessionalism and Quality car",
+      "office": " Office #: 954-530-0166",
+      "cell": "Cell #: 954-290-7235",
+      "callbackground": "white",
+      "fsize": "",
+      "color": "",
+      "footerimg": "",
+      "backgroundimg": ""
+    }
+  ],
+  "nav": [
+    {
+      "id": 1,
+      "nav0": "Home",
+      "nav1": "Bail Resources",
+      "nav2": "Post Bail Option",
+      "nav3": "About",
+      "nav4": "Contact",
+      "nav5": "Reviews",
+      "nav6": "Log in",
+      "color": "",
+      "fsize": ""
+    }
+  ],
+  "left": [
+    {
+      "main": "Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+      "button1": "WATCH LIVE HEARINGS",
+      "button2": "ZOOM LINK FOR HEARINGS",
+      "img": "",
+      "color": ""
+    }
+  ],
+  "right": [
+    {
+      "main": "Live feed from Palm Beach Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+      "button1": "BROWARD COUNTY",
+      "button2": "PALM BEACH COUNTY",
+      "button3": "MIAMI-DADE COUNTY",
+      "img": "",
+      "color": ""
+    }
+  ],
+  "middle": [
+    {
+      "main": "View the arrest information and phtot of a curren incarcerated inmate in Broward County",
+      "button1": "BROWARD COUNTY INMATE",
+      "button2": "PALM BEACH COUNTY INMATE",
+      "button3": "MIAMI-DADE COUNTY INMATE",
+      "img": "",
+      "color": ""
+    }
+  ],
+  "footer": [
+    {
+      "img": "",
+      "fsize": "",
+      "tcolor": "",
+      "bcolor": "",
+      "ffamily": "",
+      "text": "Necesita una finza? Se Habla Espanol Haga clik en este enlace para visrae nuestro sitio web enespanol",
+      "button": "Espanol",
+      "backgroundimg": ""
+    }
+  ],
+  "bail": [
+    {
+      "title": "Bail Resources",
+      "description": "Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.",
+      "descriptioncolor": "",
+      "button1": "Send us A text: 954-290-7235",
+      "button2": "Send  us A email: info@i-gotchabailbonds.com",
+      "ffmaily": ""
+    }
+  ],
+  "cases": [
+    {
+      "title": "Case, Arrest, Search Warrent",
+      "name": "Browdard",
+      "jail": "Jail: Click here",
+      "search": "Case Search: Clickhere",
+      "name1": "Date",
+      "jail1": "Jail: Click here",
+      "search1": "Case Search: Clickhere",
+      "name2": "Browdard",
+      "jail2": "Jail: Click here",
+      "search2": "Case Search: Clickhere",
+      "img": "",
+      "button1": "",
+      "button2": ""
+    }
+  ],
+  "links": [
+    {
+      "title": "Quick Bail Links",
+      "link1": "Bail Bonds: (954)-463-6363",
+      "link2": "  Bail Bond Resources Post",
+      "link3": "Bail Online Watch Live Court Hearings",
+      "link4": "Contact Page Pretrial Release",
+      "link5": "Inmate Arrest Search",
+      "link6": "Public Court Case Search",
+      "img": ""
+    }
+  ],
+  "contact": [
+    {
+      "ffamily": "",
+      "title": "Contact Us",
+      "tcolor": "blue",
+      "tb": "green",
+      "subtitle": "Bail Bond Office Location",
+      "description": "  1431 NW 31st Ave Suite 2 Lauderhill, Fl 33311  954-530-0166  info@i-gotchabailbonds.com",
+      "background": "",
+      "bcolor1": "",
+      "bcolor2": "",
+      "button1": "Bail Bonds: 000-000-0000",
+      "button2": "Email us: email@email.com",
+      "subtitle1": "We're available 24/7/365",
+      "description1": "If you need a bail bond, you can call us anytime. Night or Day, we’re here to help you through this difficult process."
+    }
+  ],
+  "postbail": [
+    {
+      "ffamily": "",
+      "title": "Post Bail Online",
+      "tb": "",
+      "subtitle": "Post Nationwid Bail Bonds Online",
+      "subdescription": "Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND. WHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA. This service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin. Fill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone",
+      "subtitle1": "Download Forms",
+      "item1": "Downloadable Forms Application Appearance Bond Form (PDF)",
+      "item2": "Application Appearance Bond Form (Print) Indemitor Information Form",
+      "item3": "Promissory Note",
+      "item4": "Mortgage Agreement",
+      "item5": "A Aabbott and Cathy Bail Bonds Credit Card",
+      "item6": "Authorization Form by Phone/Fax/Email",
+      "phone": "Phone: (954)463-6363",
+      "email": "Email: bondmeout@aol.com"
+    }
+  ],
+  "quikbaillinks": [
+    {
+      "title": "Quick Bail Links",
+      "itemcolor": "",
+      "item1": "Quick Bail Links Nationwide ",
+      "item3": "",
+      "item4": "",
+      "item5": "",
+      "item6": ""
+    }
+  ]
 }
-
-
-
-
-
-
-
-
-
-    
-        

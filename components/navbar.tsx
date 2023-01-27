@@ -14,7 +14,7 @@ import data from '../data/db.json'
     
 
 interface nav{
-  
+    id:number
     fsize: string;
     nav: string;
     nav1: string;
@@ -48,17 +48,17 @@ const Navbar = () =>{
     //   }
     //   (async()=>fetchdata())()
     // },[])
- console.log(data.nav)
 let map:Array<nav>
 let color:Array<nav>;
 let n:Array<nav>;
     return (
       <div className={styled.navbar}>
         <ul>
-          {nav.map((n,index)=>(
+          {nav.map((n,id)=>(
             <>
             
-             <span  key={index} className={styled.title}>
+             <span  key={n.id} 
+             className={styled.title}>
             <span className={styled.pink}> I Gotcha'</span>
             <br /> Bail Bond
           </span>

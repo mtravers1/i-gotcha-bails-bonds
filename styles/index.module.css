@@ -214,15 +214,16 @@
   display: flex;
   text-align: left;
   justify-content: space-around;
-  padding: 30px 50px 50px 50px;
-  font-size: 12px;
+  padding: 50px 50px 50px 50px;
+  font-size: 14px;
   flex-wrap: wrap;
-
+  font-weight: 700;
 
 }
 
 .bail input{
-  border:solid 
+  border:solid;
+  padding:10px 10px 10px 10px
 }
 .links {
   display: flex;
@@ -249,11 +250,12 @@
 }
 
 .bail button {
-  width: 62%;
+  width: 60%;
   border-radius: 50px;
   background-color: black;
   color: white;
   margin-top: 10px;
+  padding: 5px;
 }
 
 .resources button {

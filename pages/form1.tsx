@@ -1,11 +1,51 @@
 import React from "react";
 import styles from '../styles/forms.module.css'
+import { useState,useEffect } from "react";
 
 
 const Forms = ()=>{
+    const [name, setName]=useState('') 
+    const [aka, setAka]=useState('')
+    const [homenumber, setHomenumber]=useState('')
+    const [worknumber, setWorknumber]=useState('')
+    const [isPending, setIspending]=useState(false)
+    // const API_URL='http://localhost:8000/name'
+
+
+    const handleSubmit = (e:any)=>{
+        // e.Prevent.Default
+        // const submit={name, aka, homenumber, worknumber}
+        // setIspending(true)
+        // fetch('http://localhost:8000/form1/users', {
+        //     method:'POST',
+        //     headers:{'Content-Type': 'application/json'},
+        //     body: JSON.stringify(submit)
+            
+
+        // }).then(()=>{
+        //     console.log('success')
+        //     setIspending(false)
+        // })
+    }
+    // useEffect(()=>{
+    //     const fetchData=async()=>{
+    //         try{
+    //             let res=await fetch('')
+    //             let data = await res.json()
+    //             // setName()
+    //         }catch(err){
+    //             console.log(err)
+    //         }
+    //     }
+    //     (async()=>fetchData())()
+    // },[])
+
     return (
         <div className="m-5 font-serif">
         <div className={styles.form}>
+            <form onSubmit={handleSubmit}>
+                {!isPending && <button className="border-2">submit</button>}
+                {isPending && <button disabled>isPending</button>}
             <div>
           <h2 className="text-center font-bold text-3xl m-8">Bail Bond Application and Agreement</h2>
         <p>         You, the undersigned Defendant (“Defendant” or “you”), hereby represent and warrant that the following declarations made and answers given are
@@ -25,10 +65,17 @@ bond(s) or undertaking(s) for you (singularly or collectively the “Bond”), u
         <p>
             <div className="flex items-end justify-between">
                 <span className="w-3/4 flex">
-                <p>Name</p><input className="w-11/12"/> 
+                    
+                <p>Name</p>
+                <input className="w-11/12"
+                value={name}
+                onChange={(e)=>setName(e.target.value)}/> 
                 </span>
                 <span className="w-1/4 flex">
-        <p>AKA</p><input className=" w-11/12"/>
+        <p>AKA</p>
+        <input className=" w-11/12"
+        value={aka}
+        onChange={(e)=>setAka(e.target.value)} />
         </span>
         
         </div>
@@ -39,13 +86,21 @@ bond(s) or undertaking(s) for you (singularly or collectively the “Bond”), u
     </span>
     <div className="flex items-end justify-between">
         <span className="w-2/6">
-Home Phone # <input className="w-3/5"/>
+Home Phone # 
+<input className="w-3/5"
+    value={homenumber}
+    onChange={(e)=>setHomenumber(e.target.value)}/>
 </span>
 <span className="w-2/5">
-Cell Phone # <input className="w-3/4"/>
+Cell Phone # 
+<input className="w-3/4"
+/>
 </span>
 <span className="w-3/5 flex">
-<p className="w-2/12">Work Phone #</p><input className="w-11/12"/>
+<p className="w-2/12">Work Phone #</p>
+<input className="w-11/12"
+value={worknumber}
+onChange={(e)=>setWorknumber(e.target.value)}/>
 </span>
 </div>
 <div className="flex items-end justify-between" >
@@ -849,6 +904,7 @@ Phone: (888) 888-2245
 
 
             </div>
+            </form>
         </div>
         </div>
     )

@@ -58,6 +58,48 @@ const Postbail = ()=>{
     //   }
     //   (async()=>fetchdata())()
     // })
+
+    const [firstname, setFirstname]=useState('')
+    const [lastname, setLastname]=useState('')
+    const [email, setEmail]=useState('')
+    const [phonenumber, setPhonenumber]=useState('')
+    const [streetaddress, setStreetaddress]=useState('')
+    const [city, setCity]=useState('')
+    const [state, setState]=useState('')
+    const [zip, setZip]=useState('')
+    const [credit, setCredit]=useState('')
+    const [exdate, setExdate]=useState('')
+    const [isPending, setIspending]=useState(false)
+
+    const handleSubmit = (e:any)=>{
+      e.preventDefault()
+      const data={firstname, lastname, email, phonenumber, streetaddress, city, state, zip, credit, exdate}
+      setIspending(true)
+      fetch('http://localhost:8000/form', {
+          method:'POST',
+          headers:{'Content-Type': 'application/json'},
+          body: JSON.stringify(data)
+
+      }).then(()=>{
+          console.log('success')
+          setIspending(false)
+      })
+  }
+
+
+  const handleDelete= (e:any)=>{
+    // method:"DELETE"
+    // url:"http//:localhost:"
+    setIspending(true)
+    fetch('http://localhost:8000/form/2',{
+      method:"DELETE",
+      
+    }).then(()=>{
+      console.log('deleted')
+      setIspending(false)
+    })
+  }
+
     return (
       <div>
                     <Togglebutton/>
@@ -143,28 +185,58 @@ const Postbail = ()=>{
 
         <div className={styled.bail}>
           <span>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label>Your Name</label>
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
+              <input 
+              onChange={(e)=>setFirstname(e.target.value)}
+              type="text" placeholder="First Name" />
+              <input 
+                onChange={(e)=>setLastname(e.target.value)}
+              type="text" placeholder="Last Name" />
               <label>Email</label>
-              <input type="text" placeholder="E-mail" />
+              <input 
+              onChange={(e)=>setEmail(e.target.value)}
+
+              type="text" placeholder="E-mail" />
               <label>Phone number</label>
-              <input type="text" placeholder="Phone Number" />
+              <input 
+              onChange={(e)=>setFirstname(e.target.value)}
+              type="text" placeholder="Phone Number" />
               <label>Address</label>
-              <input type="text" placeholder="Street Address" />
+              <input 
+              onChange={(e)=>setStreetaddress(e.target.value)}
+              type="text" placeholder="Street Address" />
               <span style={{ display: "block" }}>
-                <input type="text" placeholder="City" />
-                <input type="text" placeholder="State/Region" />
-                <input type="text" placeholder="Postal" />
+                <input 
+                onChange={(e)=>setCity(e.target.value)}
+                type="text" placeholder="City" />
+                <input 
+               onChange={(e)=>setState(e.target.value)}
+               
+                type="text" placeholder="State/Region" />
+                <input 
+                onChange={(e)=>setZip(e.target.value)}
+                type="text" placeholder="Postal" />
               </span>
               <label>Credit card number</label>
-              <input type="text" placeholder="Credit Card Number" />
-              <label>Exp. Date</label>
-              <input type="text" placeholder="Expiration Date"></input>
+              <input 
+              onChange={(e)=>setCredit(e.target.value)}
 
-              <button >Submit</button>
-            </form>
+              type="text" placeholder="Credit Card Number" />
+              <label>Exp. Date</label>
+              <input
+              onChange={(e)=>setExdate(e.target.value)}
+
+               type="text" placeholder="Expiration Date"></input>
+
+             {!isPending && <button  className='' >Submit</button>} 
+             {isPending && <button  className='' >loading</button>}
+
+            </form >
+            {/* {!isPending && <button onClick={handleDelete}>Delete</button>}
+            {isPending && <button onClick={handleDelete}>Deleteing...</button>} */}
+
+
           </span>
 
           <span className={styled.links}>

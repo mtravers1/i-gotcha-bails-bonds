@@ -357,7 +357,7 @@ const Home = ()=>{
                       <p>Indemnitor Forms</p>
                       <div>
                     <button>
-                        <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link></button>
+                        <Link href="./forms/form2">IMPORTANT FRAUD WARNINGS</Link></button>
                     </div>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
