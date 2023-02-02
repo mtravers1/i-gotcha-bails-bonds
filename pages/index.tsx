@@ -147,7 +147,7 @@ const Home = ()=>{
                     </p> */}
                     <span className={styled.maintext} style={{fontSize:h.fsize, color:h.color}} >
                     <p >The Go to Bail Bonds Agency <br/> 
-                    <span className={styled.pink} style={{color:"black"}}> Broward</span>, <span className={styled.pink} style={{color:"black"}}>Palm Beach</span> and <span style={{color:"black"}} className={styled.pink}>Miami</span></p>
+                    <span className={styled.pink} > Broward</span>, <span className={styled.pink} >Palm Beach</span> and <span className={styled.pink}>Miami</span></p>
                 </span>
                 </span>
                 <span className={styled.secondarytext}>
