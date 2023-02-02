@@ -28,17 +28,18 @@ const Contact = ()=>{
   
     
     return (
-      <div>
+      <div >
                     <Togglebutton/>
 
         <Navbar/>
+        <div >
         {contact.map((c,index)=>(
           <div style={{fontFamily:c.ffamily}}>
           <span className={styled.banner}>
           <h1>{c.title}</h1>
         </span>
        
-
+          <div className={styled.contacts}>
         <div style={{backgroundColor:c.background}}className={styled.post}>
           <span className={styled.resources}>
             <h1>{c.subtitle}</h1>
@@ -61,8 +62,10 @@ const Contact = ()=>{
             </p>
           </span>
         </div>
+        </div>
           </div>
         ))}
+        </div>
         {/* <span className={styled.banner}>
           <h1>Contact Us</h1>
         </span>

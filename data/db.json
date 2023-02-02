@@ -10,72 +10,8 @@
       "zip": "",
       "credit": "",
       "exdate": ""
-    },
-    {
-      "firstname": "2022880295",
-      "lastname": "",
-      "email": "",
-      "phonenumber": "",
-      "streetaddress": "4117 Beck st SE 20019 Washington Linkedin",
-      "city": "Washington",
-      "state": "DC",
-      "zip": "20019",
-      "credit": "",
-      "exdate": "",
-      "id": 3
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "phonenumber": "",
-      "streetaddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "credit": "",
-      "exdate": "",
-      "id": 4
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "phonenumber": "",
-      "streetaddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "credit": "",
-      "exdate": "",
-      "id": 5
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "phonenumber": "",
-      "streetaddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "credit": "",
-      "exdate": "",
-      "id": 6
-    },
-    {
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "phonenumber": "",
-      "streetaddress": "",
-      "city": "",
-      "state": "",
-      "zip": "",
-      "credit": "",
-      "exdate": "",
-      "id": 7
     }
+    
   ],
   "header": [
     {
@@ -108,8 +44,10 @@
   "left": [
     {
       "main": "Live feed from Broward County Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
+      "button3":"BROWARD COUNTY",
       "button1": "WATCH LIVE HEARINGS",
       "button2": "ZOOM LINK FOR HEARINGS",
+      "button4":"",
       "img": "",
       "color": ""
     }
@@ -117,8 +55,8 @@
   "right": [
     {
       "main": "Live feed from Palm Beach Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM",
-      "button1": "BROWARD COUNTY",
-      "button2": "PALM BEACH COUNTY",
+      "button1": "PALM-BEACH COUNTY",
+      "button2": "BROWARD COUNTY",
       "button3": "MIAMI-DADE COUNTY",
       "img": "",
       "color": ""

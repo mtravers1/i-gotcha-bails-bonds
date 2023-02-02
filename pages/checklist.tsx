@@ -13,7 +13,7 @@ const Checklist = ()=>{
             </div>
             <div className="m-6">
                 <span>
-                    1. <p> understand that it is my responsibility to have the Defendant report to our office to complete his/her defendant
+                    1. <p>I understand that it is my responsibility to have the Defendant report to our office to complete his/her defendant
 paperwork no later than <input/>. FAILURE TO DO SO IS A DIRECT VIOLATION OF THE BOND
 CONDITIONS AND MAY RESULT IN THE REVOCATION OF THE BOND(S.)<input/>initials<input/>
                         </p>

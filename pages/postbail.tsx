@@ -142,7 +142,7 @@ const Postbail = ()=>{
           </h1>
         </span>
         <div className={styled.post}>
-          <span style={{ width: "50%", padding: "50px" }}>
+          <span className=""style={{  padding: "50px" }}>
             <h1>Post Nationwide Bail Bonds Online</h1>
             <h1 style={{fontSize:"12px", padding:"0px"}} >Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia</h1>
 

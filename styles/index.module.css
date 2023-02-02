@@ -1,10 +1,10 @@
-/* body {
-  font-family: "Assistant", sans-serif;
-} */
+
 .navbar{
   /* font-weight: 600; */
 
 }
+
+
 .title{
   font-size: 18px;
 }
@@ -27,7 +27,8 @@
 }
 
 .navbar a:hover {
-  color: #f86c57;
+  /* color: #f86c57; */
+  color: blue;
 
 }
 
@@ -63,11 +64,15 @@
   font-size: 57px;
   /* font-weight: 600; */
   color:white;
+  text-shadow: 1px 3px 2px black;
+
   
 }
 
 .maintext p{
-  margin:0px
+  margin:0px;
+  text-shadow: 1px 3px 2px black;
+
 }
 
 .secondarytext {
@@ -75,7 +80,8 @@
   color:white;
   justify-content: center;
   display: flex;
-  
+  text-shadow: 1px 3px 2px black;
+
   /* font-weight: 600; */
 }
 
@@ -135,7 +141,7 @@
 }
 
 .info button:hover {
-  color: orangered;
+  color: #295ee3;
 }
 
 .bottomimage {
@@ -151,7 +157,8 @@
 .bottom {
   margin-top: 50px;
 
-  background-color: #f86c57;
+  /* background-color: #f86c57; */
+  background-color: #295ee3;
   display: flex;
   justify-content: center;
 }
@@ -165,11 +172,13 @@
 }
 
 .pink {
-  color: #fc6c57;
+  /* color: #fc6c57; */
+  color: #295ee3;
 }
 
 .banner h1 {
-  background-color: #fc6c57;
+  /* background-color: #fc6c57; */
+  background-color: #295ee3;
   color: white;
   padding: 50px;
   font-size: 36px;
@@ -185,6 +194,7 @@
   text-align: left;
   font-size: 12px;
   justify-content: center;
+  font-family: 'Kanit', sans-serif;
 }
 
 .download {
@@ -330,8 +340,9 @@
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;
-  background-color: #fc6c57;
+  /* background-color: #fc6c57; */
   flex-wrap: wrap;
+  background-color: #295ee3;
 }
 
 .bailfooter h1 {
@@ -393,7 +404,7 @@
    
   }
   .call {
-    /* height: 100%; */
+    height: 70px;
     font-size: 12px;
     border-radius: 10px;
   }
@@ -415,15 +426,23 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 0px;
+    height: fit-content;
+    padding-bottom: 50px;
+    padding-top:50px
 }
 
 .resources {
     width: 80%;
     padding: 0px 0px 0px 0px;
 }
+.resources button{
+  height: 40px;
+}
 .download{
   width: 80%;
   padding: 0px 0px 0px 5px;
+  position: relative;
+  top:90px
 }
 .resourcebutton{
   position: relative;
@@ -435,6 +454,11 @@
 .cases{
   padding:0px;
 
+}
+.case span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .greenbutton{
@@ -465,7 +489,7 @@
   display:flex;
   background:none;
   border: none;
-  color:#fc6c57
+  color:#295ee3
 }
 
 
@@ -500,6 +524,11 @@
     background: white;
     
 }
+.contacts{
+  padding-bottom: 100px;
+  background: black;
+  padding-top: 100px;
+}
 .navlist a{
   text-decoration: none;
   color:black;
@@ -507,7 +536,11 @@
 }
 .navlist a:hover{
   /* text-decoration: none; */
-  color:#fc6c57
+  color:#295ee3
 
+}
+
+.contact{
+  height: fit-content;
 }
 }

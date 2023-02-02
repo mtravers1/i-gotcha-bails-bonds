@@ -198,6 +198,9 @@ const Home = ()=>{
                     
                     <p>{l.main}</p>
                     <div>
+                    <button style={{backgroundColor:l.color, border:"none"}}>BROWARD COUNTY</button>
+                    </div>
+                    <div>
                     <button style={{backgroundColor:l.color, border:"none"}}>LIVE COURT CASES</button>
                     </div>
                     <div>
@@ -250,15 +253,21 @@ const Home = ()=>{
                     <p>{m.main}
                     </p>
                     <div >
-                    <button style={{backgroundColor:m.color, border:"none"}} >{m.button1}</button>
+                    <button style={{backgroundColor:m.color, border:"none"}} >PALM-BEACH COUNTY INMATE</button>
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:m.color, border:"none"}}>LIVE COURT CASES</button>
                     </div>
                     <div>
 
-                    <button style={{backgroundColor:m.color, border:"none"}}>{m.button2}</button>
+                    <button style={{backgroundColor:m.color, border:"none"}}>IMATE SEARCH</button>
+                    
+
+                    
                     </div>
                     <div>
+                    <button style={{backgroundColor:m.color, border:"none"}}>ZOOM LINK HEARING</button>
 
-                    <button style={{backgroundColor:m.color, border:"none"}}>MIAMI-DADE COUNTY</button>
                     </div>
                 </span>
             </>
@@ -271,6 +280,9 @@ const Home = ()=>{
                 <Image alt="g1"height={200} width={200}  style={{}}  src={g6}/>
                     <p>Live feed from Palm-Beach Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM
                     </p>
+                    <div>
+                    <button style={{backgroundColor:r.color, border:"none"}}>MIAMI-DADE COUNTY</button>
+                    </div>
                     <div>
                     <button style={{backgroundColor:r.color, border:"none"}}>LIVE COURT CASES</button>
                     </div>
@@ -305,6 +317,9 @@ const Home = ()=>{
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form1">Bail Bond Application </Link></button>
                     </div>
+                    <div>
+                    <button><Link href="./reciept">Credit card authorization</Link></button>
+                    </div>
                     
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
@@ -328,7 +343,7 @@ const Home = ()=>{
                     <div>
 
                     <button style={{backgroundColor:"black", border:"none"}}>             
-                    <Link href="./terms">Terms and condition of bail release</Link>
+                    <Link href="./checklist">Terms and condition of bail release</Link>
 
 </button>
                     </div>
@@ -401,7 +416,7 @@ const Home = ()=>{
                         <div>
 
                     <button style={{backgroundColor:"black", border:"none"}}>             
-                    <Link href="./terms">Terms and condition of bail release</Link>
+                    <Link href="./checklist">Terms and condition of bail release</Link>
 
 </button>
                     </div>
@@ -458,7 +473,9 @@ const Home = ()=>{
     <button className={styled.button}>{f.button}</button>
     
     </div>
-    <div className='bg-footer-pink' >
+    {/* <div className='bg-footer-pink' > */}
+    <div className='bg-blue	' >
+
     
 
     <h1 className=''><b>Forms</b></h1>

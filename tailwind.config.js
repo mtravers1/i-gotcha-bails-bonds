@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'footer-pink':'#f86c57'
+        'footer-pink':'#f86c57',
+        'blue':'#295ee3'
       },
     },
   },
