@@ -218,7 +218,7 @@ Florida, US 33301
             <button className={styled.greenbutton}
               
             >
-              Bail Bonds: 954-290-7235
+              Bail Bonds: 954-530-0166
             </button>
             <button className= {styled.blackbutton}
               
@@ -237,20 +237,12 @@ Florida, US 33301
           <span>
           <h1>Jail</h1>
           <p>
-            Main
+          Broward County Main Jail
             <br />
             555 SE 1st Ave, Fort Lauderdate, FL 33301
           </p>
           </span>
-          <span>
-          <p>
-          Broward  county clerk of courts 
-            <br />
-            201 SE 6th Street
-            Fort Lauderdale
-            Florida, US 33301
-          </p>
-          </span>
+          
           <span>
           <p>
           Palm Beach The Main Detention Center 
@@ -263,7 +255,7 @@ Florida, US 33301
           </p>
           </span>
           <span>
-          <p>Miami dade jail Turner Guilford Knight Correctional Center
+          <p>Miami Dade Jail Turner Guilford Knight Correctional Center
           
             <br />
             TGK, 7000 NW 41st St, Miami, FL 33166          
@@ -276,9 +268,9 @@ Florida, US 33301
           </span>
         </span>
         <span>
-        <span className="mb-2">
+        <span className="mb-2 ">
           <h1>Court House</h1>
-          <p>
+          <p className="">
           Palm Beach County Clerk of the Circuit Court 
             <br />
             05 N Dixie Hwy, West Palm Beach, FL 33401
@@ -292,7 +284,16 @@ Florida, US 33301
           </span>
           <span>
           <p>
-          Miami Dade County clerk of courts
+          Broward County Clerk of Courts 
+            <br />
+            201 SE 6th Street
+            Fort Lauderdale
+            Florida, US 33301
+          </p>
+          </span>
+          <span>
+          <p>
+          Miami Dade County Clerk of Courts
             <br />
             73 W. Flagler Street
             Miami, Florida 33130

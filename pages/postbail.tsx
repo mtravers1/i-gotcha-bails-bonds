@@ -72,18 +72,18 @@ const Postbail = ()=>{
     const [isPending, setIspending]=useState(false)
 
     const handleSubmit = (e:any)=>{
-      e.preventDefault()
-      const data={firstname, lastname, email, phonenumber, streetaddress, city, state, zip, credit, exdate}
-      setIspending(true)
-      fetch('http://localhost:8000/form', {
-          method:'POST',
-          headers:{'Content-Type': 'application/json'},
-          body: JSON.stringify(data)
+      // e.preventDefault()
+      // const data={firstname, lastname, email, phonenumber, streetaddress, city, state, zip, credit, exdate}
+      // setIspending(true)
+      // fetch('http://localhost:8000/form', {
+      //     method:'POST',
+      //     headers:{'Content-Type': 'application/json'},
+      //     body: JSON.stringify(data)
 
-      }).then(()=>{
-          console.log('success')
-          setIspending(false)
-      })
+      // }).then(()=>{
+      //     console.log('success')
+      //     setIspending(false)
+      // })
   }
 
 
@@ -178,18 +178,21 @@ const Postbail = ()=>{
             <a href="">Promissory Note</a>
             <a href="">Mortgage Agreement</a>
             <a href="">Authorization Form by Phone/Fax/Email</a>
-            <p>Phone: (954)463-6363</p>
+            <p>Phone: (954)-530-0166</p>
             <p>Email: bondmeout@aol.com</p>
           </span>
         </div>
 
         <div className={styled.bail}>
-          <span>
+          <span className='w-1/2'>
             <form onSubmit={handleSubmit}>
-              <label>Your Name</label>
+
+              <label>Defendant First Name</label>
               <input 
               onChange={(e)=>setFirstname(e.target.value)}
               type="text" placeholder="First Name" />
+               <label>Defendant First Name</label>
+
               <input 
                 onChange={(e)=>setLastname(e.target.value)}
               type="text" placeholder="Last Name" />
@@ -198,6 +201,12 @@ const Postbail = ()=>{
               onChange={(e)=>setEmail(e.target.value)}
 
               type="text" placeholder="E-mail" />
+              <label>Defendant Date of Birth</label>
+              <input 
+              onChange={(e)=>setEmail(e.target.value)}
+
+              type="text" placeholder="E-mail" />
+              
               <label>Phone number</label>
               <input 
               onChange={(e)=>setFirstname(e.target.value)}
@@ -206,7 +215,7 @@ const Postbail = ()=>{
               <input 
               onChange={(e)=>setStreetaddress(e.target.value)}
               type="text" placeholder="Street Address" />
-              <span style={{ display: "block" }}>
+              {/* <span style={{ display: "block" }}> */}
                 <input 
                 onChange={(e)=>setCity(e.target.value)}
                 type="text" placeholder="City" />
@@ -217,7 +226,7 @@ const Postbail = ()=>{
                 <input 
                 onChange={(e)=>setZip(e.target.value)}
                 type="text" placeholder="Postal" />
-              </span>
+              {/* </span> */}
               <label>Credit card number</label>
               <input 
               onChange={(e)=>setCredit(e.target.value)}
@@ -239,7 +248,7 @@ const Postbail = ()=>{
 
           </span>
 
-          <span className={styled.links}>
+          {/* <span className={styled.links}>
             <h1>Quick Bail Links</h1>
             
             <a href="">Resources Post Bail Online </a>
@@ -247,7 +256,7 @@ const Postbail = ()=>{
             <a href="">Pretrial Release </a>
             <a href="">Inmate Arrest Search </a>
             <a href="">Public Court Case Search</a>
-          </span>
+          </span> */}
         </div>
       </div>
     );

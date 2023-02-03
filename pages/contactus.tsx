@@ -48,7 +48,11 @@ const Contact = ()=>{
             </p>
             <span className={styled.resourcebutton}>
               <button style={{ backgroundColor: "green" }}>
-                {c.button1}
+               
+                <p>
+                Office number 954-530-0166</p> 
+                <p>Business cell 954-290-7235
+                </p>
               </button>
               <button style={{ color: "black", position:"relative", left:"0px" }}>
                {c.button2}

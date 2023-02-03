@@ -144,6 +144,12 @@
   justify-content: center
 }
 
+.defend a{
+  font-size: 13px;
+  padding-top:5px;
+  padding-bottom:5px
+}
+
 .info button {
   padding: 5px;
   width: 80%;
@@ -204,12 +210,13 @@
 
 .post {
   background-color: black;
+
   color: white;
   height: 400px;
   display: flex;
   padding: 100px 0px 0px 100px;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   justify-content: center;
   font-family: 'Kanit', sans-serif;
 }
@@ -240,8 +247,8 @@
 .bail {
   display: flex;
   text-align: left;
-  justify-content: space-around;
-  padding: 50px 50px 50px 50px;
+  /* justify-content: space-around; */
+  padding: 50px 0px 0px 50px;
   font-size: 14px;
   flex-wrap: wrap;
   font-weight: 700;
@@ -271,18 +278,18 @@
 
 .bail input {
   border-radius: 5px;
-  margin-top: 10px;
-  width: 60%;
-  height: 20px;
+  margin-bottom: 10px;
+  /* width: 60%; */
+  height: 40px;
 }
 
 .bail button {
-  width: 60%;
+  /* width: 60%; */
   border-radius: 50px;
   background-color: black;
   color: white;
   margin-top: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .resources button {
@@ -305,7 +312,7 @@
   text-align: left;
   justify-content: space-around;
   flex-wrap: wrap;
-  
+  font-size: 16px;
 }
 .case h2 {
   color: red;
@@ -360,6 +367,7 @@
   /* background-color: #fc6c57; */
   flex-wrap: wrap;
   background-color: #295ee3;
+  color:white
 }
 
 .bailfooter h1 {

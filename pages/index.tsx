@@ -253,7 +253,7 @@ const Home = ()=>{
                     <p>{m.main}
                     </p>
                     <div >
-                    <button style={{backgroundColor:m.color, border:"none"}} >PALM-BEACH COUNTY INMATE</button>
+                    <button style={{backgroundColor:m.color, border:"none"}} >PALM-BEACH COUNTY</button>
                     </div>
                     <div>
                     <button style={{backgroundColor:m.color, border:"none"}}>LIVE COURT CASES</button>
@@ -301,11 +301,11 @@ const Home = ()=>{
             </>
           ))}
           
-             <span >
+             <span className={styled.defend} >
                     <Image alt="g1"height={200} width={200} style={{}}  src={g5}/>
                     
                     <p>Defendent Forms</p>
-                    <div>
+                    <div >
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
                     <Link href="./form2">IMPORTANT FRAUD WARNINGS</Link></button>
                     </div>
@@ -315,10 +315,12 @@ const Home = ()=>{
                     </div>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
-                    <Link href="./form1">Bail Bond Application </Link></button>
+                    <Link href="./form1">
+                    BAIL BOND APPLICATION</Link></button>
                     </div>
                     <div>
-                    <button><Link href="./reciept">Credit card authorization</Link></button>
+                    <button><Link href="./reciept">
+                    CREDIT CARD AUTHORIZATION</Link></button>
                     </div>
                     
                     <div>
@@ -343,7 +345,7 @@ const Home = ()=>{
                     <div>
 
                     <button style={{backgroundColor:"black", border:"none"}}>             
-                    <Link href="./checklist">Terms and condition of bail release</Link>
+                    <Link href="./checklist">TERMS AND CONDITION OF BAIL RELEASE</Link>
 
 </button>
                     </div>
@@ -367,12 +369,12 @@ const Home = ()=>{
                     
                 </span>
             
-          <span>
+          <span  className={styled.defend}>
                       <Image height={200} width={200} src={g4} alt="g5" />
                       <p>Indemnitor Forms</p>
                       <div>
-                    <button>
-                        <Link href="./forms/form2">IMPORTANT FRAUD WARNINGS</Link></button>
+                    <button >
+                        <Link className='p-2' href="./forms/form2">IMPORTANT FRAUD WARNINGS</Link></button>
                     </div>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
@@ -380,11 +382,12 @@ const Home = ()=>{
                     </div>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
-                    <Link href="./form8">Indemnitor Application and Aggreement</Link></button>
+                    <Link href="./form8">
+                    INDEMITOR APPLICATION AND AGGREEMENT</Link></button>
                     </div>
                     <div>
                     <button style={{backgroundColor:"black", border:"none"}} className="">            
-                    <Link href="./form10">Contingent Promisary Note</Link></button>
+                    <Link href="./form10">CONTINGENT PROMISARY NOTE</Link></button>
                     </div>
                     
                     <div>
@@ -397,7 +400,7 @@ const Home = ()=>{
                     <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
                     </div> */}
                     <div>
-                    <button><Link href="./reciept">Credit card authorization</Link></button>
+                    <button><Link href="./reciept">CREDIT CARD AUTHORIZATION</Link></button>
 
                     </div>
                     
@@ -416,7 +419,7 @@ const Home = ()=>{
                         <div>
 
                     <button style={{backgroundColor:"black", border:"none"}}>             
-                    <Link href="./checklist">Terms and condition of bail release</Link>
+                    <Link href="./checklist">TERMS AND CONDITION OF BAIL RELEASE</Link>
 
 </button>
                     </div>
@@ -465,7 +468,7 @@ const Home = ()=>{
             </div>
            
             {footer.map((f)=>(
-                <>
+                <div className='text-white font-normal'>
                  <img className={styled.bottomimage} style={{backgroundImage:f.backgroundimg}} />
 
 <div className={styled.bottom} style={{backgroundColor:f.bcolor}}>
@@ -500,7 +503,7 @@ const Home = ()=>{
           </div>
     
 
-                </>
+                </div>
 
             ))}
 
