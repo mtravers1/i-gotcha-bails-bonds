@@ -80,6 +80,7 @@ const Bailresources = () => {
       <span className={styled.banner}>
         <h1>Bail Resources</h1>
       </span>
+      <span className={styled.brbanner}>
       <span className="bg-white flex flex-row justify-around items-center ml-12 mr-12 p-2">
         <span className="border-r-2 border-black">
           <p className="mr-3">We Are Serving <br/>All 50 States</p>
@@ -90,6 +91,7 @@ const Bailresources = () => {
           <span className="text-center border-r-2 border-black">
           <p className="mr-3">Bail Out<br/> Same Day</p>
           </span>
+      </span>
       </span>
       <div className={styled.post}>
         <span className={styled.resources}>
@@ -225,7 +227,7 @@ Florida, US 33301
           <h2>Browdard</h2>
           <p>Jail: Click here</p>
           <p>Case Search: Click Here</p>
-          <h2>Date</h2>
+          <h2>Miami Dade</h2>
           <p>Jail: Click here</p>
           <p>Case Search: Click Here</p>
           <h2>Palm Beach</h2>
@@ -252,7 +254,7 @@ Florida, US 33301
 
 
       </div>
-      <h1 className="text-center m-12 border-b-2 border-black">Bail Bond Premium and Cost Explained</h1>
+      <h1 className="text-center m-12 border-b-2 border-black text-3xl text-blue">Bail Bond Premium and Cost Explained</h1>
       {/* <span className="flex mb-12 mt-12 justify-around"> */}
       <span className={styled.bailcost}>
 
