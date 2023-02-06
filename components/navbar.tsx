@@ -77,7 +77,7 @@ let n:Array<nav>;
              
             </li>
             <li>
-              <Link style={{color:n.color,fontSize:n.fsize}}  href={'./'}>{n.nav3}</Link>
+              <Link style={{color:n.color,fontSize:n.fsize}}  href={'./about'}>{n.nav3}</Link>
             </li>
             <li>
               <Link style={{color:n.color, fontSize:n.fsize}}  href='./contactus'>{n.nav4}</Link>

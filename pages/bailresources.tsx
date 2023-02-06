@@ -5,7 +5,8 @@ import Navbar from "../components/navbar";
 import Togglebutton from "../components/togglebutton";
 import { useState,useEffect } from "react";
 import data from '../data/db.json'
-
+import calculator from "../public/calculator.png"
+import r1 from "../public/resourceimg1.png"
 const Bailresources = () => {
   // const [bail, setBail]=useState([
   //   {title:"Bail Resources", 
@@ -75,14 +76,28 @@ const Bailresources = () => {
                   <Togglebutton/>
 
       <Navbar/>
+      
       <span className={styled.banner}>
         <h1>Bail Resources</h1>
+      </span>
+      <span className="bg-white flex flex-row justify-around items-center ml-12 mr-12 p-2">
+        <span className="border-r-2 border-black">
+          <p className="mr-3">We Are Serving <br/>All 50 States</p>
+          </span>
+          <span className="text-center border-r-2 border-black">
+          <p className="mr-3">Where Available Any Time <br/>24/7 Service</p>
+          </span>
+          <span className="text-center border-r-2 border-black">
+          <p className="mr-3">Bail Out<br/> Same Day</p>
+          </span>
       </span>
       <div className={styled.post}>
         <span className={styled.resources}>
           {bail.map((b,index)=>(
             <>
+            
             <h1>{b.title}</h1>
+            <hr/>
           <p style={{color:b.descriptioncolor, fontFamily:b.ffmaily}}>
            {b.description}
           </p>
@@ -91,6 +106,7 @@ const Bailresources = () => {
           <button className="w-3/4">{b.button2}</button>
             </>
           ))}
+          
           {/* <span>
             <span>
               <h1>
@@ -146,12 +162,13 @@ Florida, US 33301
           <a href="">{l.link4}</a>
           <a href="">{l.link5}</a>
           <a href="">{l.link6}</a> */}
-          <span >
+          <span className="flex justify-center relative bottom-4">
             <Image width={300} height={300}  src={woman} alt="logo" className="relative bottom-20"/>
           </span>
         </span>
           </>
         ))}
+        
         {/* <span className={styled.download}>
           
           <h1>Quick Bail Links</h1>
@@ -204,7 +221,7 @@ Florida, US 33301
       <div className={styled.case}>
        
         <span  className={styled.case} style={{flexDirection:"column"}}>
-          <h1>Case, Arrest and Search warrenr</h1>
+          <h1 >Case, Arrest and Search warrent</h1>
           <h2>Browdard</h2>
           <p>Jail: Click here</p>
           <p>Case Search: Click Here</p>
@@ -215,7 +232,7 @@ Florida, US 33301
           <p>Jail: Click here</p>
           <p>Case Search: Click Here</p>
           <span className={styled.resourcebutton}>
-            <button className={styled.greenbutton}
+            <button className={styled.blackbutton1}
               
             >
               Bail Bonds: 954-530-0166
@@ -226,12 +243,35 @@ Florida, US 33301
               Email us: info@i-gotchabailbonds.com
             </button>
           </span>
+          
+        </span>
+        
+        <span className="">
+          <Image  alt="r1" src={r1} height={300} width={300} className=""/>
         </span>
 
-        <span>
-          <img className="w-80"/>
-        </span>
+
       </div>
+      <h1 className="text-center m-12 border-b-2 border-black">Bail Bond Premium and Cost Explained</h1>
+      {/* <span className="flex mb-12 mt-12 justify-around"> */}
+      <span className={styled.bailcost}>
+
+        <span className=" flex justify-around w-1/2">
+        <Image height={300} width={300} src={calculator} alt="calculator"/>
+
+        </span>
+            <span className=" w-2/5">
+              <h1 className="border-black border-b-2">Bail Bonds Cost</h1>
+              <p>The bail bond cost is the entire amount of bail decided by 
+                the courts. The bail bond premium is the amount of money a bail bondsman
+                 charges for pre-trial release and is typically 10% of the total bail amount ordered by the 
+                 court system.</p>
+                 <h1 className="border-black border-b-2 mt-12">Types of Bonds</h1>
+                 <p>All bail bond agencies are required and regulated by the Florida
+                   Department Of Financial Services to charge 
+                   10% on state bonds and 15% on federal bonds.</p>
+            </span>
+        </span>
       <div className={styled.bailfooter}>
         <span>
           <span>
@@ -240,6 +280,9 @@ Florida, US 33301
           Broward County Main Jail
             <br />
             555 SE 1st Ave, Fort Lauderdate, FL 33301
+          </p>
+          <p>
+          Phone: (954) 831-5900
           </p>
           </span>
           
@@ -261,7 +304,7 @@ Florida, US 33301
             TGK, 7000 NW 41st St, Miami, FL 33166          
             </p>
             <p>
-            phone: (786) 263-5600
+            Phone: (786) 263-5600
             </p>
 
 
@@ -279,7 +322,7 @@ Florida, US 33301
           Hours: 8am to 4pm
           </p>
           <p>
-          phone (561) 355-2996
+          Phone: (561) 355-2996
           </p>
           </span>
           <span>
@@ -289,6 +332,9 @@ Florida, US 33301
             201 SE 6th Street
             Fort Lauderdale
             Florida, US 33301
+          </p>
+          <p>
+          Phone: (954) 831-6565
           </p>
           </span>
           <span>
