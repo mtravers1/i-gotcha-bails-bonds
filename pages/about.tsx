@@ -3,6 +3,8 @@ import styled from "../styles/index.module.css"
 import Togglebutton from "../components/togglebutton";
 import { useState, useEffect } from "react";
 import data from "../data/db.json"
+import about from "../public/about.png"
+import Image from "next/image";
 const About = ()=>{
   // const [contact, setContact]=useState([
   //   {ffamily:"", title:"Contact Us", tcolor:"blue", tb:"green", 
@@ -40,13 +42,17 @@ const About = ()=>{
         </span>
        
           <div className={styled.contacts}>
-        <div style={{backgroundColor:"black"}}className={styled.post}>
-          <span className={styled.resources}>
+        <div style={{backgroundColor:"black", height:"600px"}}className={styled.post}>
+          <span className="w-3/4 flex justify-center">
             {/* <h1>{c.subtitle}</h1> */}
-            <p>
+            <div className="flex justify-between">
+              
+            
+            <p className="w-3/5">
             Shantaneka Baynard is the owner of I Gotcha Bail Bonds  located here in Lauderhill, Florida just minutes away from the Swap Shop. Beyond securing your freedom we realize that being arrested and going thru the bail bond process can be an awful experience for everyone. When you come here to South Florida to vacation  but end up leaving on probation was not on your bucket list. Thats when you give I Gotcha Bail Bonds a call, All agents will be professional, knowledgeable and courteous. Our office is available to take your call and post bonds 24 hours a day, 7 days a week(including holidays).  We provide service Nationwide with sub-agents available for transfer bond if needed in most areas,  bond service  provided for Broward County, Miami-Dade County, and Palm Beach County.   We have a complete online bail bond system to easily and conveniently assist you with posting a bond for a friend or loved one, from anywhere and at any time using your smartphone or any computer device.
             </p>
-            
+            <Image height={300} width={300} alt='about' src={about} className="rounded-xl relative bottom-6"/>
+            </div>
           </span>
           <span>
         

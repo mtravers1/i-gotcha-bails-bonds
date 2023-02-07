@@ -3,6 +3,8 @@ import Image from 'next/image'
 import g1 from '../public/1.png'
 import g2 from '../public/2.png'
 import g3 from '../public/3.png'
+import g31 from '../public/31.png'
+
 import bar from '../public/bar.png'
 import styled from '../styles/index.module.css'
 import Togglebutton from '../components/togglebutton'
@@ -14,6 +16,7 @@ import g4 from '../public/4.png'
 import g5 from '../public/5.png'
 import g6 from '../public/6.png'
 import g8 from '../public/8.png'
+
 
 
 
@@ -249,7 +252,7 @@ const Home = ()=>{
             <>
             
             <span>
-                <Image alt="g1"height={200} width={200} style={{}}  src={g3}/>
+                <Image alt="g4"height={100} width={200} style={{}}  src={g3}/>
                     <p>{m.main}
                     </p>
                     <div >
@@ -277,7 +280,7 @@ const Home = ()=>{
             <>
                    
             <span>
-                <Image alt="g1"height={200} width={200}  style={{}}  src={g6}/>
+                <Image alt="g1"height={200} width={200}  style={{}}  src={g31}/>
                     <p>Live feed from Palm-Beach Court:Mon-Thurs:8:30AM and 10PMSat and Sun: 8:30AM
                     </p>
                     <div>
@@ -319,6 +322,25 @@ const Home = ()=>{
                     BAIL BOND APPLICATION</Link></button>
                     </div>
                     <div>
+                        
+
+                    <button className='' >
+                        <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
+                    </button>
+                    </div>
+                    <div>
+
+<button style={{backgroundColor:"black", border:"none"}}>             
+<Link href="./checklist">TERMS AND CONDITION OF BAIL RELEASE</Link>
+
+</button>
+</div>
+<div>
+                        
+
+                        <button className='' > <Link href="./form5">COLLATERAL RECEIPT</Link> </button>
+                        </div>
+                    <div>
                     <button><Link href="./reciept">
                     CREDIT CARD AUTHORIZATION</Link></button>
                     </div>
@@ -335,20 +357,8 @@ const Home = ()=>{
 </button>
                     </div> */}
                     
-                    <div>
-                        
-
-                    <button className='' >
-                        <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
-                    </button>
-                    </div>
-                    <div>
-
-                    <button style={{backgroundColor:"black", border:"none"}}>             
-                    <Link href="./checklist">TERMS AND CONDITION OF BAIL RELEASE</Link>
-
-</button>
-                    </div>
+                    
+                 
                     {/* <div>
 
                     <button style={{backgroundColor:"black", border:"none"}}>            <Link href="./form5">COLLATERAL RECEIPT</Link>
@@ -386,32 +396,6 @@ const Home = ()=>{
                     INDEMITOR APPLICATION AND AGGREEMENT</Link></button>
                     </div>
                     <div>
-                    <button style={{backgroundColor:"black", border:"none"}} className="">            
-                    <Link href="./form10">CONTINGENT PROMISARY NOTE</Link></button>
-                    </div>
-                    
-                    <div>
-                    <button style={{backgroundColor:"black", border:"none"}} className="">            
-                    <Link href="./form6">PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN</Link></button>
-                    </div>
-                    
-                    {/* <div>
-                    <button style={{backgroundColor:"black", border:"none"}} className="">            
-                    <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
-                    </div> */}
-                    <div>
-                    <button><Link href="./reciept">CREDIT CARD AUTHORIZATION</Link></button>
-
-                    </div>
-                    
-                    <div>
-                        
-
-                    <button className='' >             <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
-
-</button>
-                    </div>
-                    <div>
                         
 
                         <button className='' > <Link href="./form5">COLLATERAL RECEIPT</Link> </button>
@@ -423,6 +407,34 @@ const Home = ()=>{
 
 </button>
                     </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form10">CONTINGENT PROMISARY NOTE</Link></button>
+                    </div>
+                    <div>
+                    <button><Link href="./reciept">CREDIT CARD AUTHORIZATION</Link></button>
+
+                    </div>
+                    <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form6">PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN</Link></button>
+                    </div>
+                    
+                    {/* <div>
+                    <button style={{backgroundColor:"black", border:"none"}} className="">            
+                    <Link href="./form7">LEXINGTON NATIONAL INSURANCE CORPORATIONPRIVACY NOTICE</Link></button>
+                    </div> */}
+                    
+                    
+                    {/* <div>
+                        
+
+                    <button className='' >             <Link href="./form3" className=''>FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT</Link>
+
+</button>
+                    </div> */}
+                    
+                        
 
           </span>
 

@@ -2,6 +2,7 @@ import Navbar from '../components/navbar';
 import styled from '../styles/index.module.css'
 import Togglebutton from '../components/togglebutton';
 import { useState,useEffect } from 'react';
+import Banner from '../components/banner';
 
 const Postbail = ()=>{
   //   const [postbail, setPostbail]=useState([
@@ -141,8 +142,9 @@ const Postbail = ()=>{
 
           </h1>
         </span>
+        <Banner/>
         <div className={styled.post}>
-          <span className=""style={{  padding: "50px" }}>
+          <span className=""style={{  padding: "20px" }}>
             <h1>Post Nationwide Bail Bonds Online</h1>
             <h1 style={{fontSize:"12px", padding:"0px"}} >Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia</h1>
 

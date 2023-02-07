@@ -7,7 +7,12 @@ import { useState,useEffect } from "react";
 import data from '../data/db.json'
 import calculator from "../public/calculator.png"
 import r1 from "../public/resourceimg1.png"
+import { Appeal, Federal, Felony, Nebbia, Pretrial } from "../components/bondtype";
+
+
 const Bailresources = () => {
+  const [types, setTypes]=useState(false)
+  const [selectbond, setSelectbond]=useState(false)
   // const [bail, setBail]=useState([
   //   {title:"Bail Resources", 
   //   description:" Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.", 
@@ -71,6 +76,10 @@ const Bailresources = () => {
   //   }
   //   (async()=>fetchdata())()
   // },[])
+
+  const displayTypes = ()=>{
+    setTypes(!types)
+  }
   return (
     <div>
                   <Togglebutton/>
@@ -170,6 +179,7 @@ Florida, US 33301
         </span>
           </>
         ))}
+      
         
         {/* <span className={styled.download}>
           
@@ -234,9 +244,7 @@ Florida, US 33301
           <p>Jail: Click here</p>
           <p>Case Search: Click Here</p>
           <span className={styled.resourcebutton}>
-            <button className={styled.blackbutton1}
-              
-            >
+            <button className={styled.blackbutton1}>
               Bail Bonds: 954-530-0166
             </button>
             <button className= {styled.blackbutton}
@@ -254,6 +262,75 @@ Florida, US 33301
 
 
       </div>
+      <h1 onClick={displayTypes} className="text-center m-12 border-b-2 border-black text-3xl text-blue">Types of Bonds</h1>
+         
+      
+
+                 {types && <span className="text-blue flex">
+                  
+                  <h1 >Appeal Bonds</h1>
+                  <h1 >Ferderal Bonds</h1>
+                  <h1 >Felony Bonds</h1>
+                  <h1 >Nebbia Bonds</h1>
+                  <h1 >State Bonds</h1>
+                  <h1>Supersedeas Bonds</h1>
+                  </span>
+                  }
+
+        <span >
+             <div className="m-6 mt-3">
+             <p className="mb-12 text-blue">All bail bond agencies are required and regulated by the Florida
+                   Department Of Financial Services to charge 
+                   10% on state bonds and 15% on federal bonds.
+      </p>
+        <span className=" ">
+        <h1>Appeal Bonds in Florida</h1>
+        <p>
+            In order to understand what an ‘appeal bond’ is, one must first 
+            understand the meaning of an ‘appeal’ according to the judicial court system. At the closing of a court hearing, 
+            the losing party is offered the ability to have the court’s decision reviewed by the Court of Appeal (a higher court) in an attempt 
+            to reverse the final judgment. This is called an appeal.
+        </p>
+        </span>
+        <div className="mt-12">
+        <h1>Federal Bail Bonds for Pretrial Release in Florida</h1>
+        <p>
+        What is a federal bond? These bonds are required in order to bail out someone from jail who has 
+        been arrested for a federal crime. Typically, 
+        federal bonds cost more than state bonds and cannot 
+        be issued without first seeing a judge.</p>
+    </div>
+    <div className="mt-6">
+    <h1>Felony Bonds</h1>
+        <p>
+        Bail Bonds Now make it easy to post a bond in Florida. 
+        If someone you care about has been arrested for a felony criminal charge and needs help to make bail, our online bail application tool makes the process easy and convenient. 
+        Call or text a bail agent anytime at 561-500-9999.
+        </p>
+    </div>
+    <div className="mt-12">
+    <h1>Nebbia Holds</h1>
+        <p>
+        In Florida, a Nebbia hold is used to guarantee that funds used
+         to release a pretrial inmate were not part of an illegal 
+         financial transaction or activity. It is often a condition 
+        placed on a defendant's bond when suspected of drug crimes.
+        </p>
+    </div>
+    <div className="mt-6">
+    <h1>State Bail Bonds for Pretrial Release in Florida</h1>
+        <p>
+        What is a state bond? State crimes cover a long list of offenses, but in all circumstances, a law that was put into place
+         by state legislature was allegedly broken.
+        </p>
+    </div>
+    </div>
+
+                  
+                  </span>
+
+                 
+      
       <h1 className="text-center m-12 border-b-2 border-black text-3xl text-blue">Bail Bond Premium and Cost Explained</h1>
       {/* <span className="flex mb-12 mt-12 justify-around"> */}
       <span className={styled.bailcost}>
@@ -268,10 +345,7 @@ Florida, US 33301
                 the courts. The bail bond premium is the amount of money a bail bondsman
                  charges for pre-trial release and is typically 10% of the total bail amount ordered by the 
                  court system.</p>
-                 <h1 className="border-black border-b-2 mt-12">Types of Bonds</h1>
-                 <p>All bail bond agencies are required and regulated by the Florida
-                   Department Of Financial Services to charge 
-                   10% on state bonds and 15% on federal bonds.</p>
+                 
             </span>
         </span>
       <div className={styled.bailfooter}>
