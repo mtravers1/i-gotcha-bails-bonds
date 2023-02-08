@@ -1,0 +1,560 @@
+.navbar {
+  /* font-weight: 600; */
+}
+
+.title {
+  font-size: 18px;
+}
+.navbar li {
+  list-style: none;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+.navbar a:hover {
+  /* color: #f86c57; */
+  color: blue;
+}
+
+.navlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ttitle {
+  display: none;
+}
+.home {
+  font-weight: 600;
+}
+
+.logo {
+  margin-top: 50px;
+  width: 300px;
+}
+.maintext {
+  font-size: 57px;
+  /* font-weight: 600; */
+  color: white;
+  text-shadow: 1px 3px 2px black;
+}
+
+.maintext p {
+  margin: 0px;
+  text-shadow: 1px 3px 2px black;
+}
+
+.secondarytext {
+  font-size: 16px;
+  color: white;
+  justify-content: center;
+  display: flex;
+  text-shadow: 1px 3px 2px black;
+
+  /* font-weight: 600; */
+}
+
+.secondarytext p {
+  width: 27%;
+}
+
+.call {
+  width: 30%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: center;
+}
+.info p {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.info span {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.info img {
+  width: 100%;
+  margin: auto;
+}
+
+.info div {
+  display: flex;
+  justify-content: center;
+}
+
+.defend a {
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.info button {
+  padding: 5px;
+  width: 80%;
+  /* height: 40px; */
+  border-radius: 20px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.info button:hover {
+  color: #295ee3;
+}
+
+.bottom {
+  margin-top: 50px;
+
+  /* background-color: #f86c57; */
+  background-color: #295ee3;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  height: 40px;
+  width: 100px;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.pink {
+  /* color: #fc6c57; */
+  color: #295ee3;
+}
+
+.banner h1 {
+  /* background-color: #fc6c57; */
+  background-color: #295ee3;
+  color: white;
+  padding: 50px;
+  font-size: 36px;
+  margin: 0px;
+}
+
+.post {
+  background-color: black;
+
+  color: white;
+  height: 400px;
+  display: flex;
+  padding: 100px 0px 0px 100px;
+  text-align: left;
+  font-size: 14px;
+  justify-content: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+.download {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 0px 50px;
+}
+.download img {
+  /* height: 250px; */
+  /* position: relative;
+  right: 100px; */
+}
+
+.download a {
+  text-decoration: none;
+  color: #00ceff;
+  font-size: 12px;
+}
+
+/* h1 {
+  font-size: 30px;
+} */
+
+.bail {
+  display: flex;
+  text-align: left;
+  /* justify-content: space-around; */
+  padding: 50px 0px 0px 50px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.bail input {
+  border: solid;
+  padding: 10px 10px 10px 10px;
+}
+.bailcost {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  text-decoration: none;
+  color: red;
+}
+
+.bail form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.bail input {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* width: 60%; */
+  height: 40px;
+}
+
+.bail button {
+  /* width: 60%; */
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.resources button {
+  display: block;
+  border-radius: 20px;
+  margin-top: 5px;
+  background-color: white;
+  color: black;
+  /* width: 175px; */
+  height: 30px;
+}
+
+.resources {
+  width: 50%;
+  /* padding: 50px 0px 0px 150px; */
+}
+
+.case {
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  font-size: 16px;
+}
+.case h2 {
+  color: #295ee3;
+  font-size: 16px;
+}
+
+.case p {
+  font-size: 12px;
+}
+
+.case img {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  margin: 20px;
+}
+
+.cases {
+  width: 50%;
+  padding: 0px 0px 0px 100px;
+}
+.greenbutton {
+  background-color: green;
+  position: relative;
+  left: 140px;
+  bottom: 60px;
+}
+
+.blackbutton {
+  background-color: black;
+  position: relative;
+  left: 140px;
+  bottom: 60px;
+}
+
+.blackbutton1 {
+  background-color: #295ee3;
+  position: relative;
+  left: 140px;
+  bottom: 60px;
+}
+.resourcebutton {
+  position: relative;
+}
+.resourcebutton button {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+}
+
+.bailfooter {
+  display: flex;
+  /* flex-wrap:wrap; */
+  justify-content: space-around;
+  /* background-color: #fc6c57; */
+  background-color: #295ee3;
+  color: white;
+}
+
+.bailfooter h1 {
+  color: white;
+  font-size: 24px;
+}
+.bailfooter span {
+  margin: 10px;
+}
+.togglebutton {
+  position: absolute;
+  right: 1rem;
+  display: none;
+}
+@media (max-width: 821px) {
+  .blackbutton {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .blackbutton1 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 551px) {
+  .bailfooter {
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info span {
+    width: 100%;
+  }
+
+  .ttitle {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .navbar li {
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .navbar a {
+    margin-left: 0;
+  }
+  .logo {
+    width: 80%;
+    height: 80%;
+  }
+
+  .maintext {
+    font-size: 24px;
+  }
+  .secondarytext {
+    font-size: 24px;
+  }
+  .secondarytext p {
+    width: max-content;
+  }
+  .call {
+    height: 70px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .info img {
+    margin-top: 40px;
+    width: 75%;
+    /* position: relative;
+    left: 100px; */
+    margin-bottom: 20px;
+  }
+  .post {
+    background-color: black;
+    color: white;
+    display: flex;
+    text-align: left;
+    font-size: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    height: fit-content;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .resources {
+    width: 80%;
+    padding: 0px 0px 0px 0px;
+  }
+  .resources button {
+    height: 40px;
+  }
+  .download {
+    width: 80%;
+    padding: 0px 0px 0px 5px;
+    position: relative;
+    top: 90px;
+  }
+  .resourcebutton {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .brbanner {
+  }
+  .brbanner span {
+    display: flex;
+    margin: 0px;
+  }
+
+  .case {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .case span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .case {
+    /* flex-wrap: wrap;  */
+  }
+
+  .greenbutton {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .blackbutton {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .blackbutton1 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .bailcost {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  .bailcost span {
+    width: 100%;
+  }
+  .download img {
+    position: relative;
+    right: 0px;
+  }
+  .bail input {
+    width: 100%;
+  }
+  .bail form {
+    width: 100%;
+  }
+  .togglebutton {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    background: none;
+    border: none;
+    color: #295ee3;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .tnavbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tnavbar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .navlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+  }
+  .contacts {
+    padding-bottom: 100px;
+    background: black;
+    padding-top: 100px;
+  }
+  .navlist a {
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+  }
+  .navlist a:hover {
+    /* text-decoration: none; */
+    color: #295ee3;
+  }
+
+  .contact {
+    height: fit-content;
+  }
+}

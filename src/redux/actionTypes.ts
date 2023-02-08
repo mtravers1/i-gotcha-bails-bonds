@@ -1,0 +1,1 @@
+export const SET_LANG_OPTIONS = 'SET_LANG_OPTIONS';

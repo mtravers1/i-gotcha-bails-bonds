@@ -1,16 +1,21 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors:{
-        'footer-pink':'#f86c57',
-        'blue':'#295ee3'
+      colors: {
+        primary: '#295ee3',
+        'black-0.4': 'rgba(0, 0, 0, 0.4)',
+        'footer-pink': '#f86c57',
+        blue: '#295ee3',
       },
+      borderRadius: {
+        '1/2': '50%',
+        8: '40px',
+      },
+
     },
   },
   plugins: [],
-}
+};
