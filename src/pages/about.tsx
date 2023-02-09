@@ -1,10 +1,10 @@
-import Navbar from '../components/navbar';
 import styled from '../styles/index.module.css';
-import Togglebutton from '../components/togglebutton';
 import { useState, useEffect } from 'react';
-import data from '../../data/db.json';
+import data from 'data/db.json';
 import about from '../public/about.png';
 import Image from 'next/image';
+import { PageLayout } from 'layouts/pageLayout';
+
 const About = () => {
   // const [contact, setContact]=useState([
   //   {ffamily:"", title:"Contact Us", tcolor:"blue", tb:"green",
@@ -29,10 +29,7 @@ const About = () => {
   const [contact, setContact] = useState(data.contact);
 
   return (
-    <div>
-      <Togglebutton />
-
-      <Navbar />
+    <PageLayout>
       <div>
         <div>
           <span className={styled.banner}>
@@ -73,7 +70,7 @@ const About = () => {
                       smartphone or any computer device.
                     </p>
                   </span>
-                  <span className="w-2/5">
+                  {/* <span className="w-2/5">
                     <Image
                       height={1000}
                       width={300}
@@ -81,7 +78,7 @@ const About = () => {
                       src={about}
                       className="rounded-xl"
                     />
-                  </span>
+                  </span> */}
                 </div>
               </span>
               <span></span>
@@ -126,7 +123,7 @@ const About = () => {
       <div className="h-52 bg-slate-200">
         <span className="h-24 bg-blue" />
       </div>
-    </div>
+    </PageLayout>
   );
 };
 export default About;

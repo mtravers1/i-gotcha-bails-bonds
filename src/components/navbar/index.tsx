@@ -14,7 +14,7 @@ export const Navbar: FC = () => {
   const links = [
     {
       name: <FormattedMessage id="nav.home" />,
-      path: '/home',
+      path: '/',
     },
     {
       name: <FormattedMessage id="nav.bail-resources" />,
@@ -59,7 +59,7 @@ export const Navbar: FC = () => {
                   height={100}
                 />
 
-                <ul className="hidden md:flex">
+                <ul className="hidden lg:flex">
                   {links.map((link, i) => (
                     <li
                       key={`main_nav_${i}`}
@@ -71,7 +71,7 @@ export const Navbar: FC = () => {
                 </ul>
 
                 <ul className="flex items-center">
-                  <div className="block md:hidden mr-2">
+                  <div className="block lg:hidden mr-2">
                     <DropDown
                       config={{
                         useClick: true,

@@ -10,6 +10,13 @@
   "banner.sub-two": "Our areas of focus include: Reliability, Professionalism, and Quality care.",
   "office": "Office",
   "cell": "Cell",
+  "click.here": "Click Here",
+  "jail": "Jail",
+  "case.search": "Case Search",
+  "view.more": "View More",
+  "court.house": "Court House",
+  "phone": "Phone",
+  "hours": "Hours",
   "landing.info.title-one": "Live feed from Broward County Court: Mon-Thurs: 8:30AM and 10PM, Sat and Sun: 8:30AM",
   "landing.info.title-two": "View the arrest information and photo of a current incarcerated inmate in Broward County",
   "landing.info.title-three": "Live feed from Palm-Beach Court: Mon-Thurs: 8:30AM and 10PM, Sat and Sun: 8:30AM",
@@ -33,5 +40,76 @@
   "landing.info.links.promissary-note-plan": "PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN",
   "footer.switch.lang.title": "¿Necesita una fianza? Se Habla Español",
   "footer.switch.lang.desc": "Haga clic en este enlace para visitar nuestro sitio web en español.",
-  "footer.switch.lang.cta": "Español"
+  "footer.switch.lang.cta": "Español",
+  "bail-resources.page.title": "BAIL RESOURCES",
+  "bail-resources.page.top-one": "We Are Serving All 50 States",
+  "bail-resources.page.top-two": "Where Available Any Time 24/7 Service",
+  "bail-resources.page.top-three": "Bail Out Same Day",
+  "bail-resources.page.banner.title": "Bail Bond Resources",
+  "bail-resources.page.banner.desc": "Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime.",
+  "bail-resources.page.banner.btn-one": "Send us a text",
+  "bail-resources.page.banner.btn-two": "Send us an email",
+  "bail-resources.page.info.title": "Case, Arrest, and Warrant Search",
+  "bail-resources.info.title": "Here are some of the types of bonds we offer",
+
+  "bail-resources.info.bonds-def.title": "All bail bond agencies are required and regulated by the Florida Department Of Financial Services to charge 10% on state bonds and 15% on federal bonds.",
+
+  "bail-resources.info.bonds-def.info-1.title": "Appeal Bonds in Florida",
+  "bail-resources.info.bonds-def.info-1.desc": "In order to understand what an ‘appeal bond’ is, one must first understand the meaning of an ‘appeal’ according to the judicial court system. At the closing of a court hearing, the losing party is offered the ability to have the court’s decision reviewed by the Court of Appeal (a higher court) in an attempt to reverse the final judgment. This is called an appeal.",
+
+  "bail-resources.info.bonds-def.info-2.title": "Federal Bail Bonds for Pretrial Release in Florida",
+  "bail-resources.info.bonds-def.info-2.desc": "What is a federal bond? These bonds are required in order to bail out someone from jail who has been arrested for a federal crime. Typically, federal bonds cost more than state bonds and cannot be issued without first seeing a judge.",
+
+  "bail-resources.info.bonds-def.info-3.title": "Felony Bonds",
+  "bail-resources.info.bonds-def.info-3.desc": "Bail Bonds Now make it easy to post a bond in Florida. If someone you care about has been arrested for a felony criminal charge and needs help to make bail, our online bail application tool makes the process easy and convenient. Call or text a bail agent anytime at 561-500-9999.",
+
+  "bail-resources.info.bonds-def.info-4.title": "Nebbia Holds",
+  "bail-resources.info.bonds-def.info-4.desc": "In Florida, a Nebbia hold is used to guarantee that funds used to release a pretrial inmate were not part of an illegal financial transaction or activity. It is often a condition placed on a defendant's bond when suspected of drug crimes.",
+
+  "bail-resources.info.bonds-def.info-5.title": "State Bail Bonds for Pretrial Release in Florida",
+  "bail-resources.info.bonds-def.info-5.desc": "What is a state bond? State crimes cover a long list of offenses, but in all circumstances, a law that was put into place by state legislature was allegedly broken.",
+
+  "bail-resources.info.bonds.cost-ananlisis.title": "Bail Bond Premium and Cost Explained",
+  "bail-resources.info.bonds.cost-ananlisis.subtitle": "Bail Bonds Cost",
+  "bail-resources.info.bonds.cost-ananlisis.desc": "The bail bond cost is the entire amount of bail decided by the courts. The bail bond premium is the amount of money a bail bondsman charges for pre-trial release and is typically 10% of the total bail amount ordered by the court system.",
+
+  "bail-resources.info.bonds.footer-one.title": "Broward County Main Jail",
+  "bail-resources.info.bonds.footer-one.address": "555 SE 1st Ave, Fort Lauderdate, FL 33301",
+  "bail-resources.info.bonds.footer-one.phone": "(954) 831-5900",
+
+  "bail-resources.info.bonds.footer-two.title": "Palm Beach The Main Detention Center",
+  "bail-resources.info.bonds.footer-two.address": "228 Gun Club Road West Palm Beach, FL 33406-3001",
+  "bail-resources.info.bonds.footer-two.phone": "(561) 688-4401",
+
+  "bail-resources.info.bonds.footer-three.title": "Miami Dade Jail Turner Guilford Knight Correctional Center",
+  "bail-resources.info.bonds.footer-three.address": "TGK, 7000 NW 41st St, Miami, FL 33166",
+  "bail-resources.info.bonds.footer-three.phone": "(786) 263-5600",
+
+  "bail-resources.info.bonds.footer-four.title": "Palm Beach County Clerk of the Circuit Court",
+  "bail-resources.info.bonds.footer-four.address": "05 N Dixie Hwy, West Palm Beach, FL 33401",
+  "bail-resources.info.bonds.footer-four.hours": "8am to 4pm",
+  "bail-resources.info.bonds.footer-four.phone": "(561) 355-2996",
+
+  "bail-resources.info.bonds.footer-five.title": "Broward County Clerk of Courts",
+  "bail-resources.info.bonds.footer-five.address": "201 SE 6th Street Fort Lauderdale Florida, US 33301",
+  "bail-resources.info.bonds.footer-five.phone": "(954) 831-6565",
+
+  "bail-resources.info.bonds.footer-six.title": "Miami Dade County Clerk of Courts",
+  "bail-resources.info.bonds.footer-six.address": "73 W. Flagler Street Miami, Florida 33130",
+  "bail-resources.info.bonds.footer-six.phone": "305-275-1155",
+
+  "bail-resources.info.bonds.footer-seven.title": "Miami Dade Criminal Court Office",
+  "bail-resources.info.bonds.footer-seven.address": "1351 NW 12th Street, 9th Floor Miami, Florida 33125",
+  "bail-resources.info.bonds.footer-seven.phone": "305-275-1155",
+
+  "bond.types.appeal-bond": "Appeal Bond",
+  "bond.types.federal-bond": "Federal Bond",
+  "bond.types.felony-bonds": "Felony Bonds",
+  "bond.types.nebbia-bond": "Nebbia Bond",
+  "bond.types.state-bond": "State Bond",
+  "bond.types.supersedeas-bond": "Supersedeas Bond",
+
+  "post-bail.title": "Post Bail Online",
+  "post-bail.banner.title": "Post Nationwide Bail Bonds Online",
+  "post-bail.banner.desc": "Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia\n Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND.\nWHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA.\nThis service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin.\nFill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone"
 }

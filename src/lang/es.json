@@ -10,6 +10,13 @@
   "banner.sub-two": "Nuestras áreas de enfoque incluyen: confiabilidad, profesionalismo y atención de calidad.",
   "office": "Oficina",
   "cell": "Célula",
+  "click.here": "Haga clic aquí",
+  "jail": "Cárcel",
+  "case.search": "Búsqueda de casos",
+  "view.more": "Ver más",
+  "court.house": "Casa de la corte",
+  "phone": "Teléfono",
+  "hours": "Horas",
   "landing.info.title-one": "Transmisión en vivo desde el tribunal del condado de Broward: de lunes a jueves: 8:30 a. m. y 10 p. m., sábados y domingos: 8:30 a. m.",
   "landing.info.title-two": "Vea la información del arresto y la foto de un recluso actualmente encarcelado en el condado de Broward",
   "landing.info.title-three": "Transmisión en vivo desde Palm-Beach Court: de lunes a jueves: 8:30 a. m. y 10 p. m., sábados y domingos: 8:30 a. m.",
@@ -33,5 +40,75 @@
   "landing.info.links.promissary-note-plan": "PAGARÉ Y PLAN DE PAGO A PLAZOS",
   "footer.switch.lang.title": "Do you need a deposit? Do you speak English",
   "footer.switch.lang.desc": "Click on this link to visit our website in English.",
-  "footer.switch.lang.cta": "English"
+  "footer.switch.lang.cta": "English",
+  "bail-resources.page.title": "RECURSOS DE FIANZA",
+  "bail-resources.page.top-one": "Estamos sirviendo a los 50 estados",
+  "bail-resources.page.top-two": "Donde esté disponible en cualquier momento Servicio 24/7",
+  "bail-resources.page.top-three": "Rescate el mismo día",
+  "bail-resources.page.banner.title": "Recursos de fianza",
+  "bail-resources.page.banner.desc": "Recursos de fianzas Sabemos que ser arrestado, o que arresten a un ser querido, puede ser una experiencia desalentadora y aterradora. Nuestra sección de recursos de fianzas lo guiará a través de la difícil experiencia un poco más fácil. Ya sea que necesite una fianza de Dade, Broward o Palm Beach, estamos aquí para ayudarlo... ¡incluso tenemos agentes de fianza disponibles en todo el país! Como siempre, puede llamarnos o enviarnos un correo electrónico en cualquier momento.",
+  "bail-resources.page.banner.btn-one": "Envíanos un mensaje de texto",
+  "bail-resources.page.banner.btn-two": "envianos un email",
+  "bail-resources.page.info.title": "Búsqueda de casos, arrestos y órdenes judiciales",
+
+  "bail-resources.info.bonds-def.title": "Todas las agencias de fianzas están obligadas y reguladas por el Departamento de Servicios Financieros de Florida a cobrar un 10 % sobre los bonos estatales y un 15 % sobre los bonos federales.",
+
+  "bail-resources.info.bonds-def.info-1.title": "Fianzas de apelación en Florida",
+  "bail-resources.info.bonds-def.info-1.desc": "Para entender qué es un 'vínculo de apelación', primero se debe entender el significado de una 'apelación' según el sistema judicial. Al cierre de una audiencia judicial, a la parte perdedora se le ofrece la posibilidad de que el Tribunal de Apelaciones (un tribunal superior) revise la decisión del tribunal en un intento de revocar el fallo final. Esto se llama una apelación.",
+
+  "bail-resources.info.bonds-def.info-2.title": "Fianzas federales para liberación previa al juicio en Florida",
+  "bail-resources.info.bonds-def.info-2.desc": "¿Qué es un bono federal? Estas fianzas son necesarias para rescatar a alguien de la cárcel que ha sido arrestado por un delito federal. Por lo general, los bonos federales cuestan más que los bonos estatales y no se pueden emitir sin antes ver a un juez.",
+
+  "bail-resources.info.bonds-def.info-3.title": "Fianzas por delitos graves",
+  "bail-resources.info.bonds-def.info-3.desc": "Bail Bonds Now facilita el pago de una fianza en Florida. Si un ser querido ha sido arrestado por un delito grave y necesita ayuda para pagar la fianza, nuestra herramienta de solicitud de fianza en línea hace que el proceso sea fácil y conveniente. Llame o envíe un mensaje de texto a un agente de fianzas en cualquier momento al 561-500-9999.",
+
+  "bail-resources.info.bonds-def.info-4.title": "Nebbia sostiene",
+  "bail-resources.info.bonds-def.info-4.desc": "En Florida, se utiliza una retención de Nebbia para garantizar que los fondos utilizados para liberar a un recluso antes del juicio no formaron parte de una transacción o actividad financiera ilegal. A menudo es una condición que se impone a la fianza de un acusado cuando se sospecha de delitos de drogas.",
+
+  "bail-resources.info.bonds-def.info-5.title": "Fianzas estatales para liberación previa al juicio en Florida",
+  "bail-resources.info.bonds-def.info-5.desc": "¿Qué es un bono estatal? Los delitos estatales abarcan una larga lista de delitos, pero en todas las circunstancias, se alega que se infringió una ley promulgada por la legislatura estatal.",
+
+  "bail-resources.info.bonds.cost-ananlisis.title": "Prima de fianza y costo explicado",
+  "bail-resources.info.bonds.cost-ananlisis.subtitle": "Bail Bonds Cost",
+  "bail-resources.info.bonds.cost-ananlisis.desc": "El costo de la fianza es el monto total de la fianza decidido por los tribunales. La prima de la fianza es la cantidad de dinero que cobra un fiador por la liberación previa al juicio y suele ser el 10% del monto total de la fianza ordenado por el sistema judicial.",
+
+  "bail-resources.info.bonds.footer-one.title": "Cárcel principal del condado de Broward",
+  "bail-resources.info.bonds.footer-one.address": "555 SE 1st Ave, Fort Lauderdate, FL 33301",
+  "bail-resources.info.bonds.footer-one.phone": "(954) 831-5900",
+
+  "bail-resources.info.bonds.footer-two.title": "Palm Beach El Centro de Detención Principal",
+  "bail-resources.info.bonds.footer-two.address": "228 Gun Club Road West Palm Beach, FL 33406-3001",
+  "bail-resources.info.bonds.footer-two.phone": "(561) 688-4401",
+
+  "bail-resources.info.bonds.footer-three.title": "Cárcel de Miami Dade Centro Correccional Turner Guilford Knight",
+  "bail-resources.info.bonds.footer-three.address": "TGK, 7000 NW 41st St, Miami, FL 33166",
+  "bail-resources.info.bonds.footer-three.phone": "(786) 263-5600",
+
+  "bail-resources.info.bonds.footer-four.title": "Secretario del Condado de Palm Beach del Tribunal de Circuito",
+  "bail-resources.info.bonds.footer-four.address": "05 N Dixie Hwy, West Palm Beach, FL 33401",
+  "bail-resources.info.bonds.footer-four.hours": "8 am a 4 pm",
+  "bail-resources.info.bonds.footer-four.phone": "(561) 355-2996",
+
+  "bail-resources.info.bonds.footer-five.title": "Secretario de Tribunales del Condado de Broward",
+  "bail-resources.info.bonds.footer-five.address": "201 SE 6th Street Fort Lauderdale Florida, US 33301",
+  "bail-resources.info.bonds.footer-five.phone": "(954) 831-6565",
+
+  "bail-resources.info.bonds.footer-six.title": "Secretario de Tribunales del Condado de Miami Dade",
+  "bail-resources.info.bonds.footer-six.address": "73 W. Flagler Street Miami, Florida 33130",
+  "bail-resources.info.bonds.footer-six.phone": "305-275-1155",
+
+  "bail-resources.info.bonds.footer-seven.title": "Oficina del Tribunal Penal de Miami Dade",
+  "bail-resources.info.bonds.footer-seven.address": "1351 NW 12th Street, 9th Floor Miami, Florida 33125",
+  "bail-resources.info.bonds.footer-seven.phone": "305-275-1155",
+
+  "bond.types.appeal-bond": "Fianza de apelación",
+  "bond.types.federal-bond": "Bonos Federales",
+  "bond.types.felony-bonds": "Fianzas por delitos graves",
+  "bond.types.nebbia-bond": "Nebbia Bond",
+  "bond.types.state-bond": "Bono estatal",
+  "bond.types.supersedeas-bond": "Bono de sustitución",
+
+  "post-bail.title": "Pagar la fianza en línea",
+  "post-bail.banner.title": "Publicar fianzas nacionales en línea",
+  "post-bail.banner.desc": "Lexington National Insurance Corporation tiene licencia en los 50 estados y el Distrito de Columbia\n Publicar fianzas nacionales en línea ANTES DE COMPLETAR ESTE FORMULARIO, COMUNÍQUESE CON NUESTRA OFICINA PARA ASEGURARSE DE QUE TENEMOS COBERTURA EN EL ÁREA EN LA QUE DESEA PAGAR LA FIANZA. \nCUANDO SOLICITE UNA FIANZA DE TRANSFERENCIA, YA SEA EL DEMANDADO O LA PERSONA QUE DESEA PAGAR LA FIANZA ESTÉ IDEALMENTE CERCA DE MI UBICACIÓN EN FLORIDA.\nEste servicio NO ESTÁ DISPONIBLE en los siguientes estados Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregón , o Wisconsin.\nComplete el formulario a continuación para iniciar su proceso de fianza local o nacional. Una vez que haya enviado el formulario, llámenos al 954 463-6363 para completar el proceso. Ingresar la información de la tarjeta de crédito es opcional y se puede dar por teléfono"
 }

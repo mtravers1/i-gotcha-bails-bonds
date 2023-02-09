@@ -6,12 +6,11 @@ import bottomImg from 'assets/bar.png';
 import { BannerSection } from 'components/bannerSection';
 import { Button } from 'components/button';
 import { InfoText } from 'components/infoText';
-import { Navbar } from 'components/navbar';
 import data from 'data/homepage.json';
 import { InfoTextProps } from 'helpers/interfaces';
 import { useAppDispatch, useAppSelector } from 'hooks/reduxHooks';
+import { PageLayout } from 'layouts/pageLayout';
 import { setlanguage } from 'redux/actions/general';
-// import styled from '../styles/index.module.css';
 
 const Home: FC = () => {
   const { lang } = useAppSelector((state) => state.generals);
@@ -30,11 +29,10 @@ const Home: FC = () => {
   };
 
   return (
-    <div>
-      <Navbar />
+    <PageLayout useTopNav={false}>
       <BannerSection />
 
-      <div className="container mx-auto my-14">
+      <section className="container mx-auto my-14">
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
           {data.map((item: InfoTextProps, index: number) => (
             <InfoText
@@ -45,15 +43,15 @@ const Home: FC = () => {
             />
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="container mx-auto">
+      <section className="container mx-auto">
         <div className="w-full h-40 relative">
           <Image src={bottomImg} alt="bar" fill />
         </div>
-      </div>
+      </section>
 
-      <div className="mt-14 bg-primary py-9 px-3.5">
+      <section className="mt-14 bg-primary py-9 px-3.5">
         <div className="container mx-auto flex flex-wrap lg:items-center flex-col lg:flex-row">
           <div className="flex-1 flex flex-col items-start">
             <h1 className="text-white font-bold text-3xl lg:text-5xl mb-3">
@@ -72,7 +70,7 @@ const Home: FC = () => {
             </Button>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* {footer.map((f) => (
         <div className="text-white font-normal" key="jde">
@@ -104,7 +102,7 @@ const Home: FC = () => {
           </div>
         </div>
       ))} */}
-    </div>
+    </PageLayout>
   );
 };
 

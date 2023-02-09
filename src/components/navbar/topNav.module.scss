@@ -1,0 +1,13 @@
+.top-nav-el {
+  @apply border-gray-500 border-b-2 md:border-b-0 md:border-r-2 py-3 w-full md:w-1/3 text-center px-3 flex items-center justify-center text-base md:text-xl;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    @apply border-b-0 md:border-r-0;
+  }
+}
