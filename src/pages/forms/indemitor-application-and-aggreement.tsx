@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import styles from '../styles/forms.module.css';
+import { FC, useState } from 'react';
+import styles from '../../styles/forms.module.css';
 
-const Form8 = () => {
+const Form8: FC = () => {
   // const [ email, setEmail]=useState([{id:1, company:''}])
 
   const [refrence, setRefrence] = useState([{}]);

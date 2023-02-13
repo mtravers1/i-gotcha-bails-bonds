@@ -1,6 +1,7 @@
-import styles from '../styles/forms.module.css';
+import { FC } from 'react';
+import styles from '../../styles/forms.module.css';
 
-const Form10 = () => {
+const Form10: FC = () => {
   return (
     <div>
       <div className={styles.form}>

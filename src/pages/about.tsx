@@ -1,11 +1,8 @@
-import styled from '../styles/index.module.css';
-import { useState, useEffect } from 'react';
-import data from 'data/db.json';
-import about from '../public/about.png';
-import Image from 'next/image';
+import { FC } from 'react';
 import { PageLayout } from 'layouts/pageLayout';
+import styled from '../styles/index.module.css';
 
-const About = () => {
+const About: FC = () => {
   // const [contact, setContact]=useState([
   //   {ffamily:"", title:"Contact Us", tcolor:"blue", tb:"green",
 
@@ -25,8 +22,6 @@ const About = () => {
   //   }
   //   (async()=>fetchdata())()
   // })
-
-  const [contact, setContact] = useState(data.contact);
 
   return (
     <PageLayout>

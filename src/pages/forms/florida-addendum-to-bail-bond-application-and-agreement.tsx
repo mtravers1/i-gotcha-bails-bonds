@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from '../styles/forms.module.css';
+import React, { FC } from 'react';
+import styles from '../../styles/forms.module.css';
 
-const Form3 = () => {
+const Form3: FC = () => {
   return (
     <div className={styles.form}>
       <div className="m-10 font-serif">

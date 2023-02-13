@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from '../styles/forms.module.css';
+import React, { FC } from 'react';
+import styles from '../../styles/forms.module.css';
 
-const Form5 = () => {
+const Form5: FC = () => {
   return (
     <div className={styles.form}>
       <div className="flex justify-end">

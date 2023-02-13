@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
 import styles from './style.module.css';
-import woman from '../public/woman.png';
 
-const Checklist = () => {
+const Checklist: FC = () => {
   return (
     <div className={styles.checklist} style={{ margin: '40px' }}>
       <div className="flex justify-center">
-        <Image src={woman} alt="logo" height={150} width={150} />
+        <Image
+          src="https://ucarecdn.com/d02e271a-5235-453d-852d-e7f74b7c08cc/-/preview/-/quality/smart/-/format/auto/"
+          alt="Bail bonds woman"
+          height={150}
+          width={150}
+        />
         <h1 className="flex items-end font-bold">
           I GOTCHA BAIL BONDS RELEASE CHECKLIST
         </h1>
