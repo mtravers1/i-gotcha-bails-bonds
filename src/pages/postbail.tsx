@@ -7,7 +7,7 @@ import { useForm } from 'hooks/useForm';
 import { PageLayout } from 'layouts/pageLayout';
 
 const Postbail: FC = () => {
-  const { handleChange, inputTypes, handleSubmit, errors, loading } = useForm({
+  const { handleChange, inputTypes, handleSubmit, errors } = useForm({
     inputs: formData,
     cb: () => {
       return;
@@ -18,7 +18,7 @@ const Postbail: FC = () => {
     <PageLayout pageTitle="post-bail.title">
       <BannerSection />
 
-      <div className="max-w-xl mx-auto py-10">
+      <div className="max-w-3xl mx-auto py-10">
         {formData.map((data: any, i: number) => (
           <Input
             key={`${data.name}-${i}`}
