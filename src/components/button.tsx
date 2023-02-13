@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 export const Button: FC<{
   className?: string;
-  onClick?: () => void;
+  onClick?: any;
   children: any;
 }> = ({ children, className, onClick }) => {
   return (
