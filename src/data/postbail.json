@@ -1,3 +1,30 @@
 {
-    
+  "banner": {
+    "links": [
+      {
+        "title": "post-bail.banner.info.indemitor-form",
+        "link": "#"
+      },
+      {
+        "title": "post-bail.banner.info.promissary-note",
+        "link": "#"
+      },
+      {
+        "title": "post-bail.banner.info.mortgage-agreement",
+        "link": "#"
+      },
+      {
+        "title": "post-bail.banner.info.auth-form",
+        "link": "#"
+      },
+      {
+        "title": "phone",
+        "link": "(954)-530-0166"
+      },
+      {
+        "title": "email",
+        "link": "bondmeout@aol.com"
+      }
+    ]
+  }
 }

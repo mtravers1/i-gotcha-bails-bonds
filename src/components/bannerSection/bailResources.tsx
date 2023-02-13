@@ -28,7 +28,7 @@ export const BannerSection: FC = () => {
 
           <Button className="text-black !bg-white w-fit font-bold">
             <FormattedMessage id="bail-resources.page.banner.btn-two" /> :{' '}
-            <Link href="email:info@i-gotchabailbonds.com">
+            <Link href="emailTo:info@i-gotchabailbonds.com">
               info@i-gotchabailbonds.com
             </Link>
           </Button>

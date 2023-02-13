@@ -8,6 +8,7 @@ import {
   DropDownChildren,
   DropDownHeader,
 } from 'components/dropDown';
+import { NavLink } from 'components/navLink';
 import { NavWrapper } from './navWrapper';
 
 export const Navbar: FC = () => {
@@ -61,11 +62,15 @@ export const Navbar: FC = () => {
 
                 <ul className="hidden lg:flex">
                   {links.map((link, i) => (
-                    <li
-                      key={`main_nav_${i}`}
-                      className="nav-item text-black py-5 px-3"
-                    >
-                      <Link href={link.path}>{link.name}</Link>
+                    <li key={`main_nav_${i}`}>
+                      <NavLink
+                        href={link.path}
+                        className="nav-item py-5 px-3 transition-colors duration-300 hover:text-primary"
+                        activeClassName="text-primary"
+                        exact
+                      >
+                        {link.name}
+                      </NavLink>
                     </li>
                   ))}
                 </ul>

@@ -9,6 +9,7 @@ import { TopNav } from 'components/navbar/topNav';
 import { PageSection } from 'components/pageSection';
 import { PageTitleCard } from 'components/pageTitleCard';
 import data from 'data/bailresources.json';
+import formData from 'data/postbailFormData';
 import { PageLayout } from 'layouts/pageLayout';
 import styled from '../styles/index.module.css';
 
@@ -39,62 +40,9 @@ const Postbail = () => {
     // })
   };
 
-  // const handleDelete= (e:any)=>{
-  //   // method:"DELETE"
-  //   // url:"http//:localhost:"
-  //   setIspending(true)
-  //   fetch('http://localhost:8000/form/2',{
-  //     method:"DELETE",
-
-  //   }).then(()=>{
-  //     console.log('deleted')
-  //     setIspending(false)
-  //   })
-  // }
-
   return (
     <PageLayout pageTitle="post-bail.title">
       <BannerSection />
-      <div className={styled.post}>
-        <span className="" style={{ padding: '20px' }}>
-          <h1>Post Nationwide Bail Bonds Online</h1>
-          <h1 style={{ fontSize: '12px', padding: '0px' }}>
-            Lexington National Insurance Corporation is licensed in all
-            50-states and the District of Columbia
-          </h1>
-
-          <p>
-            Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM
-            PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE
-            AREA THAT YOU WOULD LIKE TO POST BOND.
-          </p>
-          <p>
-            WHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON
-            WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA.
-          </p>
-          <p>
-            This service is NOT AVAILABLE in the following states Arkansas,
-            Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska,
-            Oregon, or Wisconsin.
-          </p>
-          <p>
-            Fill out the form below to start your local or nationwide bail bonds
-            process. Once you have submitted the form, call us at 954 463-6363
-            to complete the process. Entering credit card information is
-            optional and can be given over the phone
-          </p>
-        </span>
-        <span className={styled.download}>
-          <h1>Downloadable Forms</h1>
-
-          <a href="">Indemitor Information Form</a>
-          <a href="">Promissory Note</a>
-          <a href="">Mortgage Agreement</a>
-          <a href="">Authorization Form by Phone/Fax/Email</a>
-          <p>Phone: (954)-530-0166</p>
-          <p>Email: bondmeout@aol.com</p>
-        </span>
-      </div>
 
       <div className={styled.bail}>
         <span className="w-1/2">

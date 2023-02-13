@@ -16,6 +16,7 @@
   "view.more": "View More",
   "court.house": "Court House",
   "phone": "Phone",
+  "email": "Email",
   "hours": "Hours",
   "landing.info.title-one": "Live feed from Broward County Court: Mon-Thurs: 8:30AM and 10PM, Sat and Sun: 8:30AM",
   "landing.info.title-two": "View the arrest information and photo of a current incarcerated inmate in Broward County",
@@ -111,5 +112,36 @@
 
   "post-bail.title": "Post Bail Online",
   "post-bail.banner.title": "Post Nationwide Bail Bonds Online",
-  "post-bail.banner.desc": "Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia\n Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND.\nWHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA.\nThis service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin.\nFill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone"
+  "post-bail.banner.desc": "Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia\n Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND.\nWHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA.\nThis service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin.\nFill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone",
+
+  "post-bail.banner.info.title": "Downloadable Forms",
+  "post-bail.banner.info.indemitor-form": "Indemitor Information Form",
+  "post-bail.banner.info.promissary-note": "Promissory Note",
+  "post-bail.banner.info.mortgage-agreement": "Mortgage Agreement",
+  "post-bail.banner.info.auth-form": "Authorization Form by Phone/Fax/Email",
+
+  "form.defendant-first-name": "Defendant First Name",
+  "form.defendant-last-name": "Defendant Last Name",
+  "form.defendant-date-of-birth": "Defendant Date of Birth",
+
+  "form.error.first-name": "Please enter your first name",
+  "form.error.last-name": "Please enter your last name",
+  "form.error.email": "Please enter your email",
+  "form.error.dob": "Please enter your date of birth",
+  "form.error.phone": "Please enter your phone number",
+  "form.error.address": "Please enter your address",
+  "form.error.city": "Please enter your city",
+  "form.error.state": "Please enter your state",
+  "form.error.zip": "Please enter your postal code",
+
+  "first.name": "First Name",
+  "last.name": "Last Name",
+  "phone.number": "Phone Number",
+  "dob": "Date of Birth",
+  "address": "Address",
+  "city": "City",
+  "state.region": "State/Region",
+  "postal.code": "Postal",
+  "creidt.card.number": "Credit Card Number",
+  "creidt.card.expiration": "Expiration Date"
 }

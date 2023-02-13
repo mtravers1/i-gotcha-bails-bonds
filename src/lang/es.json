@@ -16,6 +16,7 @@
   "view.more": "Ver más",
   "court.house": "Casa de la corte",
   "phone": "Teléfono",
+  "email": "Email",
   "hours": "Horas",
   "landing.info.title-one": "Transmisión en vivo desde el tribunal del condado de Broward: de lunes a jueves: 8:30 a. m. y 10 p. m., sábados y domingos: 8:30 a. m.",
   "landing.info.title-two": "Vea la información del arresto y la foto de un recluso actualmente encarcelado en el condado de Broward",
@@ -50,6 +51,7 @@
   "bail-resources.page.banner.btn-one": "Envíanos un mensaje de texto",
   "bail-resources.page.banner.btn-two": "envianos un email",
   "bail-resources.page.info.title": "Búsqueda de casos, arrestos y órdenes judiciales",
+  "bail-resources.info.title": "Estos son algunos de los tipos de bonos que ofrecemos",
 
   "bail-resources.info.bonds-def.title": "Todas las agencias de fianzas están obligadas y reguladas por el Departamento de Servicios Financieros de Florida a cobrar un 10 % sobre los bonos estatales y un 15 % sobre los bonos federales.",
 
@@ -110,5 +112,36 @@
 
   "post-bail.title": "Pagar la fianza en línea",
   "post-bail.banner.title": "Publicar fianzas nacionales en línea",
-  "post-bail.banner.desc": "Lexington National Insurance Corporation tiene licencia en los 50 estados y el Distrito de Columbia\n Publicar fianzas nacionales en línea ANTES DE COMPLETAR ESTE FORMULARIO, COMUNÍQUESE CON NUESTRA OFICINA PARA ASEGURARSE DE QUE TENEMOS COBERTURA EN EL ÁREA EN LA QUE DESEA PAGAR LA FIANZA. \nCUANDO SOLICITE UNA FIANZA DE TRANSFERENCIA, YA SEA EL DEMANDADO O LA PERSONA QUE DESEA PAGAR LA FIANZA ESTÉ IDEALMENTE CERCA DE MI UBICACIÓN EN FLORIDA.\nEste servicio NO ESTÁ DISPONIBLE en los siguientes estados Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregón , o Wisconsin.\nComplete el formulario a continuación para iniciar su proceso de fianza local o nacional. Una vez que haya enviado el formulario, llámenos al 954 463-6363 para completar el proceso. Ingresar la información de la tarjeta de crédito es opcional y se puede dar por teléfono"
+  "post-bail.banner.desc": "Lexington National Insurance Corporation tiene licencia en los 50 estados y el Distrito de Columbia\n Publicar fianzas nacionales en línea ANTES DE COMPLETAR ESTE FORMULARIO, COMUNÍQUESE CON NUESTRA OFICINA PARA ASEGURARSE DE QUE TENEMOS COBERTURA EN EL ÁREA EN LA QUE DESEA PAGAR LA FIANZA. \nCUANDO SOLICITE UNA FIANZA DE TRANSFERENCIA, YA SEA EL DEMANDADO O LA PERSONA QUE DESEA PAGAR LA FIANZA ESTÉ IDEALMENTE CERCA DE MI UBICACIÓN EN FLORIDA.\nEste servicio NO ESTÁ DISPONIBLE en los siguientes estados Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregón , o Wisconsin.\nComplete el formulario a continuación para iniciar su proceso de fianza local o nacional. Una vez que haya enviado el formulario, llámenos al 954 463-6363 para completar el proceso. Ingresar la información de la tarjeta de crédito es opcional y se puede dar por teléfono",
+
+  "post-bail.banner.info.title": "Downloadable Forms",
+  "post-bail.banner.info.indemitor-form": "Indemitor Information Form",
+  "post-bail.banner.info.promissary-note": "Promissory Note",
+  "post-bail.banner.info.mortgage-agreement": "Mortgage Agreement",
+  "post-bail.banner.info.auth-form": "Authorization Form by Phone/Fax/Email",
+
+  "form.defendant-first-name": "Nombre del demandado",
+  "form.defendant-last-name": "Apellido del demandado",
+  "form.defendant-date-of-birth": "Fecha de nacimiento del demandado",
+
+  "form.error.first-name": "Por favor, introduzca su nombre de pila",
+  "form.error.last-name": "Por favor ingrese su apellido",
+  "form.error.email": "Por favor introduzca su correo electrónico",
+  "form.error.dob": "Por favor ingrese su fecha de nacimiento",
+  "form.error.phone": "Por favor ingrese su número de teléfono",
+  "form.error.address": "Por favor ingrese su dirección",
+  "form.error.city": "Por favor ingrese su ciudad",
+  "form.error.state": "Por favor ingrese su estado",
+  "form.error.zip": "Por favor ingrese su código postal",
+
+  "first.name": "Nombre de pila",
+  "last.name": "Apellido",
+  "phone.number": "Número de teléfono",
+  "dob": "Fecha de nacimiento",
+  "address": "DIRECCIÓN",
+  "city": "Ciudad",
+  "state.region": "Estado/Región",
+  "postal.code": "Postal",
+  "creidt.card.number": "Número de Tarjeta de Crédito",
+  "creidt.card.expiration": "Fecha de caducidad"
 }
