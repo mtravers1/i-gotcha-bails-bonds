@@ -1,0 +1,121 @@
+{
+  "cases": [
+    {
+      "title": "Broward",
+      "links": {
+        "jail": "#",
+        "caseSearch": "#"
+      }
+    },
+    {
+      "title": "Maimi Dade",
+      "links": {
+        "jail": "#",
+        "caseSearch": "#"
+      }
+    },
+    {
+      "title": "Palm Beach",
+      "links": {
+        "jail": "#",
+        "caseSearch": "#"
+      }
+    }
+  ],
+  "bondTypes": [
+    {
+      "title": "bond.types.appeal-bond",
+      "link": "#"
+    },
+    {
+      "title": "bond.types.federal-bond",
+      "link": "#"
+    },
+    {
+      "title": "bond.types.felony-bonds",
+      "link": "#"
+    },
+    {
+      "title": "bond.types.nebbia-bond",
+      "link": "#"
+    },
+    {
+      "title": "bond.types.state-bond",
+      "link": "#"
+    },
+    {
+      "title": "bond.types.supersedeas-bond",
+      "link": "#"
+    }
+  ],
+  "bailBondsDef": [
+    {
+      "title": "bail-resources.info.bonds-def.info-1.title",
+      "desc": "bail-resources.info.bonds-def.info-1.desc"
+    },
+    {
+      "title": "bail-resources.info.bonds-def.info-2.title",
+      "desc": "bail-resources.info.bonds-def.info-2.desc"
+    },
+    {
+      "title": "bail-resources.info.bonds-def.info-3.title",
+      "desc": "bail-resources.info.bonds-def.info-3.desc"
+    },
+    {
+      "title": "bail-resources.info.bonds-def.info-4.title",
+      "desc": "bail-resources.info.bonds-def.info-4.desc"
+    },
+    {
+      "title": "bail-resources.info.bonds-def.info-5.title",
+      "desc": "bail-resources.info.bonds-def.info-5.desc"
+    }
+  ],
+  "footer": [
+    {
+      "title": "jail",
+      "elements": [
+        {
+          "title": "bail-resources.info.bonds.footer-one.title",
+          "address": "bail-resources.info.bonds.footer-one.address",
+          "phone": "bail-resources.info.bonds.footer-one.phone"
+        },
+        {
+          "title": "bail-resources.info.bonds.footer-two.title",
+          "address": "bail-resources.info.bonds.footer-two.address",
+          "phone": "bail-resources.info.bonds.footer-two.phone"
+        },
+        {
+          "title": "bail-resources.info.bonds.footer-three.title",
+          "address": "bail-resources.info.bonds.footer-three.address",
+          "phone": "bail-resources.info.bonds.footer-three.phone"
+        }
+      ]
+    },
+    {
+      "title": "court.house",
+      "elements": [
+        {
+          "title": "bail-resources.info.bonds.footer-four.title",
+          "address": "bail-resources.info.bonds.footer-four.address",
+          "hours": "bail-resources.info.bonds.footer-four.hours",
+          "phone": "bail-resources.info.bonds.footer-four.phone"
+        },
+        {
+          "title": "bail-resources.info.bonds.footer-five.title",
+          "address": "bail-resources.info.bonds.footer-five.address",
+          "phone": "bail-resources.info.bonds.footer-five.phone"
+        },
+        {
+          "title": "bail-resources.info.bonds.footer-six.title",
+          "address": "bail-resources.info.bonds.footer-six.address",
+          "phone": "bail-resources.info.bonds.footer-six.phone"
+        },
+        {
+          "title": "bail-resources.info.bonds.footer-seven.title",
+          "address": "bail-resources.info.bonds.footer-seven.address",
+          "phone": "bail-resources.info.bonds.footer-seven.phone"
+        }
+      ]
+    }
+  ]
+}
