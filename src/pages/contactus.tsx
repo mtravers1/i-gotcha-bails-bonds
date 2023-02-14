@@ -1,9 +1,9 @@
-import Navbar from '../components/navbar';
+import { FC, useState } from 'react';
+import { Navbar } from 'components/navbar';
+import data from 'data/db.json';
 import styled from '../styles/index.module.css';
-import Togglebutton from '../components/togglebutton';
-import { useState, useEffect } from 'react';
-import data from '../../data/db.json';
-const Contact = () => {
+
+const Contact: FC = () => {
   // const [contact, setContact]=useState([
   //   {ffamily:"", title:"Contact Us", tcolor:"blue", tb:"green",
 
@@ -24,16 +24,14 @@ const Contact = () => {
   //   (async()=>fetchdata())()
   // })
 
-  const [contact, setContact] = useState(data.contact);
+  const [contact] = useState(data.contact);
 
   return (
     <div>
-      <Togglebutton />
-
       <Navbar />
       <div>
-        {contact.map((c, index) => (
-          <div style={{ fontFamily: c.ffamily }}>
+        {contact.map((c: any, index: number) => (
+          <div style={{ fontFamily: c.ffamily }} key={`items_${index}`}>
             <span className={styled.banner}>
               <h1>{c.title}</h1>
             </span>

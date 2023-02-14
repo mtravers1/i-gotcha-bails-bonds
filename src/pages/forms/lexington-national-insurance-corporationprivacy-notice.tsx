@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Form7 = () => {
+const Form7: FC = () => {
   return (
     <div>
       <div className="m-9">

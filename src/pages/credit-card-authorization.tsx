@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Image from 'next/image';
-import woman from '../public/woman.png';
 
-const Formcredit = () => {
+const Formcredit: FC = () => {
   return (
     <div className="text-xl">
       take photo of ID and front and back of credit card
       <span className="flex justify-center">
-        <Image src={woman} height={200} width={200} alt="logo" />
+        <Image
+          src="https://ucarecdn.com/d02e271a-5235-453d-852d-e7f74b7c08cc/-/preview/-/quality/smart/-/format/auto/"
+          height={200}
+          width={200}
+          alt="logo"
+        />
       </span>
       <h1 className="text-center text-2xl mb-12">
         One (1) Time Credit Card Payment Authorization

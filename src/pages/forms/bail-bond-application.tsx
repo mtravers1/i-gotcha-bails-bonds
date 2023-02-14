@@ -1,39 +1,17 @@
-import { useState, useEffect } from 'react';
-import styles from '../styles/forms.module.css';
+import { FC, useState } from 'react';
+import styles from '../../styles/forms.module.css';
 
-const Forms = () => {
+const Forms: FC = () => {
   const [name, setName] = useState('');
   const [aka, setAka] = useState('');
   const [homenumber, setHomenumber] = useState('');
   const [worknumber, setWorknumber] = useState('');
-  const [isPending, setIspending] = useState(false);
+  const [isPending] = useState(false);
   // const API_URL='http://localhost:8000/name'
 
-  const handleSubmit = (e: any) => {
-    // e.Prevent.Default
-    // const submit={name, aka, homenumber, worknumber}
-    // setIspending(true)
-    // fetch('http://localhost:8000/form1/users', {
-    //     method:'POST',
-    //     headers:{'Content-Type': 'application/json'},
-    //     body: JSON.stringify(submit)
-    // }).then(()=>{
-    //     console.log('success')
-    //     setIspending(false)
-    // })
+  const handleSubmit = () => {
+    return;
   };
-  // useEffect(()=>{
-  //     const fetchData=async()=>{
-  //         try{
-  //             let res=await fetch('')
-  //             let data = await res.json()
-  //             // setName()
-  //         }catch(err){
-  //             console.log(err)
-  //         }
-  //     }
-  //     (async()=>fetchData())()
-  // },[])
 
   return (
     <div className="m-5 font-serif">
