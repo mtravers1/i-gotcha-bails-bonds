@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import woman from '../public/woman.png';
+// import woman from '../public/woman.png';
 
 const Formcredit = () => {
   return (
     <div className="text-xl">
       take photo of ID and front and back of credit card
       <span className="flex justify-center">
-        <Image src={woman} height={200} width={200} alt="logo" />
+        {/* <Image src={woman} height={200} width={200} alt="logo" /> */}
       </span>
       <h1 className="text-center text-2xl mb-12">
         One (1) Time Credit Card Payment Authorization

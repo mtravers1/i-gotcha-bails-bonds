@@ -45,6 +45,112 @@ const Postbail = () => {
       <BannerSection />
 
       <div className={styled.bail}>
+        <span className='w-1/2'>
+        <form onSubmit={handleSubmit}>
+          <span className='flex flex-row'>
+          
+          <span>
+          <label>Defendant First Name</label>
+          <input
+              onChange={(e) => setFirstname(e.target.value)}
+              type="text"
+              placeholder="First Name"
+            />
+          </span>
+            <span>
+            <label>Defendant First Name</label>
+
+<input
+  onChange={(e) => setLastname(e.target.value)}
+  type="text"
+  placeholder="Last Name"
+/>
+            </span>
+            
+            <span>
+            <label>Defendant Date of Birth</label>
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              placeholder="E-mail"
+            />
+            </span>
+            
+
+          </span>
+            <label>Indemitor First Name</label>
+            <input
+              onChange={(e) => setFirstname(e.target.value)}
+              type="text"
+              placeholder="First Name"
+            />
+            <label>Indemitor First Name</label>
+
+            <input
+              onChange={(e) => setLastname(e.target.value)}
+              type="text"
+              placeholder="Last Name"
+            />
+            <label>Indemitor Email</label>
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              placeholder="E-mail"
+            />
+            <label>Indemitor Date of Birth</label>
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              placeholder="E-mail"
+            />
+
+            <label>Indemitor Phone number</label>
+            <input
+              onChange={(e) => setFirstname(e.target.value)}
+              type="text"
+              placeholder="Phone Number"
+            />
+            <label>Indemitor Address</label>
+            <input
+              onChange={(e) => setStreetaddress(e.target.value)}
+              type="text"
+              placeholder="Street Address"
+            />
+            {/* <span style={{ display: "block" }}> */}
+            <input
+              onChange={(e) => setCity(e.target.value)}
+              type="text"
+              placeholder="City"
+            />
+            <input
+              onChange={(e) => setState(e.target.value)}
+              type="text"
+              placeholder="State/Region"
+            />
+            <input
+              onChange={(e) => setZip(e.target.value)}
+              type="text"
+              placeholder="Postal"
+            />
+            {/* </span> */}
+            <label>Indemitor Credit card number</label>
+            <input
+              onChange={(e) => setCredit(e.target.value)}
+              type="text"
+              placeholder="Credit Card Number"
+            />
+            <label>Exp. Date</label>
+            <input
+              onChange={(e) => setExdate(e.target.value)}
+              type="text"
+              placeholder="Expiration Date"
+            ></input>
+
+            {!isPending && <button className="">Submit</button>}
+            {isPending && <button className="">loading</button>}
+          </form>
+          
+        </span>
         <span className="w-1/2">
           <form onSubmit={handleSubmit}>
             <label>Defendant First Name</label>

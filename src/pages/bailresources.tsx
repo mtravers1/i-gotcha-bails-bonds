@@ -185,45 +185,7 @@ Carrying a concealed firearm
               
               </ul>
 
-
-      </PageSection>
-
-      <PageSection>
-      <h1 className="text-black text-2xl font-bold">
-      <FormattedMessage id="The Law Office of Dean Tsourakis" />
-      </h1>
-      <p>Dean Tsourakis is a Clearwater criminal defense attorney with over 40 years of experience. Contact us to schedule a free consultation.</p>
-      <h1 className="text-xl text-blue font-bold mb-3 mt-3">
-                <FormattedMessage id="Battery, Domestic Battery, and Aggravated Battery in Florida: What's the Difference?" />
-              </h1>
-              <p>Domestic battery in Florida comes with severe consequences if an individual is convicted. 
-                  It can be one of the potential charges included in an arrest in a situation involving alleged domestic violence. 
-                  Battery and aggravated</p>
-
-                  <h1 className="text-xl text-blue font-bold mb-3 mt-3">
-                <FormattedMessage id="Domestic Violence Charges in Florida" />
-              </h1>
-              <p>When someone you care about has been arrested for a domestic violence charge, you need a reliable bail 
-                bondsman who will begin working on the defendant's release as soon as possible. Bail Bonds Now is standing by 
-                and ready to help post bail</p>
-                  <h1 className="text-xl text-blue font-bold mb-3 mt-3">
-                <FormattedMessage id="The Difference Between Theft, Burglary, Robbery, and Larceny in Florida" />
-              </h1>
-              <p>Criminal charges often sound similar, but there are key differences, such as the legal differences between theft and burglary.
-                 Depending on what was involved in the crime committed, penalties will vary in severity. 
-                 Understanding the</p>
-
-                 <h1 className="text-xl text-blue font-bold mb-3 mt-3">
-                <FormattedMessage id="Florida Drug Laws: Understanding Drug Charge Penalties and Fines" />
-
-             
-              </h1>
-              <p>Florida drug laws allow for harsh penalties and fines across the state. 
-                       Depending on the specific charges, the outcome can vary severely.  
-                     Understanding Florida drug laws is the first step in preparation for dealing with</p>
-
-
-                     <h1 className="text-xl text-blue font-bold mb-3 mt-3">
+              <h1 className="text-xl text-blue font-bold mb-3 mt-3">
                 <FormattedMessage id="Nebbia Hearing" />
 
              
@@ -232,7 +194,14 @@ Carrying a concealed firearm
                       you are posting for bail. 
                       If you convince the court that those assets were obtained with legitimate funds, you may be released.</p>
 
+    
+
+
       </PageSection>
+
+
+      
+                    
       <PageSection>
         <h1 className="text-black text-2xl font-bold">
           <span className="text-red-500">*</span>{' '}

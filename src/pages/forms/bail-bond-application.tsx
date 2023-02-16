@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import styles from '../styles/forms.module.css';
+import styles from './forms.module.css';
 
 const Forms = () => {
   const [name, setName] = useState('');
@@ -38,6 +38,7 @@ const Forms = () => {
   return (
     <div className="m-5 font-serif">
       <div className={styles.form}>
+        <p  className='text-red-900 flex justify-end'>* if you falsify any information, the bond will  be revoked immediately</p>
         <form onSubmit={handleSubmit}>
           {!isPending && <button className="border-2">submit</button>}
           {isPending && <button disabled>isPending</button>}
@@ -76,6 +77,7 @@ const Forms = () => {
                       className="w-11/12"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
+                      required
                     />
                   </span>
                   <span className="w-1/4 flex">

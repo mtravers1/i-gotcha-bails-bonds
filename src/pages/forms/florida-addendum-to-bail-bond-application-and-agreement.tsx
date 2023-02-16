@@ -1,9 +1,11 @@
 import React from 'react';
-import styles from '../styles/forms.module.css';
+import styles from './forms.module.css';
 
 const Form3 = () => {
   return (
     <div className={styles.form}>
+              <p  className='text-red-900 flex justify-end'>* if you falsify any information, the bond will  be revoked immediately</p>
+
       <div className="m-10 font-serif">
         <span className="justify-center  flex text-center font-bold">
           <h1 className=" justify-center  flex">

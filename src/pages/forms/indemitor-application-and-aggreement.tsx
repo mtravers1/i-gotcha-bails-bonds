@@ -1,5 +1,6 @@
+
 import { useState } from 'react';
-import styles from '../styles/forms.module.css';
+import styles from './forms.module.css';
 
 const Form8 = () => {
   // const [ email, setEmail]=useState([{id:1, company:''}])
@@ -21,6 +22,8 @@ const Form8 = () => {
     <div>
       <div className="m-5 font-serif">
         <div className={styles.form}>
+        <p  className='text-red-900 flex justify-end'>* if you falsify any information, the bond will  be revoked immediately</p>
+
           <div>
             <h2 className="text-center font-bold text-3xl m-8">
               INDEMNITOR APPLICATION AND AGGREEMENT

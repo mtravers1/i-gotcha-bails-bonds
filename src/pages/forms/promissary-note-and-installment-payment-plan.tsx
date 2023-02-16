@@ -1,9 +1,11 @@
 import React from 'react';
-import styles from '../styles/forms.module.css';
+import styles from './forms.module.css';
 
 const Form6 = () => {
   return (
     <div className={styles.form}>
+              <p  className='text-red-900 flex justify-end'>* if you falsify any information, the bond will  be revoked immediately</p>
+
       <div className="flex justify-center">
         <span className="border-2 border-black h-40 w-1/3 ">
           <p>Bail Producer Stamp:</p>
