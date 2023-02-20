@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './forms.module.css';
 
-const Form2 = () => {
+const Form2: FC = () => {
   return (
     <div className={styles.form} style={{ fontWeight: 'bold' }}>
       <h1 className="text-center">IMPORTANT FRAUD WARNINGS</h1>

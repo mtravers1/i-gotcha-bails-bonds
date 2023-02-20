@@ -24,8 +24,8 @@ const Home: FC = () => {
 
   const handleClick = () => {
     window.scrollTo(0, 0);
-    localStorage.setItem('lang', langSelected.includes('en') ? 'es' : 'en');
-    dispatch(setlanguage(langSelected.includes('en') ? 'es' : 'en'));
+    localStorage.setItem('lang', langSelected?.includes('en') ? 'es' : 'en');
+    dispatch(setlanguage(langSelected?.includes('en') ? 'es' : 'en'));
   };
 
   return (
