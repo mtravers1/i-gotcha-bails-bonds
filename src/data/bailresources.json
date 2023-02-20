@@ -71,62 +71,31 @@
       "desc": "bail-resources.info.bonds-def.info-5.desc"
     }
   ],
-  "felony":[
+  "felony": [
     {
-      "title":"Felony",
-      "description":"A felony is any criminal offense which is punishable by more than one year in state prison or federal prison and a fine of more than $1,000, Capital Felonies — An example of a capital felony is first-degree murder.",
-      "elements":[
+      "title": "Felony",
+      "description": "A felony is any criminal offense which is punishable by more than one year in state prison or federal prison and a fine of more than $1,000, Capital Felonies — An example of a capital felony is first-degree murder.",
+      "elements": [
         {
-          "subheader":"Life Felonies",
-          "description":"These can include crimes such as aggravated sexual assault."
+          "subheader": "Life Felonies",
+          "description": "These can include crimes such as aggravated sexual assault."
         },
         {
-          "subheader":"First-Degree Felonies",
-          "description":"An example of a first-degree felony is aggravated assault of a police officer while that officer is on duty, which is the most severe degree after capital and life felonies. These top three are related to profoundly serious crimes. Second and third-degree felonies are serious as well, and all require legal representation from a criminal defense attorney. What is a second-degree felony in Florida?"
+          "subheader": "First-Degree Felonies",
+          "description": "An example of a first-degree felony is aggravated assault of a police officer while that officer is on duty, which is the most severe degree after capital and life felonies. These top three are related to profoundly serious crimes. Second and third-degree felonies are serious as well, and all require legal representation from a criminal defense attorney. What is a second-degree felony in Florida?"
         },
         {
-          "subheader":"Second-Degree Felonies",
-          "description":"A drug offense such as selling marijuana to a minor would be an example of a second-degree felony in Florida. What is a 3rd-degree felony in Florida?"
+          "subheader": "Second-Degree Felonies",
+          "description": "A drug offense such as selling marijuana to a minor would be an example of a second-degree felony in Florida. What is a 3rd-degree felony in Florida?"
         },
         {
-          "subheader":"Third-Degree Felonies",
-          "description":"Examples of third-degree felonies in Florida include grand theft, felony battery, and a third-time DUI, which took place within ten years of a prior DUI conviction. There are multiple types of crimes that constitute a felony charge in Florida, such as:"
+          "subheader": "Third-Degree Felonies",
+          "description": "Examples of third-degree felonies in Florida include grand theft, felony battery, and a third-time DUI, which took place within ten years of a prior DUI conviction. There are multiple types of crimes that constitute a felony charge in Florida, such as:"
         }
-        
       ]
     }
-
   ],
-  "Tsourakis":[
-    {
-      "title":"The Law Office of Dean Tsourakis",
-      "description":"ADean Tsourakis is a Clearwater criminal defense attorney with over 40 years of experience. Contact us to schedule a free consultation.",
-      "elements":[
-        {
-          "subheader":"Battery, Domestic Battery, and Aggravated Battery in Florida: What's the Difference?          ",
-          "description":"Domestic battery in Florida comes with severe consequences if an individual is convicted. It can be one of the potential charges included in an arrest in a situation involving alleged domestic violence. Battery and aggravated"
-        },
-        {
-          "subheader":"Domestic Violence Charges in Florida          ",
-          "description":"When someone you care about has been arrested for a domestic violence charge, you need a reliable bail bondsman who will begin working on the defendant's release as soon as possible. Bail Bonds Now is standing by and ready to help post bail"
-        },
-        {
-          "subheader":"The Difference Between Theft, Burglary, Robbery, and Larceny in Florida          ",
-          "description":"Criminal charges often sound similar, but there are key differences, such as the legal differences between theft and burglary. Depending on what was involved in the crime committed, penalties will vary in severity. Understanding the"
-        },
-        {
-          "subheader":"Florida Drug Laws: Understanding Drug Charge Penalties and Fines   ",
-          "description":"Florida drug laws allow for harsh penalties and fines across the state. Depending on the specific charges, the outcome can vary severely. Understanding Florida drug laws is the first step in preparation for dealing with"
-        },
-        {
-          "subheader":"Nebbia Hearing          ",
-          "description":"A Nebbia hearing, also known as a bail source hearing, is a court procedure during which you must disclose the source of funds used to acquire the assets you are posting for bail. If you convince the court that those assets were obtained with legitimate funds, you may be released."
-        }
-        
-      ]
-    }
 
-  ],
   "footer": [
     {
       "title": "jail",
