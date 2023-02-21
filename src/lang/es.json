@@ -110,6 +110,22 @@
   "bond.types.state-bond": "Bono estatal",
   "bond.types.supersedeas-bond": "Bono de sustitución",
 
+  "bond-felony.header":"Un delito estatal es cualquier delito que infringe una ley establecida por la legislatura estatal. Los delitos estatales cubren una larga lista de delitos y son investigados y administrados por la policía estatal y los tribunales municipales, así como por los abogados estatales y municipales. Los delitos agrupados como estado serían delitos en violación de las leyes estatales, como violencia doméstica, asalto y agresión, acecho y homicidio.",
+  "bond-felony.title":"Delito",
+  "bond-felony.title.description":"Un delito grave es cualquier delito penal que se castiga con más de un año en una prisión estatal o una prisión federal y una multa de más de $1,000. Delitos graves capitales: un ejemplo de delito grave capital es el asesinato en primer grado.",
+  "bond-felony.title.life":"Delitos de vida",
+  "bond-felony.life.description":"Estos pueden incluir delitos como agresión sexual agravada.",
+  "bond-felony.title.first-degree":"Delitos graves de primer grado",
+  "bond-felony.first-degree.description":"Un ejemplo de un delito grave de primer grado es el asalto agravado de un oficial de policía mientras ese oficial está de servicio, que es el grado más grave después de los delitos capitales y de vida. Estos tres principales están relacionados con delitos profundamente graves. Los delitos graves de segundo y tercer grado también son graves y todos requieren la representación legal de un abogado defensor penal. ¿Qué es un delito grave de segundo grado en Florida?",
+  "bond-felony.title.second-degree":"Delitos graves de segundo grado",
+  "bond-felony.second-degree.description":"Un delito de drogas como vender marihuana a un menor sería un ejemplo de un delito grave de segundo grado en Florida. ¿Qué es un delito grave de tercer grado en Florida?",
+  "bond-felony.title.third-degree":"Delitos graves de tercer grado",
+  "bond-felony.third-degree.description":"Los ejemplos de delitos graves de tercer grado en Florida incluyen hurto mayor, agresión grave y un DUI por tercera vez, que tuvo lugar dentro de los diez años posteriores a una condena por DUI anterior. Hay varios tipos de delitos que constituyen un cargo de delito grave en Florida, como:",
+
+
+
+
+
   "post-bail.title": "Pagar la fianza en línea",
   "post-bail.banner.title": "Publicar fianzas nacionales en línea",
   "post-bail.banner.desc": "Lexington National Insurance Corporation tiene licencia en los 50 estados y el Distrito de Columbia\n Publicar fianzas nacionales en línea ANTES DE COMPLETAR ESTE FORMULARIO, COMUNÍQUESE CON NUESTRA OFICINA PARA ASEGURARSE DE QUE TENEMOS COBERTURA EN EL ÁREA EN LA QUE DESEA PAGAR LA FIANZA. \nCUANDO SOLICITE UNA FIANZA DE TRANSFERENCIA, YA SEA EL DEMANDADO O LA PERSONA QUE DESEA PAGAR LA FIANZA ESTÉ IDEALMENTE CERCA DE MI UBICACIÓN EN FLORIDA.\nEste servicio NO ESTÁ DISPONIBLE en los siguientes estados Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregón , o Wisconsin.\nComplete el formulario a continuación para iniciar su proceso de fianza local o nacional. Una vez que haya enviado el formulario, llámenos al 954 463-6363 para completar el proceso. Ingresar la información de la tarjeta de crédito es opcional y se puede dar por teléfono",

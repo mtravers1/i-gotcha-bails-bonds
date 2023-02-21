@@ -8,6 +8,7 @@ import { PageSection } from 'components/pageSection';
 import data from 'data/bailresources.json';
 import { PageLayout } from 'layouts/pageLayout';
 
+
 const Bailresources: FC = () => {
   return (
     <PageLayout pageTitle="bail-resources.page.title">
@@ -76,15 +77,37 @@ const Bailresources: FC = () => {
       </PageSection>
 
       <PageSection>
-        <p className="m-6">
-          A state crime is any offense that breaks a law put into place by the
-          state legislature. State crimes cover a long list of offenses and are
-          investigated and administered by state law enforcement and municipal
-          courts, as well as state and city attorneys. Crimes grouped as state
-          would be offenses in violation to state laws, such as domestic
-          violence, assault and battery, stalking, and homicide.
-        </p>
-        <h1 className="text-black text-2xl font-bold">
+        {data.felony.map((f:any,index)=>(
+          <div key={index}>
+            <p className='m-6' >
+            <FormattedMessage id="bond-felony.header"/></p>
+            
+
+            <h1 className="text-black text-2xl font-bold ">
+            <FormattedMessage id="bond-felony.title" />
+            </h1> 
+
+            {/* <FormattedMessage id={f.description} /> */}
+            <FormattedMessage id="bond-felony.title.description" />
+
+
+            {f.elements.map((i:any,index:any)=>(
+              
+            <div key={`felony_elements_${index}`}>
+              <h1 className="text-xl text-blue font-bold mb-3 mt-3">
+              <FormattedMessage id={i.subheader}/>
+              </h1>
+              <p>
+              <FormattedMessage id={i.description}/>
+              </p>
+            </div>
+            ))}
+
+        
+          </div>
+        ))}
+{/*        
+        <h1 className="text-black text-2xl font-bold ">
           <FormattedMessage id="Felony" />
         </h1>
         <p>
@@ -92,12 +115,9 @@ const Bailresources: FC = () => {
           year in state prison or federal prison and a fine of more than $1,000,
           Capital Felonies — An example of a capital felony is first-degree
           murder.
-        </p>
-        <h1 className="text-xl text-blue font-bold mb-3  mt-3">
-          <FormattedMessage id="Life Felonies" />
-        </h1>
-        <p>These can include crimes such as aggravated sexual assault.</p>
-        <h1 className="text-xl text-blue font-bold mb-3  mt-3">
+        </p> */}
+        
+        {/* <h1 className="text-xl text-blue font-bold mb-3  mt-3">
           <FormattedMessage id="First-degree Felonies " />
         </h1>
         <p>
@@ -156,7 +176,7 @@ const Bailresources: FC = () => {
           acquire the assets you are posting for bail. If you convince the court
           that those assets were obtained with legitimate funds, you may be
           released.
-        </p>
+        </p> */}
       </PageSection>
 
       <PageSection>

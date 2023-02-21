@@ -73,24 +73,26 @@
   ],
   "felony": [
     {
-      "title": "Felony",
-      "description": "A felony is any criminal offense which is punishable by more than one year in state prison or federal prison and a fine of more than $1,000, Capital Felonies — An example of a capital felony is first-degree murder.",
+      "header":"bond-felony.header",
+      "title": "bond-felony.title",
+      "description": "bond-felony.title.description",
       "elements": [
+       
         {
-          "subheader": "Life Felonies",
+          "subheader": "bond-felony.title.life",
           "description": "These can include crimes such as aggravated sexual assault."
         },
         {
-          "subheader": "First-Degree Felonies",
-          "description": "An example of a first-degree felony is aggravated assault of a police officer while that officer is on duty, which is the most severe degree after capital and life felonies. These top three are related to profoundly serious crimes. Second and third-degree felonies are serious as well, and all require legal representation from a criminal defense attorney. What is a second-degree felony in Florida?"
+          "subheader": "bond-felony.title.first-degree",
+          "description": "bond-felony.first-degree.description"
         },
         {
-          "subheader": "Second-Degree Felonies",
-          "description": "A drug offense such as selling marijuana to a minor would be an example of a second-degree felony in Florida. What is a 3rd-degree felony in Florida?"
+          "subheader": "bond-felony.title.second-degree",
+          "description": "bond-felony.second-degree.description"
         },
         {
-          "subheader": "Third-Degree Felonies",
-          "description": "Examples of third-degree felonies in Florida include grand theft, felony battery, and a third-time DUI, which took place within ten years of a prior DUI conviction. There are multiple types of crimes that constitute a felony charge in Florida, such as:"
+          "subheader": "bond-felony.title.third-degree",
+          "description": "bond-felony.third-degree.description"
         }
       ]
     }

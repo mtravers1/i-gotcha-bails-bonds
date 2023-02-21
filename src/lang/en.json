@@ -110,6 +110,22 @@
   "bond.types.state-bond": "State Bond",
   "bond.types.supersedeas-bond": "Supersedeas Bond",
 
+  "bond-felony.header":"A state crime is any offense that breaks a law put into place by the state legislature. State crimes cover a long list of offenses and are investigated and administered by state law enforcement and municipal courts, as well as state and city attorneys. Crimes grouped as state would be offenses in violation to state laws, such as domestic violence, assault and battery, stalking, and homicide.",
+  "bond-felony.title":"Felony",
+  "bond-felony.title.description":"A felony is any criminal offense which is punishable by more than one year in state prison or federal prison and a fine of more than $1,000, Capital Felonies — An example of a capital felony is first-degree murder.",
+  "bond-felony.title.life":"Life Felonies",
+  "bond-felony.life.description":"These can include crimes such as aggravated sexual assault.",
+  "bond-felony.title.first-degree":"First-Degree Felonies",
+  "bond-felony.first-degree.description":"An example of a first-degree felony is aggravated assault of a police officer while that officer is on duty, which is the most severe degree after capital and life felonies. These top three are related to profoundly serious crimes. Second and third-degree felonies are serious as well, and all require legal representation from a criminal defense attorney. What is a second-degree felony in Florida?",
+  "bond-felony.title.second-degree":"Second-Degree Felonies",
+  "bond-felony.second-degree.description":"A drug offense such as selling marijuana to a minor would be an example of a second-degree felony in Florida. What is a 3rd-degree felony in Florida?",
+  "bond-felony.title.third-degree":"Third-Degree Felonies",
+  "bond-felony.third-degree.description":"Examples of third-degree felonies in Florida include grand theft, felony battery, and a third-time DUI, which took place within ten years of a prior DUI conviction. There are multiple types of crimes that constitute a felony charge in Florida, such as:",
+
+
+
+
+
   "post-bail.title": "Post Bail Online",
   "post-bail.banner.title": "Post Nationwide Bail Bonds Online",
   "post-bail.banner.desc": "Lexington National Insurance Corporation is licensed in all 50-states and the District of Columbia\n Post Nationwide Bail Bonds Online PRIOR TO COMPLETING THIS FORM PLEASE CONTACT OUR OFFICE TO MAKE SURE THAT WE HAVE COVERAGE IN THE AREA THAT YOU WOULD LIKE TO POST BOND.\nWHEN REQUESTING A TRANSFER BOND, EITHER THE DEFENDANT OR THE PERSON WISHING TO POST BAIL IS IDEALLY NEAR MY LOCATION IN FLORIDA.\nThis service is NOT AVAILABLE in the following states Arkansas, Colorado, Illinois, Kentucky, Maine, Massachusetts, Nebraska, Oregon, or Wisconsin.\nFill out the form below to start your local or nationwide bail bonds process. Once you have submitted the form, call us at 954 463-6363 to complete the process. Entering credit card information is optional and can be given over the phone",
