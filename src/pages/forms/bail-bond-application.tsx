@@ -1,5 +1,5 @@
-import { FC, useState } from 'react';
-import styles from '../../styles/forms.module.css';
+import { useState, FC } from 'react';
+import styles from './forms.module.css';
 
 const Forms: FC = () => {
   const [name, setName] = useState('');

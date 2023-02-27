@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from '../../styles/forms.module.css';
+import styles from './forms.module.css';
 
 const Form6: FC = () => {
   return (
