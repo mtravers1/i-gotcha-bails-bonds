@@ -36,6 +36,16 @@ const Signup: FC<{
 
       const dataObj = Object.keys(inputs).reduce((acc, input) => {
         if (input === 'cpassword' || input === 'fullName') {
+          if (input === 'fullName') {
+            const [firstName, middleName, lastName] = inputs.fullName.split;
+
+            return {
+              ...acc,
+              firstName: firstName,
+              middleName: middleName && !lastName ? undefined : middleName,
+              lastName: middleName && !lastName ? middleName : lastName,
+            };
+          }
           return { ...acc };
         }
         if (input === 'si_password') {

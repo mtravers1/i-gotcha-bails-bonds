@@ -63,7 +63,10 @@ const formData = [
     label: { id: 'phone.number', defaultMessage: 'Phone Number' },
     placeholder: { id: 'phone.number', defaultMessage: 'Phone Number' },
     type: 'date',
-    errorMessage: 'form.error.phone',
+    errorMessage: {
+      id: 'form.error.phone',
+      defaultMessage: 'Please enter your phone number',
+    },
     required: true,
     pattern: FREE_TEXT_REGEX,
   },

@@ -187,5 +187,7 @@
   "forgot-page.sigin": "o iniciar sesión",
   "reset-password-page.title": "Restablecer contraseña",
   "reset-password-page.desc": "un ultimo paso",
-  "reset-password-page.success": "Actualizado exitosamente"
+  "reset-password-page.success": "Actualizado exitosamente",
+  "update.profile": "Actualización del perfil",
+  "navigation": "Navegación"
 }

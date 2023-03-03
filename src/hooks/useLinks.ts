@@ -1,6 +1,6 @@
 import { useIntl } from 'react-intl';
 
-interface Link {
+export interface Link {
   name: string;
   path: string;
 }

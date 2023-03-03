@@ -25,7 +25,7 @@ const Bailresources: FC = () => {
         <div className="w-full md:w-1/2 mr-0 md:mr-20">
           <h1 className="text-3xl md:text-4xl text-black font-black mb-5">
             <FormattedMessage
-              id="4cxnSK"
+              id="bail-resources.page.info.title"
               defaultMessage="Case, Arrest, and Warrant Search"
             />
           </h1>
@@ -39,10 +39,10 @@ const Bailresources: FC = () => {
 
                 <div>
                   <span className="font-bold">
-                    <FormattedMessage id="jail" />:{' '}
+                    <FormattedMessage id="jail" defaultMessage="Jail" />:{' '}
                     <Link href={item.links.jail}>
                       <FormattedMessage
-                        id="MutiiU"
+                        id="click.here"
                         defaultMessage="Click Here"
                       />
                     </Link>
@@ -51,10 +51,14 @@ const Bailresources: FC = () => {
 
                 <div>
                   <span className="font-bold">
-                    <FormattedMessage id="case.search" />:{' '}
+                    <FormattedMessage
+                      id="case.search"
+                      defaultMessage="Case Search"
+                    />
+                    :{' '}
                     <Link href={item.links.caseSearch}>
                       <FormattedMessage
-                        id="MutiiU"
+                        id="click.here"
                         defaultMessage="Click Here"
                       />
                     </Link>
@@ -73,7 +77,7 @@ const Bailresources: FC = () => {
       <PageSection>
         <h1 className="text-black text-2xl font-bold">
           <FormattedMessage
-            id="7Sc82z"
+            id="bail-resources.info.title"
             defaultMessage="Here are some of the types of bonds we offer"
           />
         </h1>
@@ -115,13 +119,19 @@ const Bailresources: FC = () => {
           defaultMessage={data.felony.description.defaultMessage}
         />
 
-        {data.felony.elements.map((i: any, index: any) => (
+        {data.felony.elements.map((element: any, index: any) => (
           <div key={`felony_elements_${index}`}>
             <h1 className="text-xl text-blue font-bold mb-3 mt-3">
-              <FormattedMessage id={i.subheader} />
+              <FormattedMessage
+                id={element.subheader.id}
+                defaultMessage={element.subheader.defaultMessage}
+              />
             </h1>
             <p>
-              <FormattedMessage id={i.description} />
+              <FormattedMessage
+                id={element.description.id}
+                defaultMessage={element.description.defaultMessage}
+              />
             </p>
           </div>
         ))}
@@ -203,7 +213,7 @@ const Bailresources: FC = () => {
         <h1 className="text-black text-2xl font-bold">
           <span className="text-red-500">*</span>{' '}
           <FormattedMessage
-            id="1TxmTI"
+            id="bail-resources.info.bonds-def.title"
             defaultMessage="All bail bond agencies are required and regulated by the Florida Department Of Financial Services to charge 10% on state bonds and 15% on federal bonds."
           />
         </h1>
@@ -232,7 +242,7 @@ const Bailresources: FC = () => {
       <PageSection>
         <h1 className="text-black text-2xl font-bold">
           <FormattedMessage
-            id="Z/4YLg"
+            id="bail-resources.info.bonds.cost-ananlisis.title"
             defaultMessage="Bail Bond Premium and Cost Explained"
           />
         </h1>
@@ -241,14 +251,14 @@ const Bailresources: FC = () => {
           <div className="w-full flex-grow-1">
             <h1 className="text-2xl font-bold mb-5">
               <FormattedMessage
-                id="UhBFsS"
+                id="bail-resources.info.bonds.cost-ananlisis.subtitle"
                 defaultMessage="Bail Bonds Cost"
               />
             </h1>
 
             <p>
               <FormattedMessage
-                id="I71k96"
+                id="bail-resources.info.bonds.cost-ananlisis.desc"
                 defaultMessage="The bail bond cost is the entire amount of bail decided by the courts. The bail bond premium is the amount of money a bail bondsman charges for pre-trial release and is typically 10% of the total bail amount ordered by the court system."
               />
             </p>

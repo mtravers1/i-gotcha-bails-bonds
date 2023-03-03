@@ -20,7 +20,7 @@ const Postbail: FC = () => {
     >
       <BannerSection />
 
-      <div className="max-w-3xl mx-auto py-10">
+      <div className="max-w-3xl mx-auto py-10 w-full">
         {formData.map((data: any, i: number) => (
           <Input
             key={`${data.name}-${i}`}

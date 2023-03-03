@@ -105,7 +105,7 @@ export const Navbar: FC = () => {
                         className="-right-3"
                       >
                         <DropDownHeader>
-                          <h2 className="font-bold text-primary flex items-center">
+                          <h2 className="font-bold text-primary flex items-center ml-5">
                             Hi {user?.firstName}{' '}
                             <SlArrowDown className="stroke-2 ml-2" />
                           </h2>
