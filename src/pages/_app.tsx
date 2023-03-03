@@ -1,55 +1,55 @@
-import { useState, useEffect } from 'react';
+import { FC, useMemo, useEffect } from 'react';
 import { IntlProvider } from 'react-intl';
+import { Provider } from 'react-redux';
+import { ToastProvider } from 'react-toast-notifications';
+import Cookies from 'js-cookie';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
-import { useAppSelector } from 'hooks/reduxHooks';
-import English from 'lang/en.json';
-import Spanish from 'lang/es.json';
+import { useRouter } from 'next/router';
+import { axiosInstance } from 'helpers';
+import { getAppData, initializeStore } from 'helpers/config';
+import { EXCLUDED_PAGES, Q_TOKEN, TOKEN_COOKIE_NAME } from 'helpers/constants';
+import English from '../../lang/en.json';
+import Spanish from '../../lang/es.json';
 import { wrapper } from '../store';
 import '../styles/index.scss';
 import '../styles/tailwind_index.scss';
 
-function App({ Component, pageProps }: AppProps): any {
-  const [langOptions, setLangOptions] = useState({
-    locale: 'en',
-    lang: English,
-  });
+const App: FC<{
+  pageProps: any;
+  Component: any;
+}> = ({ Component, pageProps }) => {
+  const { locale, pathname, asPath } = useRouter();
+  const [shortLocale] = locale ? locale.split('-') : ['en'];
 
-  const setLang = (locale: string) => {
-    switch (locale) {
+  const messages: any = useMemo(() => {
+    switch (shortLocale) {
       case 'es':
-        setLangOptions({
-          locale: 'es',
-          lang: Spanish,
-        });
-        break;
+        return Spanish;
       default:
-        setLangOptions({
-          locale: 'en',
-          lang: English,
-        });
-        break;
+        return English;
     }
-  };
-
-  const { lang } = useAppSelector((state) => state.generals);
+  }, [shortLocale]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setLang(localStorage.getItem('lang') || navigator.language);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!lang) return;
-    setLang(lang);
-  }, [lang]);
-
-  // This is a hack to get the translations to work
-  const [show, setShow] = useState(false);
-  useEffect(() => {
-    setShow(true);
-  }, [show]);
+    axiosInstance.interceptors.response.use(
+      (res) => {
+        return res;
+      },
+      (err) => {
+        if (
+          err.response?.status === 401 &&
+          !EXCLUDED_PAGES.some((page) => pathname.includes(page))
+        ) {
+          localStorage.removeItem(Q_TOKEN);
+          Cookies.remove(TOKEN_COOKIE_NAME);
+          location.href = `/login?redirect=${asPath}`;
+        }
+        return Promise.reject(err);
+      }
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [asPath]);
 
   return (
     <>
@@ -84,11 +84,43 @@ function App({ Component, pageProps }: AppProps): any {
         ]}
       />
 
-      <IntlProvider locale={langOptions.locale} messages={langOptions.lang}>
-        {show && <Component {...pageProps} />}
-      </IntlProvider>
+      <ToastProvider>
+        <IntlProvider locale={shortLocale} messages={messages}>
+          <Component {...pageProps} />
+        </IntlProvider>
+      </ToastProvider>
     </>
   );
-}
+};
 
-export default wrapper.withRedux(App);
+const BailBonds = ({ Component, ...rest }: AppProps): any => {
+  const { store, props } = wrapper.useWrappedStore(rest);
+
+  return (
+    <Provider store={store}>
+      <App pageProps={props.pageProps} Component={Component} />
+    </Provider>
+  );
+};
+
+BailBonds.getInitialProps = wrapper.getInitialPageProps(
+  (store) => async (context: any) => {
+    if (typeof window === 'undefined' && context?.ctx?.req?.headers?.cookie) {
+      if (!EXCLUDED_PAGES.some((page) => context.ctx.asPath.includes(page))) {
+        const appData = await getAppData(context);
+
+        // @ts-ignore
+        store.dispatch(initializeStore(appData)); // You can dispatch initial actions here
+
+        return {
+          // You can return any props you want
+          pageProps: {
+            error: appData.error,
+          },
+        };
+      }
+    }
+  }
+);
+
+export default BailBonds;

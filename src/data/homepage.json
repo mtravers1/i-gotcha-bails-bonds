@@ -1,142 +1,185 @@
 [
   {
     "src": "https://ucarecdn.com/16cfe133-e37d-406b-b522-f7c2d2229c0f/",
-    "title": "landing.info.title-one",
+    "title": {
+      "id": "landing.info.title-one",
+      "defaultMessage": "Live feed from Broward County Court: Mon-Thurs: 8:30AM and 10PM, Sat and Sun: 8:30AM"
+    },
     "links": [
       {
-        "text": "landing.info.links.one-one",
+        "id": "landing.info.links.one-one",
+        "defaultMessage": "BROWARD COUNTY",
         "href": "https://www.browardclerk.org/courts/criminal/criminal-division"
       },
       {
-        "text": "landing.info.links.live-court-cases",
+        "id": "landing.info.links.live-court-cases",
+        "defaultMessage": "LIVE COURT CASES",
         "href": "https://www.browardclerk.org/courts/criminal/criminal-division"
       },
       {
-        "text": "landing.info.links.inmate-search",
+        "id": "landing.info.links.inmate-search",
+        "defaultMessage": "INMATE SEARCH",
         "href": "https://www.browardclerk.org/courts/criminal/criminal-division"
       },
       {
-        "text": "landing.info.links.zoom-hearings",
+        "id": "landing.info.links.zoom-hearings",
+        "defaultMessage": "ZOOM LINK FOR HEARINGS",
         "href": "https://www.browardclerk.org/courts/criminal/criminal-division"
       }
     ]
   },
   {
     "src": "https://ucarecdn.com/16cfe133-e37d-406b-b522-f7c2d2229c0f/",
-    "title": "landing.info.title-two",
+    "title": {
+      "id": "landing.info.title-two",
+      "defaultMessage": "View the arrest information and photo of a current incarcerated inmate in Broward County"
+    },
     "links": [
       {
-        "text": "landing.info.links.two-one",
+        "id": "landing.info.links.two-one",
+        "defaultMessage": "PALM-BEACH COUNTY",
         "href": "https://www.pbcgov.com/courts/criminal-division/Pages/default.aspx"
       },
       {
-        "text": "landing.info.links.live-court-cases",
+        "id": "landing.info.links.live-court-cases",
+        "defaultMessage": "LIVE COURT CASES",
         "href": "https://www.pbcgov.com/courts/criminal-division/Pages/default.aspx"
       },
       {
-        "text": "landing.info.links.inmate-search",
+        "id": "landing.info.links.inmate-search",
+        "defaultMessage": "INMATE SEARCH",
         "href": "https://www.pbcgov.com/courts/criminal-division/Pages/default.aspx"
       },
       {
-        "text": "landing.info.links.zoom-hearings",
+        "id": "landing.info.links.zoom-hearings",
+        "defaultMessage": "ZOOM LINK FOR HEARINGS",
         "href": "https://www.pbcgov.com/courts/criminal-division/Pages/default.aspx"
       }
     ]
   },
   {
     "src": "https://ucarecdn.com/16cfe133-e37d-406b-b522-f7c2d2229c0f/",
-    "title": "landing.info.title-three",
+    "title": {
+      "id": "landing.info.title-three",
+      "defaultMessage": "Live feed from Palm-Beach Court: Mon-Thurs: 8:30AM and 10PM, Sat and Sun: 8:30AM"
+    },
     "links": [
       {
-        "text": "landing.info.links.three-one",
+        "id": "landing.info.links.three-one",
+        "defaultMessage": "MIAMI-DADE COUNTY",
         "href": "https://www.miamidadeclerk.com/courts/criminal-division/Pages/default.aspx"
       },
       {
-        "text": "landing.info.links.live-court-cases",
+        "id": "landing.info.links.live-court-cases",
+        "defaultMessage": "LIVE COURT CASES",
         "href": "https://www.miamidadeclerk.com/courts/criminal-division/Pages/default.aspx"
       },
       {
-        "text": "landing.info.links.inmate-search",
+        "id": "landing.info.links.inmate-search",
+        "defaultMessage": "INMATE SEARCH",
         "href": "https://www.miamidadeclerk.com/courts/criminal-division/Pages/default.aspx"
       },
       {
-        "text": "landing.info.links.zoom-hearings",
+        "id": "landing.info.links.zoom-hearings",
+        "defaultMessage": "ZOOM LINK FOR HEARINGS",
         "href": "https://www.miamidadeclerk.com/courts/criminal-division/Pages/default.aspx"
       }
     ]
   },
   {
     "src": "https://ucarecdn.com/16cfe133-e37d-406b-b522-f7c2d2229c0f/",
-    "title": "landing.info.title-four",
+    "title": {
+      "id": "landing.info.title-four",
+      "defaultMessage": "Defendent Forms"
+    },
     "links": [
       {
-        "text": "landing.info.links.fraud-warnings",
+        "id": "landing.info.links.fraud-warnings",
+        "defaultMessage": "IMPORTANT FRAUD WARNINGS",
         "href": "/forms/important-fraud-warnings"
       },
       {
-        "text": "landing.info.links.lex-privacy-notice",
+        "id": "landing.info.links.lex-privacy-notice",
+        "defaultMessage": "LEXINGTON NATIONAL INSURANCE CORPORATION PRIVACY NOTICE",
         "href": "/forms/lexington-national-insurance-corporationprivacy-notice"
       },
       {
-        "text": "landing.info.links.four-three",
+        "id": "landing.info.links.four-three",
+        "defaultMessage": "BAIL BOND APPLICATION",
         "href": "/forms/bail-bond-application"
       },
       {
-        "text": "landing.info.links.four-four",
+        "id": "landing.info.links.four-four",
+        "defaultMessage": "FLORIDA ADDENDUM TO BAIL BOND APPLICATION AND AGREEMENT",
         "href": "/forms/florida-addendum-to-bail-bond-application-and-agreement"
       },
       {
-        "text": "landing.info.links.bail-release-terms",
+        "id": "landing.info.links.bail-release-terms",
+        "defaultMessage": "TERMS AND CONDITION OF BAIL RELEASE",
         "href": "/terms-and-condition-of-bail-release"
       },
       {
-        "text": "landing.info.links.collateral-reciept",
+        "id": "landing.info.links.collateral-reciept",
+        "defaultMessage": "COLLATERAL RECEIPT",
         "href": "/forms/collateral-receipt"
       },
       {
-        "text": "landing.info.links.card-authorization",
+        "id": "landing.info.links.card-authorization",
+        "defaultMessage": "CREDIT CARD AUTHORIZATION",
         "href": "/credit-card-authorization"
       },
       {
-        "text": "landing.info.links.promissary-note-plan",
+        "id": "landing.info.links.promissary-note-plan",
+        "defaultMessage": "PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN",
         "href": "/forms/promissary-note-and-installment-payment-plan"
       }
     ]
   },
   {
     "src": "https://ucarecdn.com/16cfe133-e37d-406b-b522-f7c2d2229c0f/",
-    "title": "landing.info.title-five",
+    "title": {
+      "id": "landing.info.title-five",
+      "defaultMessage": "Indemnitor Forms"
+    },
     "links": [
       {
-        "text": "landing.info.links.fraud-warnings",
+        "id": "landing.info.links.fraud-warnings",
+        "defaultMessage": "IMPORTANT FRAUD WARNINGS",
         "href": "/forms/important-fraud-warnings"
       },
       {
-        "text": "landing.info.links.lex-privacy-notice",
+        "id": "landing.info.links.lex-privacy-notice",
+        "defaultMessage": "LEXINGTON NATIONAL INSURANCE CORPORATION PRIVACY NOTICE",
         "href": "/forms/lexington-national-insurance-corporationprivacy-notice"
       },
       {
-        "text": "landing.info.links.five-three",
+        "id": "landing.info.links.five-three",
+        "defaultMessage": "INDEMITOR APPLICATION AND AGGREEMENT",
         "href": "/forms/indemitor-application-and-aggreement"
       },
       {
-        "text": "landing.info.links.collateral-reciept",
+        "id": "landing.info.links.collateral-reciept",
+        "defaultMessage": "COLLATERAL RECEIPT",
         "href": "/forms/collateral-receipt"
       },
       {
-        "text": "landing.info.links.bail-release-terms",
+        "id": "landing.info.links.bail-release-terms",
+        "defaultMessage": "TERMS AND CONDITION OF BAIL RELEASE",
         "href": "/terms-and-condition-of-bail-release"
       },
       {
-        "text": "landing.info.links.five-six",
+        "id": "landing.info.links.five-six",
+        "defaultMessage": "CONTINGENT PROMISARY NOTE",
         "href": "/forms/contingent-promisary-note"
       },
       {
-        "text": "landing.info.links.card-authorization",
+        "id": "landing.info.links.card-authorization",
+        "defaultMessage": "CREDIT CARD AUTHORIZATION",
         "href": "/credit-card-authorization"
       },
       {
-        "text": "landing.info.links.promissary-note-plan",
+        "id": "landing.info.links.promissary-note-plan",
+        "defaultMessage": "PROMISSARY NOTE & INSTALLMENT PAYMENT PLAN",
         "href": "/forms/promissary-note-and-installment-payment-plan"
       }
     ]

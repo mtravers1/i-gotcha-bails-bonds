@@ -1,0 +1,16 @@
+.auth-section {
+  .reg-text {
+    @apply mb-12 text-center;
+    &.left {
+      @apply text-left mb-5;
+    }
+
+    h2 {
+      @apply mb-5 text-3xl;
+    }
+
+    p {
+      @apply text-txt;
+    }
+  }
+}

@@ -8,10 +8,14 @@ import { PageSection } from 'components/pageSection';
 import data from 'data/bailresources.json';
 import { PageLayout } from 'layouts/pageLayout';
 
-
 const Bailresources: FC = () => {
   return (
-    <PageLayout pageTitle="bail-resources.page.title">
+    <PageLayout
+      pageTitle={{
+        id: 'bail-resources.page.title',
+        defaultMessage: 'BAIL RESOURCES',
+      }}
+    >
       <BannerSection />
 
       <PageSection
@@ -20,7 +24,10 @@ const Bailresources: FC = () => {
       >
         <div className="w-full md:w-1/2 mr-0 md:mr-20">
           <h1 className="text-3xl md:text-4xl text-black font-black mb-5">
-            <FormattedMessage id="bail-resources.page.info.title" />
+            <FormattedMessage
+              id="4cxnSK"
+              defaultMessage="Case, Arrest, and Warrant Search"
+            />
           </h1>
 
           <div>
@@ -34,7 +41,10 @@ const Bailresources: FC = () => {
                   <span className="font-bold">
                     <FormattedMessage id="jail" />:{' '}
                     <Link href={item.links.jail}>
-                      <FormattedMessage id="click.here" />
+                      <FormattedMessage
+                        id="MutiiU"
+                        defaultMessage="Click Here"
+                      />
                     </Link>
                   </span>
                 </div>
@@ -43,7 +53,10 @@ const Bailresources: FC = () => {
                   <span className="font-bold">
                     <FormattedMessage id="case.search" />:{' '}
                     <Link href={item.links.caseSearch}>
-                      <FormattedMessage id="click.here" />
+                      <FormattedMessage
+                        id="MutiiU"
+                        defaultMessage="Click Here"
+                      />
                     </Link>
                   </span>
                 </div>
@@ -59,7 +72,10 @@ const Bailresources: FC = () => {
 
       <PageSection>
         <h1 className="text-black text-2xl font-bold">
-          <FormattedMessage id="bail-resources.info.title" />
+          <FormattedMessage
+            id="7Sc82z"
+            defaultMessage="Here are some of the types of bonds we offer"
+          />
         </h1>
 
         <ul className="flex flex-col mt-4">
@@ -69,7 +85,10 @@ const Bailresources: FC = () => {
               key={`bond_types_${item.title}`}
             >
               <Link href={item.link}>
-                <FormattedMessage id={item.title} />
+                <FormattedMessage
+                  id={item.title.id}
+                  defaultMessage={item.title.defaultMessage}
+                />
               </Link>
             </li>
           ))}
@@ -77,36 +96,37 @@ const Bailresources: FC = () => {
       </PageSection>
 
       <PageSection>
-        {data.felony.map((f:any,index)=>(
-          <div key={index}>
-            <p className='m-6' >
-            <FormattedMessage id="bond-felony.header"/></p>
-            
+        <p className="m-6">
+          <FormattedMessage
+            id={data.felony.header.id}
+            defaultMessage={data.felony.header.defaultMessage}
+          />
+        </p>
 
-            <h1 className="text-black text-2xl font-bold ">
-            <FormattedMessage id="bond-felony.title" />
-            </h1> 
+        <h1 className="text-black text-2xl font-bold ">
+          <FormattedMessage
+            id={data.felony.title.id}
+            defaultMessage={data.felony.title.defaultMessage}
+          />
+        </h1>
 
-            {/* <FormattedMessage id={f.description} /> */}
-            <FormattedMessage id="bond-felony.title.description" />
+        <FormattedMessage
+          id={data.felony.description.id}
+          defaultMessage={data.felony.description.defaultMessage}
+        />
 
-
-            {f.elements.map((i:any,index:any)=>(
-              
-            <div key={`felony_elements_${index}`}>
-              <h1 className="text-xl text-blue font-bold mb-3 mt-3">
-              <FormattedMessage id={i.subheader}/>
-              </h1>
-              <p>
-              <FormattedMessage id={i.description}/>
-              </p>
-            </div>
-            ))}
-
-        
+        {data.felony.elements.map((i: any, index: any) => (
+          <div key={`felony_elements_${index}`}>
+            <h1 className="text-xl text-blue font-bold mb-3 mt-3">
+              <FormattedMessage id={i.subheader} />
+            </h1>
+            <p>
+              <FormattedMessage id={i.description} />
+            </p>
           </div>
         ))}
-{/*        
+
+        {/*        
         <h1 className="text-black text-2xl font-bold ">
           <FormattedMessage id="Felony" />
         </h1>
@@ -116,7 +136,7 @@ const Bailresources: FC = () => {
           Capital Felonies — An example of a capital felony is first-degree
           murder.
         </p> */}
-        
+
         {/* <h1 className="text-xl text-blue font-bold mb-3  mt-3">
           <FormattedMessage id="First-degree Felonies " />
         </h1>
@@ -182,18 +202,27 @@ const Bailresources: FC = () => {
       <PageSection>
         <h1 className="text-black text-2xl font-bold">
           <span className="text-red-500">*</span>{' '}
-          <FormattedMessage id="bail-resources.info.bonds-def.title" />
+          <FormattedMessage
+            id="1TxmTI"
+            defaultMessage="All bail bond agencies are required and regulated by the Florida Department Of Financial Services to charge 10% on state bonds and 15% on federal bonds."
+          />
         </h1>
 
         <div className="mt-5">
           {data.bailBondsDef.map((item: any, index: number) => (
             <div className="mb-5" key={`bail_bonds_def_${index}`}>
               <h1 className="text-xl text-blue font-bold mb-3">
-                <FormattedMessage id={item.title} />
+                <FormattedMessage
+                  id={item.title.id}
+                  defaultMessage={item.title.defaultMessage}
+                />
               </h1>
 
               <p>
-                <FormattedMessage id={item.desc} />
+                <FormattedMessage
+                  id={item.desc}
+                  defaultMessage={item.desc.defaultMessage}
+                />
               </p>
             </div>
           ))}
@@ -202,17 +231,26 @@ const Bailresources: FC = () => {
 
       <PageSection>
         <h1 className="text-black text-2xl font-bold">
-          <FormattedMessage id="bail-resources.info.bonds.cost-ananlisis.title" />
+          <FormattedMessage
+            id="Z/4YLg"
+            defaultMessage="Bail Bond Premium and Cost Explained"
+          />
         </h1>
 
         <div className="flex flex-col md:flex-row-reverse items-start mt-5">
           <div className="w-full flex-grow-1">
             <h1 className="text-2xl font-bold mb-5">
-              <FormattedMessage id="bail-resources.info.bonds.cost-ananlisis.subtitle" />
+              <FormattedMessage
+                id="UhBFsS"
+                defaultMessage="Bail Bonds Cost"
+              />
             </h1>
 
             <p>
-              <FormattedMessage id="bail-resources.info.bonds.cost-ananlisis.desc" />
+              <FormattedMessage
+                id="I71k96"
+                defaultMessage="The bail bond cost is the entire amount of bail decided by the courts. The bail bond premium is the amount of money a bail bondsman charges for pre-trial release and is typically 10% of the total bail amount ordered by the court system."
+              />
             </p>
           </div>
 
@@ -227,7 +265,10 @@ const Bailresources: FC = () => {
           {data.footer.map((item: any, index: number) => (
             <div className="mb-5" key={`footer_index_${index}`}>
               <h1 className="text-3xl text-white font-bold mb-3">
-                <FormattedMessage id={item.title} />
+                <FormattedMessage
+                  id={item.title.id}
+                  defaultMessage={item.title.defaultMessage}
+                />
               </h1>
 
               <div>
@@ -237,21 +278,33 @@ const Bailresources: FC = () => {
                     key={`footer_element_${index}`}
                   >
                     <li>
-                      <FormattedMessage id={element.title} />
+                      <FormattedMessage
+                        id={element.title.id}
+                        defaultMessage={element.title.defaultMessage}
+                      />
                     </li>
                     <li>
-                      <FormattedMessage id={element.address} />
+                      <FormattedMessage
+                        id={element.address.id}
+                        defaultMessage={element.address.defaultMessage}
+                      />
                     </li>
                     {element.hours && (
                       <li>
                         <FormattedMessage id="hours" />:{' '}
-                        <FormattedMessage id={element.hours} />
+                        <FormattedMessage
+                          id={element.hours.id}
+                          defaultMessage={element.hours.defaultMessage}
+                        />
                       </li>
                     )}
                     <li>
                       <Link href={`tel:${element.phone}`}>
                         <FormattedMessage id="phone" />:{' '}
-                        <FormattedMessage id={element.phone} />
+                        <FormattedMessage
+                          id={element.phone.id}
+                          defaultMessage={element.phone.defaultMessage}
+                        />
                       </Link>
                     </li>
                   </ul>

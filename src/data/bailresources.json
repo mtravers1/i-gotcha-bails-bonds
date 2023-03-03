@@ -24,124 +24,264 @@
   ],
   "bondTypes": [
     {
-      "title": "bond.types.appeal-bond",
+      "title": {
+        "id": "bond.types.appeal-bond",
+        "defaultMessage": "Appeal Bond"
+      },
       "link": "#"
     },
     {
-      "title": "bond.types.federal-bond",
+      "title": {
+        "id": "bond.types.federal-bond",
+        "defaultMessage": "Federal Bond"
+      },
       "link": "#"
     },
     {
-      "title": "bond.types.felony-bonds",
+      "title": {
+        "id": "bond.types.felony-bonds",
+        "defaultMessage": "Felony Bonds"
+      },
       "link": "#"
     },
     {
-      "title": "bond.types.nebbia-bond",
+      "title": {
+        "id": "bond.types.nebbia-bond",
+        "defaultMessage": "Nebbia Bond"
+      },
       "link": "#"
     },
     {
-      "title": "bond.types.state-bond",
+      "title": {
+        "id": "bond.types.state-bond",
+        "defaultMessage": "State Bond"
+      },
       "link": "#"
     },
     {
-      "title": "bond.types.supersedeas-bond",
+      "title": {
+        "id": "bond.types.supersedeas-bond",
+        "defaultMessage": "Supersedeas Bond"
+      },
       "link": "#"
     }
   ],
 
   "bailBondsDef": [
     {
-      "title": "bail-resources.info.bonds-def.info-1.title",
-      "desc": "bail-resources.info.bonds-def.info-1.desc"
+      "title": {
+        "id": "bail-resources.info.bonds-def.info-1.title",
+        "defaultMessage": "Appeal Bonds in Florida"
+      },
+      "desc": {
+        "id": "bail-resources.info.bonds-def.info-1.desc",
+        "defaultMessage": "In order to understand what an ‘appeal bond’ is, one must first understand the meaning of an ‘appeal’ according to the judicial court system. At the closing of a court hearing, the losing party is offered the ability to have the court’s decision reviewed by the Court of Appeal (a higher court) in an attempt to reverse the final judgment. This is called an appeal."
+      }
     },
     {
-      "title": "bail-resources.info.bonds-def.info-2.title",
-      "desc": "bail-resources.info.bonds-def.info-2.desc"
+      "title": {
+        "id": "bail-resources.info.bonds-def.info-2.title",
+        "defaultMessage": "Federal Bail Bonds for Pretrial Release in Florida"
+      },
+      "desc": {
+        "id": "bail-resources.info.bonds-def.info-2.desc",
+        "defaultMessage": "What is a federal bond? These bonds are required in order to bail out someone from jail who has been arrested for a federal crime. Typically, federal bonds cost more than state bonds and cannot be issued without first seeing a judge."
+      }
     },
     {
-      "title": "bail-resources.info.bonds-def.info-3.title",
-      "desc": "bail-resources.info.bonds-def.info-3.desc"
+      "title": {
+        "id": "bail-resources.info.bonds-def.info-3.title",
+        "defaultMessage": "Felony Bonds"
+      },
+      "desc": {
+        "id": "bail-resources.info.bonds-def.info-3.desc",
+        "defaultMessage": "Bail Bonds Now make it easy to post a bond in Florida. If someone you care about has been arrested for a felony criminal charge and needs help to make bail, our online bail application tool makes the process easy and convenient. Call or text a bail agent anytime at 561-500-9999."
+      }
     },
     {
-      "title": "bail-resources.info.bonds-def.info-4.title",
-      "desc": "bail-resources.info.bonds-def.info-4.desc"
+      "title": {
+        "id": "bail-resources.info.bonds-def.info-4.title",
+        "defaultMessage": "Nebbia Holds"
+      },
+      "desc": {
+        "id": "bail-resources.info.bonds-def.info-4.desc",
+        "defaultMessage": "In Florida, a Nebbia hold is used to guarantee that funds used to release a pretrial inmate were not part of an illegal financial transaction or activity. It is often a condition placed on a defendant's bond when suspected of drug crimes."
+      }
     },
     {
-      "title": "bail-resources.info.bonds-def.info-5.title",
-      "desc": "bail-resources.info.bonds-def.info-5.desc"
+      "title": {
+        "id": "bail-resources.info.bonds-def.info-5.title",
+        "defaultMessage": "State Bail Bonds for Pretrial Release in Florida"
+      },
+      "desc": {
+        "id": "bail-resources.info.bonds-def.info-5.desc",
+        "defaultMessage": "What is a state bond? State crimes cover a long list of offenses, but in all circumstances, a law that was put into place by state legislature was allegedly broken."
+      }
     }
   ],
-  "felony": [
-    {
-      "header":"bond-felony.header",
-      "title": "bond-felony.title",
-      "description": "bond-felony.title.description",
-      "elements": [
-       
-        {
-          "subheader": "bond-felony.title.life",
-          "description": "These can include crimes such as aggravated sexual assault."
+  "felony": {
+    "header": {
+      "id": "bond-felony.header",
+      "defaultMessage": "A state crime is any offense that breaks a law put into place by the state legislature. State crimes cover a long list of offenses and are investigated and administered by state law enforcement and municipal courts, as well as state and city attorneys. Crimes grouped as state would be offenses in violation to state laws, such as domestic violence, assault and battery, stalking, and homicide."
+    },
+    "title": { "id": "bond-felony.title", "defaultMessage": "Felony" },
+    "description": {
+      "id": "bond-felony.title.description",
+      "defaultMessage": "A felony is any criminal offense which is punishable by more than one year in state prison or federal prison and a fine of more than $1,000, Capital Felonies — An example of a capital felony is first-degree murder."
+    },
+    "elements": [
+      {
+        "subheader": {
+          "id": "bond-felony.title.life",
+          "defaultMessage": "Life Felonies"
         },
-        {
-          "subheader": "bond-felony.title.first-degree",
-          "description": "bond-felony.first-degree.description"
-        },
-        {
-          "subheader": "bond-felony.title.second-degree",
-          "description": "bond-felony.second-degree.description"
-        },
-        {
-          "subheader": "bond-felony.title.third-degree",
-          "description": "bond-felony.third-degree.description"
+        "description": {
+          "id": "bond-felony.life.description",
+          "defaultMessage": "These can include crimes such as aggravated sexual assault."
         }
-      ]
-    }
-  ],
-
+      },
+      {
+        "subheader": {
+          "id": "bond-felony.title.first-degree",
+          "defaultMessage": "First-Degree Felonies"
+        },
+        "description": {
+          "id": "bond-felony.first-degree.description",
+          "defaultMessage": "An example of a first-degree felony is aggravated assault of a police officer while that officer is on duty, which is the most severe degree after capital and life felonies. These top three are related to profoundly serious crimes. Second and third-degree felonies are serious as well, and all require legal representation from a criminal defense attorney. What is a second-degree felony in Florida?"
+        }
+      },
+      {
+        "subheader": {
+          "id": "bond-felony.title.second-degree",
+          "defaultMessage": "Second-Degree Felonies"
+        },
+        "description": {
+          "id": "bond-felony.second-degree.description",
+          "defaultMessage": "A drug offense such as selling marijuana to a minor would be an example of a second-degree felony in Florida. What is a 3rd-degree felony in Florida?"
+        }
+      },
+      {
+        "subheader": {
+          "id": "bond-felony.title.third-degree",
+          "defaultMessage": "Third-Degree Felonies"
+        },
+        "description": {
+          "id": "bond-felony.third-degree.description",
+          "defaultMessage": "Examples of third-degree felonies in Florida include grand theft, felony battery, and a third-time DUI, which took place within ten years of a prior DUI conviction. There are multiple types of crimes that constitute a felony charge in Florida, such as:"
+        }
+      }
+    ]
+  },
   "footer": [
     {
-      "title": "jail",
+      "title": { "id": "jail", "defaultMessage": "Jail" },
       "elements": [
         {
-          "title": "bail-resources.info.bonds.footer-one.title",
-          "address": "bail-resources.info.bonds.footer-one.address",
-          "phone": "bail-resources.info.bonds.footer-one.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-one.title",
+            "defaultMessage": "Broward County Main Jail"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-one.address",
+            "defaultMessage": "555 SE 1st Ave, Fort Lauderdate, FL 33301"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-one.phone",
+            "defaultMessage": "(954) 831-5900"
+          }
         },
         {
-          "title": "bail-resources.info.bonds.footer-two.title",
-          "address": "bail-resources.info.bonds.footer-two.address",
-          "phone": "bail-resources.info.bonds.footer-two.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-two.title",
+            "defaultMessage": "Palm Beach The Main Detention Center"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-two.address",
+            "defaultMessage": "228 Gun Club Road West Palm Beach, FL 33406-3001"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-two.phone",
+            "defaultMessage": "(561) 688-4401"
+          }
         },
         {
-          "title": "bail-resources.info.bonds.footer-three.title",
-          "address": "bail-resources.info.bonds.footer-three.address",
-          "phone": "bail-resources.info.bonds.footer-three.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-three.title",
+            "defaultMessage": "Miami Dade Jail Turner Guilford Knight Correctional Center"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-three.address",
+            "defaultMessage": "TGK, 7000 NW 41st St, Miami, FL 33166"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-three.phone",
+            "defaultMessage": "(786) 263-5600"
+          }
         }
       ]
     },
     {
-      "title": "court.house",
+      "title": { "id": "court.house", "defaultMessage": "Court House" },
       "elements": [
         {
-          "title": "bail-resources.info.bonds.footer-four.title",
-          "address": "bail-resources.info.bonds.footer-four.address",
-          "hours": "bail-resources.info.bonds.footer-four.hours",
-          "phone": "bail-resources.info.bonds.footer-four.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-four.title",
+            "defaultMessage": "Palm Beach County Clerk of the Circuit Court"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-four.address",
+            "defaultMessage": "05 N Dixie Hwy, West Palm Beach, FL 33401"
+          },
+          "hours": {
+            "id": "bail-resources.info.bonds.footer-four.hours",
+            "defaultMessage": "8am to 4pm"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-four.phone",
+            "defaultMessage": "(561) 355-2996"
+          }
         },
         {
-          "title": "bail-resources.info.bonds.footer-five.title",
-          "address": "bail-resources.info.bonds.footer-five.address",
-          "phone": "bail-resources.info.bonds.footer-five.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-five.title",
+            "defaultMessage": "Broward County Clerk of Courts"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-five.address",
+            "defaultMessage": "201 SE 6th Street Fort Lauderdale Florida, US 33301"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-five.phone",
+            "defaultMessage": "(954) 831-6565"
+          }
         },
         {
-          "title": "bail-resources.info.bonds.footer-six.title",
-          "address": "bail-resources.info.bonds.footer-six.address",
-          "phone": "bail-resources.info.bonds.footer-six.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-six.title",
+            "defaultMessage": "Miami Dade County Clerk of Courts"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-six.address",
+            "defaultMessage": "73 W. Flagler Street Miami, Florida 33130"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-six.phone",
+            "defaultMessage": "305-275-1155"
+          }
         },
         {
-          "title": "bail-resources.info.bonds.footer-seven.title",
-          "address": "bail-resources.info.bonds.footer-seven.address",
-          "phone": "bail-resources.info.bonds.footer-seven.phone"
+          "title": {
+            "id": "bail-resources.info.bonds.footer-seven.title",
+            "defaultMessage": "Miami Dade Criminal Court Office"
+          },
+          "address": {
+            "id": "bail-resources.info.bonds.footer-seven.address",
+            "defaultMessage": "1351 NW 12th Street, 9th Floor Miami, Florida 33125"
+          },
+          "phone": {
+            "id": "bail-resources.info.bonds.footer-seven.phone",
+            "defaultMessage": "305-275-1155"
+          }
         }
       ]
     }

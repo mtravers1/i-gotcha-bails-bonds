@@ -4,8 +4,8 @@ interface UseInputProps {
   type: string;
   name: string;
   value: string;
-  errorMsg: string;
-  valErrorMsg: string | undefined;
+  errorMsg?: { id?: string; defaultMessage: string };
+  valErrorMsg?: { id?: string; defaultMessage: string };
   required: boolean;
   handleChange: (event: any, error: any) => void;
   open: boolean;
@@ -15,11 +15,12 @@ interface UseInputProps {
 
 interface UseInputLogicReturn {
   showPassword: boolean;
-  setShowPassword: (value: boolean) => void;
+  revielPassword: () => void;
   errorMessage: string;
   inputInternalError: boolean | undefined;
   validateOne: (event: any) => void;
   error: any;
+  inputType: string;
 }
 
 export const useInputLogic = ({
@@ -38,6 +39,7 @@ export const useInputLogic = ({
   const [errorMessage, setErrorMessage] = useState<any>(errorMsg);
   const [internalValue, setInternalValue] = useState(value);
   const [inputInternalError, setInternalError] = useState<boolean>();
+  const [inputType, setInputType] = useState<string>(type);
 
   const error = errors && errors[name];
   const submitted = errors?.onSubmit;
@@ -50,7 +52,7 @@ export const useInputLogic = ({
     if (internalValue === '' || !internalValue) {
       if (submitted && required) {
         setInternalError(true);
-        setErrorMessage(valErrorMsg);
+        setErrorMessage(valErrorMsg || errorMsg);
       }
 
       if (errors?.reset) {
@@ -86,6 +88,16 @@ export const useInputLogic = ({
     errors?.reset,
   ]);
 
+  const revielPassword = () => {
+    if (inputType === 'password') {
+      setInputType('text');
+      setShowPassword(true);
+    } else {
+      setInputType('password');
+      setShowPassword(false);
+    }
+  };
+
   function addCommas(x: any) {
     x = x.split(',').join('');
 
@@ -108,10 +120,11 @@ export const useInputLogic = ({
 
   return {
     showPassword,
-    setShowPassword,
+    revielPassword,
     errorMessage,
     inputInternalError,
     validateOne,
     error,
+    inputType,
   };
 };

@@ -1,31 +1,29 @@
 import { FC } from 'react';
 import { FormattedMessage } from 'react-intl';
 import Image from 'next/image';
-// import Link from 'next/link';
+import { useRouter } from 'next/router';
 import bottomImg from 'assets/bar.png';
 import { BannerSection } from 'components/bannerSection';
 import { Button } from 'components/button';
 import { InfoText } from 'components/infoText';
 import data from 'data/homepage.json';
 import { InfoTextProps } from 'helpers/interfaces';
-import { useAppDispatch, useAppSelector } from 'hooks/reduxHooks';
 import { PageLayout } from 'layouts/pageLayout';
-import { setlanguage } from 'redux/actions/general';
 
 const Home: FC = () => {
-  const { lang } = useAppSelector((state) => state.generals);
-  const dispatch = useAppDispatch();
+  const { locale, pathname, push, asPath, query } = useRouter();
+  const [shortLocale] = locale ? locale.split('-') : ['en'];
+  const toLocale = shortLocale === 'en' ? 'es' : 'en';
 
-  let langSelected = lang;
-
-  if (!langSelected && typeof window !== 'undefined') {
-    langSelected = localStorage.getItem('lang') || navigator.language;
-  }
-
-  const handleClick = () => {
-    window.scrollTo(0, 0);
-    localStorage.setItem('lang', langSelected?.includes('en') ? 'es' : 'en');
-    dispatch(setlanguage(langSelected?.includes('en') ? 'es' : 'en'));
+  const changeLocale = () => {
+    push(
+      {
+        pathname,
+        query,
+      },
+      asPath,
+      { locale: toLocale }
+    );
   };
 
   return (
@@ -55,18 +53,27 @@ const Home: FC = () => {
         <div className="container mx-auto flex flex-wrap lg:items-center flex-col lg:flex-row">
           <div className="flex-1 flex flex-col items-start">
             <h1 className="text-white font-bold text-3xl lg:text-5xl mb-3">
-              <FormattedMessage id="footer.switch.lang.title" />
+              <FormattedMessage
+                id="footer.switch.lang.title"
+                defaultMessage="¿Necesita una fianza? Se Habla Español"
+              />
             </h1>
             <p className="text-white text-xl  font-normal">
-              <FormattedMessage id="footer.switch.lang.desc" />
+              <FormattedMessage
+                id="footer.switch.lang.desc"
+                defaultMessage="Haga clic en este enlace para visitar nuestro sitio web en español"
+              />
             </p>
           </div>
           <div className="mt-5 lg:mt-0">
             <Button
-              className="!bg-white text-black rounded-none !text-2xl px-10 font-bold"
-              onClick={handleClick}
+              onClick={changeLocale}
+              className="!bg-white !text-txt rounded-none !text-2xl px-10 font-bold"
             >
-              <FormattedMessage id="footer.switch.lang.cta" />
+              <FormattedMessage
+                id="footer.switch.lang.cta"
+                defaultMessage="Español"
+              />
             </Button>
           </div>
         </div>

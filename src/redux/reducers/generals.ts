@@ -1,22 +1,21 @@
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { GeneralsDataType } from 'helpers/interfaces';
-import { SET_LANG_OPTIONS } from '../actionTypes';
 
-const generals = (
-  state = {
-    lang: undefined,
-  } as GeneralsDataType,
-  action: any
-): any => {
-  switch (action.type) {
-    case SET_LANG_OPTIONS:
-      return {
-        ...state,
-        lang: action.payload,
-      };
-
-    default:
-      return state;
-  }
+const initialState: Partial<GeneralsDataType> = {
+  lang: undefined,
 };
 
-export default generals;
+const generals = createSlice({
+  name: 'generals',
+  initialState,
+  reducers: {
+    setlanguage(state, action: PayloadAction<string>) {
+      state.lang = action.payload;
+    },
+  },
+});
+
+const { actions, reducer } = generals;
+
+export const { setlanguage } = actions;
+export default reducer;

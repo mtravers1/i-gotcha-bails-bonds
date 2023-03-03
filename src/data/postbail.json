@@ -2,27 +2,39 @@
   "banner": {
     "links": [
       {
-        "title": "post-bail.banner.info.indemitor-form",
+        "title": {
+          "id": "post-bail.banner.info.indemitor-form",
+          "defaultMessage": "Indemitor Information Form"
+        },
         "link": "#"
       },
       {
-        "title": "post-bail.banner.info.promissary-note",
+        "title": {
+          "id": "post-bail.banner.info.promissary-note",
+          "defaultMessage": "Promissory Note"
+        },
         "link": "#"
       },
       {
-        "title": "post-bail.banner.info.mortgage-agreement",
+        "title": {
+          "id": "post-bail.banner.info.mortgage-agreement",
+          "defaultMessage": "Mortgage Agreement"
+        },
         "link": "#"
       },
       {
-        "title": "post-bail.banner.info.auth-form",
+        "title": {
+          "id": "post-bail.banner.info.auth-form",
+          "defaultMessage": "Authorization Form by Phone/Fax/Email"
+        },
         "link": "#"
       },
       {
-        "title": "phone",
+        "title": { "id": "phone", "defaultMessage": "Phone" },
         "link": "(954)-530-0166"
       },
       {
-        "title": "email",
+        "title": { "id": "email", "defaultMessage": "Email" },
         "link": "bondmeout@aol.com"
       }
     ]

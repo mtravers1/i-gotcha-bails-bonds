@@ -1,4 +1,5 @@
 import { useState, SyntheticEvent } from 'react';
+import { useToasts } from 'react-toast-notifications';
 import { validate } from 'helpers';
 
 type props = {
@@ -29,6 +30,7 @@ export const useForm = ({
   runOnError,
 }: // showErrorToast = true,
 props): returnType => {
+  const { addToast } = useToasts();
   const initialInputs = inputs?.reduce(
     (acc: any, input: any) => ({
       ...acc,
@@ -143,20 +145,24 @@ props): returnType => {
       setLoading(false);
     } catch (error) {
       const actError: any = error;
+      let errMessage: any = '';
 
       if (actError.response) {
         if (actError.response?.status === 500) {
-          actError.message = 'Network actError please try again';
-        } else
-          actError.message =
-            actError?.response?.data?.message || actError.message;
-      } else actError.message = actError.message || 'actError occured';
+          errMessage = 'Network actError please try again';
+        } else errMessage = actError?.response?.data?.error || actError.error;
+      } else errMessage = actError.error || 'actError occured';
 
-      const err = Array.isArray(actError.message)
-        ? actError.message.join(', ')
-        : actError.message;
+      const err = Array.isArray(errMessage)
+        ? errMessage.join(', ')
+        : errMessage;
 
       // add a toast or do soemthing with the actError
+      addToast(err, {
+        appearance: 'error',
+        autoDismiss: true,
+        autoDismissTimeout: 5000,
+      });
 
       runOnError
         ? runOnError?.(error, err)

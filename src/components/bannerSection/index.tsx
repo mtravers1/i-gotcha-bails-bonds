@@ -26,7 +26,10 @@ export const BannerSection: FC = () => {
           }}
         >
           <h1 className="text-center text-white text-bold text-3xl md:text-6xl font-bold">
-            <FormattedMessage id="banner.title" />
+            <FormattedMessage
+              id="banner.title"
+              defaultMessage="The Go to Bail Bonds Agency"
+            />
 
             <div>
               <h3 className="text-primary text-2xl md:text-5xl lg:text-6xl">
@@ -38,22 +41,29 @@ export const BannerSection: FC = () => {
 
           <div className="text-white mt-3 text-base md:text-lg text-center">
             <p>
-              <FormattedMessage id="banner.sub-one" />
+              <FormattedMessage
+                id="banner.sub-one"
+                defaultMessage="The best choice bail bonds agency in Florida!"
+              />
             </p>
             <p>
-              <FormattedMessage id="banner.sub-two" />
+              <FormattedMessage
+                id="banner.sub-two"
+                defaultMessage="Our areas of focus include: Reliability, Professionalism, and Quality care."
+              />
             </p>
           </div>
 
-          <Button className="mt-6 !bg-white-0.6 py-3 text-base md:text-md !rounded-sm">
+          <Button className="mt-6 !bg-white-0.6 py-3 text-base md:text-md !rounded-sm flex flex-col">
             <a
               href="tel:954-530-0166"
-              className="text-black  block border-b border-black w-full px-16"
+              className="text-black block border-b border-black w-full px-16"
             >
-              <FormattedMessage id="office" />: 954-530-0166
+              <FormattedMessage id="office" defaultMessage="Office" />:
+              954-530-0166
             </a>
-            <a href="tel:954-290-7235" className="text-black ">
-              <FormattedMessage id="cell" />: 954-290-7235
+            <a href="tel:954-290-7235" className="text-black">
+              <FormattedMessage id="cell" defaultMessage="Cell" />: 954-290-7235
             </a>
           </Button>
         </div>

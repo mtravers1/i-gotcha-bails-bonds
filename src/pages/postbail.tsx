@@ -15,7 +15,9 @@ const Postbail: FC = () => {
   });
 
   return (
-    <PageLayout pageTitle="post-bail.title">
+    <PageLayout
+      pageTitle={{ id: 'post-bail.title', defaultMessage: 'Post Bail Online' }}
+    >
       <BannerSection />
 
       <div className="max-w-3xl mx-auto py-10">

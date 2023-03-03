@@ -7,7 +7,7 @@ import { PageTitleCard } from 'components/pageTitleCard';
 export const PageLayout: FC<{
   children: any;
   useTopNav?: boolean;
-  pageTitle?: string;
+  pageTitle?: { id: string; defaultMessage: string };
 }> = ({ children, useTopNav = true, pageTitle }) => {
   return (
     <main>
@@ -15,9 +15,10 @@ export const PageLayout: FC<{
       <Navbar />
       {pageTitle && (
         <PageTitleCard>
-          <h2>
-            <FormattedMessage id={pageTitle} />
-          </h2>
+          <FormattedMessage
+            id={pageTitle.id}
+            defaultMessage={pageTitle.defaultMessage}
+          />
         </PageTitleCard>
       )}
       {useTopNav && <TopNav />}

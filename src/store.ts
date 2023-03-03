@@ -28,4 +28,4 @@ export const wrapper = createWrapper<Store<ReduxStateDataType>>(makeStore, {
   debug,
 });
 
-export type AppDispatch = typeof store.dispatch;
+export type AppDispatch = typeof store.dispatch ;

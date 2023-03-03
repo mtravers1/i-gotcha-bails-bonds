@@ -6,10 +6,10 @@ import { useInputLogic } from './useInputLogic';
 interface InputProps {
   type?: string;
   name: string;
-  placeholder?: string;
+  placeholder?: { id?: string; defaultMessage: string };
   value: string;
-  errorMsg?: string;
-  valErrorMsg?: string;
+  errorMsg?: { id?: string; defaultMessage: string };
+  valErrorMsg?: { id?: string; defaultMessage: string };
   required?: boolean;
   handleChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   reviel?: boolean;
@@ -19,22 +19,20 @@ interface InputProps {
   example?: string;
   className?: string;
   errors?: any;
-  label?: string;
+  label?: { id?: string; defaultMessage: string };
 }
 
 const Input: FC<InputProps> = ({
   type = 'text',
   name,
-  placeholder = 'Place Holder',
+  placeholder = { defaultMessage: 'Place Holder' },
   value,
-  errorMsg = '',
+  errorMsg,
   valErrorMsg,
   required = false,
   handleChange = () => {
     return;
   },
-  reviel,
-  // revielPassword,
   attr = {},
   open = false,
   className = '',
@@ -45,11 +43,12 @@ const Input: FC<InputProps> = ({
 
   const {
     showPassword,
-    setShowPassword,
+    revielPassword,
     // errorMessage,
     inputInternalError,
     validateOne,
     error,
+    inputType,
   } = useInputLogic({
     type,
     name,
@@ -65,19 +64,20 @@ const Input: FC<InputProps> = ({
 
   const inputRef = createRef<any>();
 
-  console.log;
-
   return (
     <div className={`input-div ${className || 'mb-5 '}`}>
       <div className="input">
         {label && (
-          <FormattedMessage id={label} defaultMessage={label}>
+          <FormattedMessage id={label.id} defaultMessage={label.defaultMessage}>
             {(msg) => <label className="mb-1 block">{msg}</label>}
           </FormattedMessage>
         )}
 
         <div className="input-con" ref={inputCon}>
-          <FormattedMessage id={placeholder} defaultMessage={placeholder}>
+          <FormattedMessage
+            id={placeholder?.id}
+            defaultMessage={placeholder.defaultMessage}
+          >
             {(msg) => (
               <>
                 {type === 'textarea' ? (
@@ -95,7 +95,7 @@ const Input: FC<InputProps> = ({
                   <>
                     <input
                       className="input-type"
-                      type={reviel ? 'text' : type}
+                      type={inputType}
                       required={required}
                       name={name}
                       onChange={validateOne}
@@ -111,30 +111,29 @@ const Input: FC<InputProps> = ({
           </FormattedMessage>
 
           {value && type === 'password' ? (
-            <span
-              onClick={() => {
-                setShowPassword(!showPassword);
-                // revielPassword();
-              }}
-              className="reviel-password"
-            >
+            <span onClick={revielPassword} className="reviel-password">
               {!showPassword ? <BsEye /> : <BsEyeSlash />}
             </span>
           ) : null}
         </div>
 
-        <FormattedMessage id={errorMsg} defaultMessage={errorMsg}>
-          {(msg) => (
-            <p
-              className="error mr-2.5 text-red-500 text-sm"
-              style={{
-                display: error || inputInternalError ? 'block' : 'none',
-              }}
-            >
-              {msg}
-            </p>
-          )}
-        </FormattedMessage>
+        {errorMsg && (
+          <FormattedMessage
+            id={errorMsg?.id}
+            defaultMessage={errorMsg?.defaultMessage}
+          >
+            {(msg) => (
+              <p
+                className="error mr-2.5 text-red-500 text-sm"
+                style={{
+                  display: error || inputInternalError ? 'block' : 'none',
+                }}
+              >
+                {msg}
+              </p>
+            )}
+          </FormattedMessage>
+        )}
       </div>
     </div>
   );

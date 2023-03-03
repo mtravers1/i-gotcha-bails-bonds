@@ -14,20 +14,33 @@ export const BannerSection: FC = () => {
       <div className="container mx-auto flex flex-col-reverse md:flex-row justify-center items-center h-full">
         <div className="md:w-1/2 flex flex-col mr-0 md:mr-10 ">
           <h1 className="text-3xl md:text-5xl font-bold text-white">
-            <FormattedMessage id="bail-resources.page.banner.title" />
+            <FormattedMessage
+              id="aZycHu"
+              defaultMessage="Bail Bond Resources"
+            />
           </h1>
 
           <p className="text-white mt-5">
-            <FormattedMessage id="bail-resources.page.banner.desc" />
+            <FormattedMessage
+              id="2MoNF+"
+              defaultMessage="Bail Bond Resources We know that getting arrested, or having a loved one get arrested, can be a daunting and scary experience. Our bail bond resource section will help guide you through the difficult experience a bit easier. Whether you need a Dade, Broward or Palm Beach bail bond, we’re here for you… we even have bail agents available nationwide! As always, you can call us or email us anytime."
+            />
           </p>
 
-          <Button className="text-black !bg-white w-fit font-bold my-5">
-            <FormattedMessage id="bail-resources.page.banner.btn-one" /> :{' '}
-            <Link href="tel:954-290-7235">954-290-7235</Link>
+          <Button className="!text-txt !bg-white w-fit font-bold my-5">
+            <FormattedMessage
+              id="1P4ckX"
+              defaultMessage="Send us a text"
+            />{' '}
+            : <Link href="tel:954-290-7235">954-290-7235</Link>
           </Button>
 
-          <Button className="text-black !bg-white w-fit font-bold">
-            <FormattedMessage id="bail-resources.page.banner.btn-two" /> :{' '}
+          <Button className="!text-txt !bg-white w-fit font-bold">
+            <FormattedMessage
+              id="sbyZbi"
+              defaultMessage="Send us an email"
+            />{' '}
+            :{' '}
             <Link href="emailTo:info@i-gotchabailbonds.com">
               info@i-gotchabailbonds.com
             </Link>
