@@ -11,7 +11,7 @@ const data = [
     label: {
       id: 'first.name',
       defaultMessage: 'First Name',
-      position: 'middle',
+      position: 'bottom',
     },
     errorMessage: {
       id: 'form.error.first-name',
@@ -26,7 +26,7 @@ const data = [
     label: {
       id: 'middle.name',
       defaultMessage: 'Middle Name',
-      position: 'middle',
+      position: 'bottom',
     },
     errorMessage: {
       id: 'form.error.middle-name',
@@ -37,7 +37,7 @@ const data = [
   },
   {
     name: 'lastName',
-    label: { id: 'last.name', defaultMessage: 'Last Name', position: 'middle' },
+    label: { id: 'last.name', defaultMessage: 'Last Name', position: 'bottom' },
     errorMessage: {
       id: 'form.error.last-name',
       defaultMessage: 'Please enter your last name',

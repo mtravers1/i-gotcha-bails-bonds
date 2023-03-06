@@ -24,7 +24,7 @@ export interface InputProps {
   label?: {
     id?: string;
     defaultMessage: string;
-    position?: 'right' | 'left' | 'middle' | 'inline';
+    position?: 'right' | 'left' | 'middle' | 'inline' | 'bottom';
   };
   formType?: boolean;
 }
@@ -85,6 +85,7 @@ const Input: FC<InputProps> = ({
           'flex items-end': label?.position === 'inline',
           'flex flex-col':
             label?.position === 'middle' || label?.position === 'left',
+          'flex flex-col-reverse': label?.position === 'bottom',
         })}
       >
         {label && (

@@ -51,14 +51,14 @@ const Form8: FC = () => {
           <h2 className="text-center font-bold text-3xl m-8">
             INDEMNITOR APPLICATION AND AGGREEMENT
           </h2>
-          <div className=" align-baseline inline-block">
+          <div className="flex flex-wrap items-baseline">
             You, the undersigned indemnitor (“Indemnitor” or “you”), hereby
             represent and warrant that the following declarations made and
             answers given are true, complete and correct and are made for the
             purpose of inducing Lexington National Insurance Corporation
             (“Surety”) to issue, or cause to be issued, bail bond(s) or
             undertaking(s) (singularly or collectively the “Bond”) for:
-            <div className="flex mb-1">
+            <div className="inline-flex my-1">
               {data.slice(0, 3).map((form, i) => (
                 <Input
                   key={`indemitor_form_${i}`}
@@ -72,7 +72,7 @@ const Form8: FC = () => {
                   errors={errors}
                   open={true}
                   formType
-                  className="ml-0.5 mb-2"
+                  className="mx-0.5 mb-2"
                 />
               ))}
             </div>
