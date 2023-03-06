@@ -142,6 +142,7 @@
   "form.defendant-date-of-birth": "Fecha de nacimiento del demandado",
 
   "form.error.first-name": "Por favor, introduzca su nombre de pila",
+  "form.error.middle-name": "Por favor ingrese su nombre del medio",
   "form.error.last-name": "Por favor ingrese su apellido",
   "form.error.email": "Por favor introduzca su correo electrónico",
   "form.error.dob": "Por favor ingrese su fecha de nacimiento",
@@ -154,6 +155,8 @@
   "form.error.confirm-password": "Por favor confirme su contraseña",
   "form.error.full-name": "Al menos 2 nombres válidos",
   "form.error.otp": "Por favor ingrese su OTP",
+  "form.error.attorney": "Por favor ingrese su abogado",
+  "form.error.amount": "Por favor ingrese la cantidad",
 
   "confirm.password": "Confirmar contraseña",
   "full.name": "Nombre completo",

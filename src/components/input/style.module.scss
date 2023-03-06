@@ -1,0 +1,85 @@
+%selected {
+  @apply text-white bg-black;
+}
+
+.input-div {
+  @apply w-full;
+
+  .input {
+    .input-type {
+      @apply z-0 bg-transparent w-full text-sm p-2 outline-none relative;
+    }
+
+    .reviel-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+
+      svg {
+        @apply fill-current text-black w-5 h-5;
+      }
+    }
+  }
+
+  .input-con {
+    //use shadow to see border
+    @apply rounded-md z-0 relative border border-black transition-all duration-300 ease-in;
+
+    &.input-con__form_type {
+      border: none;
+      border-bottom: 2px solid black;
+      border-radius: 0;
+      background-color: rgb(226 232 240);
+
+      input {
+        text-align: center;
+      }
+
+      .input-type {
+        padding: 4px !important;
+      }
+
+      @apply border-b border-black;
+
+      .elspans {
+        @apply absolute -bottom-0.5 left-0 h-0.5 w-0;
+        transition: width 0.3s ease-in-out;
+      }
+
+      &.typing {
+        .elspans {
+          @apply bg-black w-full;
+        }
+      }
+
+      &.valid {
+        .elspans {
+          @apply bg-primary w-full;
+        }
+      }
+
+      &.invalid {
+        .elspans {
+          @apply bg-red-500 w-full;
+        }
+      }
+    }
+
+    .elspans {
+    }
+
+    input:focus {
+      @apply border-primary;
+    }
+
+    &.valid {
+      @apply border-primary;
+    }
+
+    &.invalid {
+      @apply border-red-500;
+    }
+  }
+}

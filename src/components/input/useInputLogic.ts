@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from './style.module.scss';
 
 interface UseInputProps {
   type: string;
@@ -59,18 +60,18 @@ export const useInputLogic = ({
         setInternalError(false);
       }
 
-      inputCon?.current?.classList.remove('typing');
+      inputCon?.current?.classList.remove(styles.typing);
     } else {
       setInternalError(false);
-      inputCon?.current?.classList.add('typing');
+      inputCon?.current?.classList.add(styles.typing);
 
       if (error) {
-        inputCon?.current?.classList.add('invalid');
-        inputCon?.current?.classList.remove('valid');
+        inputCon?.current?.classList.add(styles.invalid);
+        inputCon?.current?.classList.remove(styles.valid);
         setErrorMessage(errorMsg);
       } else {
-        inputCon?.current?.classList.add('valid');
-        inputCon?.current?.classList.remove('invalid');
+        inputCon?.current?.classList.add(styles.valid);
+        inputCon?.current?.classList.remove(styles.invalid);
         setErrorMessage(null);
       }
     }
