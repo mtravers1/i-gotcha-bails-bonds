@@ -16,11 +16,6 @@
   /* font-size: 14px; */
 }
 
-.form p {
-  position: relative;
-  top: 10px;
-}
-
 .reciept input {
   border-bottom: solid 2px black;
 }

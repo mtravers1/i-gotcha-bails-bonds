@@ -91,7 +91,8 @@ const Input: FC<InputProps> = ({
         {label && (
           <label
             className={classNames('mb-1 block', {
-              'self-center': label?.position === 'middle',
+              'self-center':
+                label?.position === 'middle' || label?.position === 'bottom',
               'self-start': label?.position === 'left',
               'text-xs': formType,
               'mr-2 !text-base': label?.position === 'inline',
