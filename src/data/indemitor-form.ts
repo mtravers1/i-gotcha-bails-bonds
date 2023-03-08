@@ -2,6 +2,7 @@ import {
   EMAIL_REFEX,
   FREE_TEXT_REGEX,
   FULL_NAME_REGEX,
+  PHONE_NUMBER_REGEX,
   NUMBER_REGEX,
 } from 'helpers/regexConstants';
 
@@ -70,7 +71,7 @@ const data = [
     name: 'fullName',
     errorMessage: {
       id: 'form.error.fullName',
-      defaultMessage: 'Please enter the defendant full name',
+      defaultMessage: 'Please enter the full name',
     },
     label: {
       id: 'full.name',
@@ -81,6 +82,155 @@ const data = [
     pattern: FULL_NAME_REGEX,
     type: 'text',
   },
-];
+  {
+    name: 'AKA',
+  
+    label: {
+      id: 'Aaka',
+      defaultMessage: 'Aka',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'homephone',
+    label: { id: 'Home.number', defaultMessage: 'Home Phone Number', position: 'bottom' },
+
+    errorMessage: {
+      id: 'form.error.homephone',
+      defaultMessage: 'Please enter your home phone number',
+    },
+    required: true,
+    pattern: PHONE_NUMBER_REGEX,
+    type: 'number',
+  },
+  {
+    name: 'cellphone',
+    label: { id: 'cell.number', defaultMessage: 'Cell Phone Number', position: 'bottom' },
+
+    errorMessage: {
+      id: 'form.error.cellphone',
+      defaultMessage: 'Please enter your cell phone number',
+    },
+    required: true,
+    pattern: PHONE_NUMBER_REGEX,
+    type: 'number',
+  },
+  {
+    name: 'workphone',
+    label: { id: 'work.number', defaultMessage: 'Work Phone Number', position: 'bottom' },
+
+    errorMessage: {
+      id: 'form.error.cellphone',
+      defaultMessage: 'Please enter your work phone number',
+    },
+    required: true,
+    pattern: PHONE_NUMBER_REGEX,
+    type: 'number',
+  },
+  {
+    name: 'Email',
+    errorMessage: {
+      id: 'form.error.fullName',
+      defaultMessage: 'Please enter your Email',
+    },
+    label: {
+      id: 'email',
+      defaultMessage: 'Email',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'Facebook',
+  
+    label: {
+      id: 'Facebook',
+      defaultMessage: 'Facebook',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'Other Social',
+ 
+    label: {
+      id: 'Other social',
+      defaultMessage: 'Other Social Media',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'Address',
+    errorMessage: {
+      id: 'form.error.address',
+      defaultMessage: 'Please enter your Address',
+    },
+    label: {
+      id: 'Address',
+      defaultMessage: 'Current Address',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'How Long',
+    errorMessage: {
+      id: 'form.error.howlong',
+      defaultMessage: 'Please enter how long you have been at your current address',
+    },
+    label: {
+      id: 'howlong',
+      defaultMessage: 'How Long',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'Landlord',
+    errorMessage: {
+      id: 'form.error.Landlord',
+      defaultMessage: 'Please enter the Landlord/Mortage Holder',
+    },
+    label: {
+      id: 'Landlord',
+      defaultMessage: 'LandLord/Mortgage Holder',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text',
+  },
+  {
+    name: 'DOB',
+    errorMessage: {
+      id: 'form.error.dob',
+      defaultMessage: 'Please enter your date of birth',
+    },
+    label: {
+      id: 'dob',
+      defaultMessage: 'Date of Birth',
+      position: 'inline',
+    },
+    required: true,
+    pattern: FULL_NAME_REGEX,
+    type: 'text', 
+},
+
+]
+
 
 export default data;
