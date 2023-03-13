@@ -1,4 +1,4 @@
-import React, { FC, createRef } from 'react';
+import React, { FC, createRef, memo } from 'react';
 import { useIntl } from 'react-intl';
 import classNames from 'classnames';
 import { BsEye, BsEyeSlash } from 'react-icons/bs';
@@ -29,118 +29,99 @@ export interface InputProps {
   formType?: boolean;
 }
 
-const Input: FC<InputProps> = ({
-  type = 'text',
-  name,
-  placeholder = { defaultMessage: 'Place holder' },
-  value,
-  errorMsg,
-  valErrorMsg,
-  required = false,
-  handleChange = () => {
-    return;
-  },
-  attr = {},
-  open = false,
-  className = '',
-  errors,
-  label,
-  formType = false,
-}) => {
-  const inputCon = createRef<any>();
-  const intl = useIntl();
-
-  const {
-    showPassword,
-    revielPassword,
-    // errorMessage,
-    inputInternalError,
-    validateOne,
-    error,
-    inputType,
-  } = useInputLogic({
-    type,
+export const Input: FC<InputProps> = memo(
+  ({
+    type = 'text',
     name,
+    placeholder = { defaultMessage: 'Place holder' },
     value,
     errorMsg,
     valErrorMsg,
-    required,
-    handleChange,
-    open,
+    required = false,
+    handleChange = () => {
+      return;
+    },
+    attr = {},
+    open = false,
+    className = '',
     errors,
-    inputCon,
-  });
+    label,
+    formType = false,
+  }) => {
+    const inputCon = createRef<any>();
+    const intl = useIntl();
 
-  const inputRef = createRef<any>();
+    const {
+      showPassword,
+      revielPassword,
+      errorMessage,
+      inputInternalError,
+      validateOne,
+      error,
+      inputType,
+    } = useInputLogic({
+      type,
+      name,
+      value,
+      errorMsg,
+      valErrorMsg,
+      required,
+      handleChange,
+      open,
+      errors,
+      inputCon,
+    });
 
-  return (
-    <div
-      className={classNames(styles['input-div'], {
-        [className]: className,
-        'mb-5': !className,
-      })}
-    >
+    const inputRef = createRef<any>();
+
+    return (
       <div
-        className={classNames(styles.input, {
-          'flex items-end': label?.position === 'inline',
-          'flex flex-col':
-            label?.position === 'middle' || label?.position === 'left',
-          'flex flex-col-reverse': label?.position === 'bottom',
+        className={classNames(styles['input-div'], {
+          [className]: className,
+          'mb-5': !className,
         })}
       >
-        {label && (
-          <label
-            className={classNames('mb-1 block', {
-              'self-center':
-                label?.position === 'middle' || label?.position === 'bottom',
-              'self-start': label?.position === 'left',
-              'text-xs': formType,
-              'mr-2 !text-base': label?.position === 'inline',
-            })}
-          >
-            {intl.formatMessage({
-              id: label.id,
-              defaultMessage: label.defaultMessage,
-            })}
-          </label>
-        )}
-
         <div
-          className={classNames(styles['input-con'], 'flex-1', {
-            [styles['input-con__form_type']]: formType,
+          className={classNames(styles.input, {
+            'flex items-end': label?.position === 'inline',
+            'flex flex-col':
+              label?.position === 'middle' || label?.position === 'left',
+            'flex flex-col-reverse': label?.position === 'bottom',
           })}
-          ref={inputCon}
         >
-          <>
-            {type === 'textarea' ? (
-              <textarea
-                className={styles['input-type']}
-                required={required}
-                name={name}
-                onChange={validateOne}
-                value={value}
-                rows={5}
-                ref={inputRef}
-                placeholder={
-                  placeholder?.id
-                    ? (intl.formatMessage({
-                        id: placeholder?.id,
-                        defaultMessage: placeholder.defaultMessage,
-                      }) as any)
-                    : ''
-                }
-              />
-            ) : (
-              <>
-                <input
+          {label && (
+            <label
+              className={classNames('mb-1 block', {
+                'self-center':
+                  label?.position === 'middle' || label?.position === 'bottom',
+                'self-start': label?.position === 'left',
+                'text-xs': formType,
+                'mr-2 !text-base': label?.position === 'inline',
+              })}
+            >
+              {intl.formatMessage({
+                id: label.id,
+                defaultMessage: label.defaultMessage,
+              })}
+            </label>
+          )}
+
+          <div
+            className={classNames(styles['input-con'], 'flex-1', {
+              [styles['input-con__form_type']]: formType,
+            })}
+            ref={inputCon}
+          >
+            <>
+              {type === 'textarea' ? (
+                <textarea
                   className={styles['input-type']}
-                  type={inputType}
                   required={required}
                   name={name}
                   onChange={validateOne}
                   value={value}
+                  rows={5}
                   ref={inputRef}
-                  {...attr}
                   placeholder={
                     placeholder?.id
                       ? (intl.formatMessage({
@@ -150,40 +131,59 @@ const Input: FC<InputProps> = ({
                       : ''
                   }
                 />
-              </>
-            )}
-          </>
+              ) : (
+                <>
+                  <input
+                    className={styles['input-type']}
+                    type={inputType}
+                    required={required}
+                    name={name}
+                    onChange={validateOne}
+                    value={value}
+                    ref={inputRef}
+                    {...attr}
+                    placeholder={
+                      placeholder?.id
+                        ? (intl.formatMessage({
+                            id: placeholder?.id,
+                            defaultMessage: placeholder.defaultMessage,
+                          }) as any)
+                        : ''
+                    }
+                  />
+                </>
+              )}
+            </>
 
-          <span className={styles.elspans}></span>
+            <span className={styles.elspans}></span>
 
-          {value && type === 'password' ? (
-            <span
-              onClick={revielPassword}
-              className={styles['reviel-password']}
-            >
-              {!showPassword ? <BsEye /> : <BsEyeSlash />}
-            </span>
-          ) : null}
+            {value && type === 'password' ? (
+              <span
+                onClick={revielPassword}
+                className={styles['reviel-password']}
+              >
+                {!showPassword ? <BsEye /> : <BsEyeSlash />}
+              </span>
+            ) : null}
+          </div>
         </div>
+        {errorMessage && (
+          <p
+            className={classNames(
+              styles.error,
+              'mr-2.5 text-red-500 text-xs text-center'
+            )}
+            style={{
+              display: error || inputInternalError ? 'block' : 'none',
+            }}
+          >
+            {intl.formatMessage({
+              id: errorMessage?.id,
+              defaultMessage: errorMessage?.defaultMessage,
+            })}
+          </p>
+        )}
       </div>
-      {errorMsg && (
-        <p
-          className={classNames(
-            styles.error,
-            'mr-2.5 text-red-500 text-xs text-center'
-          )}
-          style={{
-            display: error || inputInternalError ? 'block' : 'none',
-          }}
-        >
-          {intl.formatMessage({
-            id: errorMsg?.id,
-            defaultMessage: errorMsg?.defaultMessage,
-          })}
-        </p>
-      )}
-    </div>
-  );
-};
-
-export default Input;
+    );
+  }
+);

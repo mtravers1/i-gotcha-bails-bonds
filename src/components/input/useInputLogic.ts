@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import styles from './style.module.scss';
 
 interface UseInputProps {
@@ -17,7 +17,7 @@ interface UseInputProps {
 interface UseInputLogicReturn {
   showPassword: boolean;
   revielPassword: () => void;
-  errorMessage: string;
+  errorMessage: any;
   inputInternalError: boolean | undefined;
   validateOne: (event: any) => void;
   error: any;
@@ -37,23 +37,24 @@ export const useInputLogic = ({
   inputCon,
 }: UseInputProps): UseInputLogicReturn => {
   const [showPassword, setShowPassword] = useState(false);
-  const [errorMessage, setErrorMessage] = useState<any>(errorMsg);
-  const [internalValue, setInternalValue] = useState(value);
+  const [errorMessage, setErrorMessage] = useState<any>();
   const [inputInternalError, setInternalError] = useState<boolean>();
+  const [internalValue, setInternalValue] = useState<string>(value);
   const [inputType, setInputType] = useState<string>(type);
 
-  const error = errors && errors[name];
-  const submitted = errors?.onSubmit;
-
-  useEffect(() => {
-    setInternalValue(value);
-  }, [value]);
+  const error = useMemo(
+    () => (typeof errors?.[name] !== 'string' && errors?.[name] ? true : false),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [errors?.[name]]
+  );
+  const submitted = useMemo(() => errors?.onSubmit, [errors?.onSubmit]);
 
   useEffect(() => {
     if (internalValue === '' || !internalValue) {
-      if (submitted && required) {
+      if ((submitted && required) || (error && required)) {
         setInternalError(true);
-        setErrorMessage(valErrorMsg || errorMsg);
+        inputCon?.current?.classList.add(styles.invalid);
+        setErrorMessage(errorMsg);
       }
 
       if (errors?.reset) {
@@ -61,6 +62,7 @@ export const useInputLogic = ({
       }
 
       inputCon?.current?.classList.remove(styles.typing);
+      inputCon?.current?.classList.remove(styles.valid);
     } else {
       setInternalError(false);
       inputCon?.current?.classList.add(styles.typing);
@@ -68,26 +70,15 @@ export const useInputLogic = ({
       if (error) {
         inputCon?.current?.classList.add(styles.invalid);
         inputCon?.current?.classList.remove(styles.valid);
-        setErrorMessage(errorMsg);
+        setErrorMessage(valErrorMsg || errorMsg);
       } else {
         inputCon?.current?.classList.add(styles.valid);
         inputCon?.current?.classList.remove(styles.invalid);
         setErrorMessage(null);
       }
     }
-  }, [
-    value,
-    inputCon,
-    valErrorMsg,
-    open,
-    error,
-    errorMsg,
-    name,
-    required,
-    internalValue,
-    submitted,
-    errors?.reset,
-  ]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open, error, internalValue, submitted, errors?.reset]);
 
   const revielPassword = () => {
     if (inputType === 'password') {

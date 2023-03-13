@@ -23,6 +23,42 @@
     }
   }
 
+  &.radx {
+    @apply m-0;
+
+    .rad_options {
+      // @apply h-4;
+
+      &::before {
+        content: '';
+        box-shadow: 0 0 0 1.5px #333;
+
+        @apply w-4 h-4 rounded-full absolute left-0 transform top-1/2 -translate-y-1/2;
+      }
+
+      &.selected {
+        &::before {
+          content: '';
+          @apply bg-primary border-2 border-white;
+        }
+      }
+    }
+  }
+
+  &.select_op {
+    &[disabled] {
+      .currentValue {
+        color: grey;
+
+        &.arrow {
+          &::after {
+            color: grey !important;
+          }
+        }
+      }
+    }
+  }
+
   .input-con {
     //use shadow to see border
     @apply rounded-md z-0 relative border border-black transition-all duration-300 ease-in;
@@ -63,6 +99,73 @@
       &.invalid {
         .elspans {
           @apply bg-red-500 w-full;
+        }
+      }
+    }
+
+    .select {
+      .search-input {
+        &::before {
+          @apply absolute bg-white h-2.5;
+          content: '';
+          top: -11px;
+          left: -8px;
+          width: calc(100% + 16px);
+        }
+      }
+
+      .currentValue {
+        outline: none;
+        min-height: 20px;
+
+        &::before {
+          content: '';
+          @apply absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-full;
+        }
+
+        &.arrow {
+          &::after {
+            content: '\25BC';
+            position: absolute;
+            @apply text-xs text-txt right-2.5 top-1/2 transform -translate-y-1/2;
+          }
+        }
+
+        p {
+          margin-bottom: 0;
+          min-height: 0.85em;
+        }
+
+        img {
+          margin-left: 10px;
+          width: 10px;
+          height: 15px;
+        }
+      }
+
+      .dropDownButtons {
+        padding: 5px 8px 10px;
+        transition: visibility 0.4s ease, top 0.3s ease, opacity 0.2s ease;
+        transform-origin: top;
+        max-height: 400px;
+        background: white;
+
+        &:hover {
+          overflow-y: scroll;
+        }
+
+        .options {
+          &:hover {
+            @apply bg-gray-50;
+          }
+        }
+
+        .selected {
+          @extend %selected;
+        }
+
+        &.open-drop {
+          @apply visible opacity-100 mt-10;
         }
       }
     }

@@ -2,6 +2,14 @@ import { FC } from 'react';
 import { SideNav } from 'components/sideNav';
 import { AccountLayout } from 'layouts/accountLayout';
 
+const FormCard: FC = () => {
+  return (
+    <div>
+      <h1>Form Card</h1>
+    </div>
+  );
+};
+
 const MyAccount: FC = () => {
   return (
     <AccountLayout
@@ -16,7 +24,12 @@ const MyAccount: FC = () => {
         <h1>Hi, let's get you started</h1>
         <h2>Please Complete this application form for you to get started</h2>
 
-        <p>Go to form</p>
+        <div>
+          <h1>Indemitor Form</h1>
+          <p>....</p>
+          <FormCard />
+          <p>Go to form</p>
+        </div>
       </div>
     </AccountLayout>
   );

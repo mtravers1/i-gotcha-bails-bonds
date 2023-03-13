@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { useToasts } from 'react-toast-notifications';
 import { useRouter } from 'next/router';
 import { Button } from 'components/button';
-import Input from 'components/input';
+import { Input } from 'components/input';
 import data from 'data/signup';
 import { axiosInstance } from 'helpers';
 import { useForm } from 'hooks/useForm';

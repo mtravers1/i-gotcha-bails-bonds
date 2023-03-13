@@ -141,6 +141,10 @@
   "form.defendant-last-name": "Apellido del demandado",
   "form.defendant-date-of-birth": "Fecha de nacimiento del demandado",
 
+  "form.error.invalid-name": "Nombre inválido",
+  "form.error.invalid-full-name": "Por favor ingrese al menos 2 nombres",
+  "form.error.invalid-phone": "Introduce un número de teléfono válido",
+  "form.error.invalid-email": "Introduzca un correo electrónico válido",
   "form.error.first-name": "Por favor, introduzca su nombre de pila",
   "form.error.middle-name": "Por favor ingrese su nombre del medio",
   "form.error.last-name": "Por favor ingrese su apellido",

@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { useToasts } from 'react-toast-notifications';
 import { Button } from 'components/button';
-import Input from 'components/input';
+import { Input } from 'components/input';
 import { SideNav } from 'components/sideNav';
 import data from 'data/profile';
 import { axiosInstance } from 'helpers';

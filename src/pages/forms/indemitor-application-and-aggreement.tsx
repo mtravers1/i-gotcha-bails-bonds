@@ -1,14 +1,14 @@
+'use client';
+
 import { FC, useState } from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { useToasts } from 'react-toast-notifications';
-import Input from 'components/input';
+import classNames from 'classnames';
+import { Input } from 'components/input';
+import { InputTypes } from 'components/input/inputTypes';
 import data from 'data/indemitor-form';
-import data2 from 'data/indemitor-form';
-
-
 import { axiosInstance } from 'helpers';
 import { useForm } from 'hooks/useForm';
-import styles from './forms.module.css';
 
 const Form8: FC = () => {
   // const [ email, setEmail]=useState([{id:1, company:''}])
@@ -49,284 +49,122 @@ const Form8: FC = () => {
 
   return (
     <main className="container mx-auto">
-      <div className={styles.form}>
-        <div>
-          <h2 className="text-center font-bold text-3xl m-8">
-            INDEMNITOR APPLICATION AND AGGREEMENT
-          </h2>
-          <div className="flex flex-wrap items-baseline">
-            You, the undersigned indemnitor (“Indemnitor” or “you”), hereby
-            represent and warrant that the following declarations made and
-            answers given are true, complete and correct and are made for the
-            purpose of inducing Lexington National Insurance Corporation
-            (“Surety”) to issue, or cause to be issued, bail bond(s) or
-            undertaking(s) (singularly or collectively the “Bond”) for:
-            <div className="inline-flex my-1">
-              {data.slice(0, 3).map((form, i) => (
-                <Input
-                  key={`indemitor_form_${i}`}
-                  name={form.name}
-                  type={form.type}
-                  label={form.label as any}
-                  value={inputTypes[form.name]}
-                  errorMsg={form.errorMessage}
-                  required={form.required}
-                  handleChange={handleChange}
-                  errors={errors}
-                  open={true}
-                  formType
-                  className="mx-0.5 mb-2"
-                />
-              ))}
-            </div>
-            (“Defendant”), using power of attorney
-            <Input
-              name={data[3].name}
-              type={data[3].type}
-              label={data[3].label as any}
-              value={inputTypes[data[3].name]}
-              errorMsg={data[3].errorMessage}
-              required={data[3].required}
-              handleChange={handleChange}
-              errors={errors}
-              formType
-              className="ml-0.5 inline-block !w-fit mb-2"
-            />
-            , in the total amount of{' '}
-            <Input
-              name={data[4].name}
-              type={data[4].type}
-              label={data[4].label as any}
-              value={inputTypes[data[4].name]}
-              errorMsg={data[4].errorMessage}
-              required={data[4].required}
-              handleChange={handleChange}
-              errors={errors}
-              formType
-              className="ml-0.5 inline-block !w-fit mb-2"
-            />{' '}
-            Dollars $, in the
-            <input className="" /> Court of{' '}
-            <u>
-              <input className="w-1/4" />
-            </u>
-          </div>
-        </div>
-        {/* ------------------------------------------Box1--------------------- */}
-
-        <div>
-          <h1 className="mt-7 font-bold">1. DEFENDENT'S NAME AND ADDRESS</h1>
-
-          <div className="border-2 border-black p-2 ">
-            <span className='flex'>
+      <section>
+        <h2 className="text-center font-bold text-3xl m-8">
+          INDEMNITOR APPLICATION AND AGGREEMENT
+        </h2>
+        <div className="flex flex-wrap items-baseline">
+          You, the undersigned indemnitor (“Indemnitor” or “you”), hereby
+          represent and warrant that the following declarations made and answers
+          given are true, complete and correct and are made for the purpose of
+          inducing Lexington National Insurance Corporation (“Surety”) to issue,
+          or cause to be issued, bail bond(s) or undertaking(s) (singularly or
+          collectively the “Bond”) for:
+          <div className="inline-flex my-1">
+            {data.slice(0, 3).map((form, i) => (
               <Input
-              className='w-3/4'
-                key={`indemitor_form_$`}
-                name={data[5].name}
-                type={data[5].type}
-                label={data[5].label as any}
-                value={inputTypes[data[5].name]}
-                errorMsg={data[5].errorMessage}
-                required={data[5].required}
+                key={`indemitor_form_section_1_${i}`}
+                name={form.name}
+                type={form.type}
+                label={form.label as any}
+                value={inputTypes[form.name]}
+                errorMsg={form.errorMessage}
+                valErrorMsg={form.valErrorMsg}
+                required={form.required}
                 handleChange={handleChange}
                 errors={errors}
                 open={true}
                 formType
-                // className="mr-4 max-w-[300px]"
+                className="mx-0.5 mb-2"
               />
-              <Input
-              
-              key={`indemitor_form_$`}
-              name={data[6].name}
-              type={data[6].type}
-              label={data[6].label as any}
-              value={inputTypes[data[6].name]}
-             
-              handleChange={handleChange}
-              errors={errors}
-              open={true}
-              formType/>
-
-              </span>
-
-            <p>
-              {/* <div className="flex items-end justify-between">
-                <span className="w-3/4 flex">
-                  <p>Name</p>
-                  <input className="w-11/12" />
-                </span>
-                <span className="w-1/4 flex">
-                  <p>AKA</p>
-                  <input className=" w-11/12" />
-                </span>
-              </div> */}
-
-              <span className="w-2/4 flex justify-between">
-                <p className="ml-24">First</p> <p>Middle</p> <p>Last</p>
-              </span>
-              <span className='flex '>
-              {data.slice(7,10).map((form, i)=>(
-                <>
-               
-                <Input
-                className='mr-5'
-                key={`indemitor_form_${i}`}
-                name={form.name}
-                type={form.type}
-                label={form.label as any}
-                value={inputTypes[form.name]}
-                errorMsg={form.errorMessage}
-                required={form.required}
-                handleChange={handleChange}
-                errors={errors}
-                open={true}
-                formType
-                />
-                
-                </>
-              ))}
-              </span>
-              {/* <div className="flex items-end justify-between">
-                <span className="w-2/6">
-                  Home Phone # <input className="w-3/5" />
-                </span>
-                <span className="w-2/5">
-                  Cell Phone # <input className="w-3/4" />
-                </span>
-                <span className="w-3/5 flex">
-                  <p className="w-2/12">Work Phone #</p>
-                  <input className="w-11/12" />
-                </span>
-              </div> */}
-              <span className='flex mb-6'>
-              {data.slice(10,13).map((form, i)=>(
-                <>
-                  <Input  
-                  className='mr-5'
-                key={`indemitor_form_${i}`}
-                name={form.name}
-                type={form.type}
-                label={form.label as any}
-                value={inputTypes[form.name]}
-                errorMsg={form.errorMessage}
-                required={form.required}
-                handleChange={handleChange}
-                errors={errors}
-                open={true}
-                formType
-                />
-                </>
-              ))}
-              </span>
-              {/* <div className="flex items-end justify-between">
-                <span className="w-10/12">
-                  Email
-                  <input className="w-11/12 m-1" />
-                </span>
-                <span className="">Facebook username</span>
-                <input className=" w-1/4" />
-                Other social media
-                <input className=" w-1/4 m-1" />
-              </div> */}
-              <Input
-              name={data[13].name}
-              type={data[13].type}
-              label={data[13].label as any}
-              value={inputTypes[data[13].name]}
-              errorMsg={data[13].errorMessage}
-              required={data[13].required}
-
-              handleChange={handleChange}
-              errors={errors}
-              open={true}
-              formType
-              />
-              <span className='flex'>
-              {data.slice(14,16).map((form, i)=>(
-                <>
-                 <Input className='mr-5'
-                key={`indemitor_form_${i}`}
-                name={form.name}
-                type={form.type}
-                label={form.label as any}
-                value={inputTypes[form.name]}
-                errorMsg={form.errorMessage}
-                required={form.required}
-                handleChange={handleChange}
-                errors={errors}
-                open={true}
-                formType
-                />
-                </>
-              ))}
-                <span className="w-3/12">
-                  <input type="radio" />
-                  Rent or <input type="radio" /> Own{' '}
-                </span>
-              </span>
-
-              {/* <div className="flex items-end justify-between">
-                <span className="w-1/2">
-                  How Long <input className=" w-10/12 " />
-                </span>
-                <span className="w-1/12">
-                  <input type="radio" />
-                  Rent or <input type="radio" /> Own{' '}
-                </span>
-
-                <span className="w-2/4 flex">
-                  <p className="w-4/12">Landlord/Mortgage Holder</p>
-                  <input className=" w-10/12 m-1" />
-                </span>
-              </div> */}
-              {/* <div>
-Former Home Address <input className=" w-2/4 m-1"/>
-<span></span>
-How Long<input className="w-1/4"/><span className="w-14"><input type="radio"/>Rent or <input type="radio"/> Own</span>
-</div> */}
-              <div className="flex items-end justify-between">
-                {/* <span className="w-1/4">
-How Long Resided in Current City <input className=" pt-3 w-1/4 m-1"/>
-
-</span> */}
-                {/* <span className="w-1/4"> */}
-                {/* State<input className=" pt-3  w-1/8 m-1"/> </span> */}
-                {/* <span className="w-1/4">Prior City/State Lived in <input className="   pt-3 w-1/8 m-1"/></span> */}
-                {/* <span className="w-1/4 flex"><p className="w-1/5">How Long</p><input className=" pt-3 w-10/12 m-1"/></span> */}
-              </div>
-            </p>
-          </div>
-        </div>
-        {/* ------------------------------------------Box1--------------------- */}
-        <div>
-          <h1 className="mt-7 font-bold "> 2. Personal Description</h1>
-          <div className="border-2 border-black p-2 ">
-            {data.splice(16).map((form, i)=>(
-              <>
-               <Input 
-                className='mr-5'
-                key={`indemitor_form_${i}`}
-                name={form.name}
-                type={form.type}
-                label={form.label as any}
-                value={inputTypes[form.name]}
-                errorMsg={form.errorMessage}
-                required={form.required}
-                handleChange={handleChange}
-                errors={errors}
-                open={true}
-                formType
-                />
-              </>
             ))}
-            <span className="flex items-end justify-between">
-            
-              <span className="w-1/8">
-              {data.slice(17,18).map((form, i)=>(
-                <>
-                <Input 
-                className='mr-5'
-                key={`indemitor_form_${i}`}
+          </div>
+          (“Defendant”), using power of attorney
+          <Input
+            name={data[3].name}
+            type={data[3].type}
+            label={data[3].label as any}
+            value={inputTypes[data[3].name]}
+            errorMsg={data[3].errorMessage}
+            required={data[3].required}
+            handleChange={handleChange}
+            errors={errors}
+            formType
+            className="ml-0.5 inline-block !w-fit mb-2"
+          />
+          , in the total amount of{' '}
+          <Input
+            name={data[4].name}
+            type={data[4].type}
+            label={data[4].label as any}
+            value={inputTypes[data[4].name]}
+            errorMsg={data[4].errorMessage}
+            required={data[4].required}
+            handleChange={handleChange}
+            errors={errors}
+            formType
+            className="mx-2 mb-2 inline-block !w-fit"
+          />{' '}
+          Dollars $, in the
+          <Input
+            name={data[5].name}
+            type={data[5].type}
+            label={data[5].label as any}
+            value={inputTypes[data[5].name]}
+            errorMsg={data[5].errorMessage}
+            required={data[5].required}
+            handleChange={handleChange}
+            errors={errors}
+            formType
+            className="mx-2 mb-2 !w-fit"
+          />{' '}
+          Court of{' '}
+          <Input
+            name={data[6].name}
+            type={data[6].type}
+            label={data[6].label as any}
+            value={inputTypes[data[6].name]}
+            errorMsg={data[6].errorMessage}
+            required={data[6].required}
+            handleChange={handleChange}
+            errors={errors}
+            formType
+            className="mx-2 mb-2 max-w-[250px] !inline"
+          />{' '}
+        </div>
+
+        <h1 className="mt-11 font-bold">1. DEFENDENT'S NAME AND ADDRESS</h1>
+        <div className="border-2 border-black p-2 grid md:grid-cols-6 gap-x-5 gap-y-4">
+          {data.slice(7, 19).map((form, i) => (
+            <InputTypes
+              key={`indemitor_form_section_2_${i}`}
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              required={form.required}
+              handleChange={handleChange}
+              handleSelect={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              itype={form.itype}
+              inputs={form.inputs}
+              className={classNames('col-span-2', {
+                [`col-span-${form.width}`]: form.width,
+              })}
+            />
+          ))}
+        </div>
+
+        {/* ------------------------------------------Box1--------------------- */}
+        <div>
+          <h1 className="mt-8 font-bold "> 2. Personal Description</h1>
+          <div className="border-2 border-black p-2 grid md:grid-cols-6 gap-x-5 gap-y-4">
+            {data.slice(19, 27).map((form, i) => (
+              <InputTypes
+                key={`indemitor_form_section_3_${i}`}
                 name={form.name}
                 type={form.type}
                 label={form.label as any}
@@ -334,87 +172,17 @@ How Long Resided in Current City <input className=" pt-3 w-1/4 m-1"/>
                 errorMsg={form.errorMessage}
                 required={form.required}
                 handleChange={handleChange}
+                handleSelect={handleChange}
                 errors={errors}
                 open={true}
                 formType
-                />
-                </>
-              ))}
-                {/* Date of Birth <input className="" /> */}
-              </span>
-              <span className="w-5/12">
-                City and State Born
-                <input className="w-3/4" />
-              </span>
-              <span className="w-1/8">
-                Male
-                <input type="radio" />
-                Female
-                <input type="radio" />
-              </span>
-              <span className="w-1/4 flex">
-                <p>Race</p> <input className="w-11/12" />
-              </span>
-            </span>
-            <span className="flex items-end justify-between">
-              <span className="w-1/3">
-                Social Security #<input className="w-9/12" />
-              </span>
-              <span className="w-1/3">
-                Drivers License # <input className="w-3/4" />
-              </span>
-              <span className="w-1/3 flex">
-                <p className="w-1/8 pl-2">Issuesing State</p>{' '}
-                <input className="w-4/5" />
-              </span>
-            </span>
-            {/* <span className="flex items-end justify-between">
-                <span className="w-1/6">
-                    Height<input className="w-9/12"/>
-                </span>
-                <span className="w-1/6">
-                    Weight <input className=""/>
-                </span>
-                <span className="w-1/6"> 
-                    Eye Color<input className=""/>
-                    </span>
-                <span className="w-1/6 flex "> 
-                    <p>Complexion</p><input className="w-3/5"/>
-                </span>
-                <span className="w-1/6"> 
-                    Hair Color<input className=""/>
-                    </span>
-                    <span className="w-1/6 flex pl-10"> 
-                    <p className="mr-10 ">Glasses</p><input type="radio" className=""/>Yes<input type="radio"/>No
-                    </span>
-            </span>
-            <span className="flex ">
-               <p className="w-1/6">Scars, Marks, Tattoos</p>  <input className="w-full"/>
-            </span> */}
-            <span className="flex items-end justify-between">
-              <span className="w-1/8">
-                U.S. Citizen <input type="radio" />
-                Yes
-                <input type="radio" />
-                No
-              </span>
-              <span className="w-1/4">
-                How Long in US
-                <input className="w-8/12" />
-              </span>
-              <span className="w-1/4">
-                Nationality
-                <input className="w-8/12" />
-              </span>
-              <span className="w-1/4 flex">
-                <p>Alien#</p>
-                <input className="w-full" />
-              </span>
-            </span>
-            <span className="flex">
-              <p className="w-1/5">Additional Notes</p>
-              <input className="w-full" />
-            </span>
+                itype={form.itype}
+                inputs={form.inputs}
+                className={classNames('col-span-2', {
+                  [`col-span-${form.width}`]: form.width,
+                })}
+              />
+            ))}
           </div>
         </div>
         {/* ------------------------------employment ------------*/}
@@ -723,8 +491,6 @@ How Long Resided in Current City <input className=" pt-3 w-1/4 m-1"/>
               </span>
             </div>
             {refrence.map((com, i) => {
-              console.log(i);
-              i += 1;
               return (
                 <>
                   <h1 className="mt-7 font-bold ">REFERENCE {i + 1}</h1>
@@ -1283,7 +1049,7 @@ Phone: (888) 888-2245
             </span>
           </span>
         </div>
-      </div>
+      </section>
 
       <div className="flex flex-row justify-center">
         <span className="w-1/3 border-2">

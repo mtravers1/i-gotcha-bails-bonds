@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Button } from 'components/button';
-import Input from 'components/input';
+import { Input } from 'components/input';
 import data from 'data/forgot';
 import { axiosInstance } from 'helpers';
 import { useForm } from 'hooks/useForm';

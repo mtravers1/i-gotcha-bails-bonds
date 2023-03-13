@@ -4,7 +4,7 @@ import { useToasts } from 'react-toast-notifications';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Button } from 'components/button';
-import Input from 'components/input';
+import { Input } from 'components/input';
 import data from 'data/signIn';
 import { axiosInstance } from 'helpers';
 import { User } from 'helpers/interfaces';

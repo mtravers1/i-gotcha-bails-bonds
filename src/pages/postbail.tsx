@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { BannerSection } from 'components/bannerSection/postBail';
 import { Button } from 'components/button';
-import Input from 'components/input';
+import { Input } from 'components/input';
 import formData from 'data/postbailFormData';
 import { useForm } from 'hooks/useForm';
 import { PageLayout } from 'layouts/pageLayout';
