@@ -194,28 +194,54 @@ const Form8: FC = () => {
                <p className="w-1/5">All occumations for the past 5 years: </p> <input className="w-full"/>
             </span> */}
             {/* </span> */}
-
+            
+          
             <span className="flex items-end justify-between">
-              <span className="w-1/3 flex">
-                <p>Employer</p> <input className="w-full" />
-              </span>
-              <span className="w-1/3 flex">
-                <p>Position</p> <input className="w-full" />
-              </span>
-
-              <span className="w-1/4 flex">
-                <p className="w-1/4">How Long</p> <input className="w-full" />
-              </span>
+              {/* <span className="w-1/3 flex"> */}
+              {data.slice(27, 30).map((form, i)=>(
+              <>
+              <InputTypes
+                key={`indemitor_form_section_3_${i}`}
+                name={form.name}
+                type={form.type}
+                label={form.label as any}
+                value={inputTypes[form.name]}
+                errorMsg={form.errorMessage}
+                required={form.required}
+                handleChange={handleChange}
+                handleSelect={handleChange}
+                errors={errors}
+                open={true}
+                formType
+                itype={form.itype}
+                inputs={form.inputs}
+                className={classNames('col-span-2', {
+                  [`col-span-${form.width}`]: form.width,
+                })}
+              />
+              </>
+            ))}
+              {/* </span> */}
+              
             </span>
             <span className="flex items-end justify-between">
-              <span className="w-2/3">
-                Employer Address
-                <input className="w-10/12" />
-              </span>
-              <span className="w-1/3 flex">
-                <p className="w-1/3">SuperVisor's Name</p>
-                <input className="w-full" />
-              </span>
+              {data.slice(30,32).map((form, i)=>(
+                <>
+              <Input key={`indemitor_form_section_1_${i}`}
+               name={form.name}
+               type={form.type}
+               label={form.label as any}
+               value={inputTypes[form.name]}
+               errorMsg={form.errorMessage}
+               valErrorMsg={form.valErrorMsg}
+               required={form.required}
+               handleChange={handleChange}
+               errors={errors}
+               open={true}
+               formType
+               className="mx-0.5 mb-2"/>
+                </>
+              ))}
             </span>
 
             {/*         
@@ -272,120 +298,143 @@ const Form8: FC = () => {
             </span>
             </span> */}
             <span className="flex items-end justify-between">
-              <span className="w-1/6">
-                Union
-                <input className="w-10/12" />
-              </span>
-              <span className="w-1/6">
-                Local #<input className="w-9/12" />
-              </span>
-              <span className="w-2/6">
-                Military Service: Branch
-                <input className="w-8/12" />
-              </span>
-              <span>
-                Active
-                <input type="radio" />
-                Yes
-                <input type="radio" />
-                No
-                <span>
-                  Discharge Date <input />
-                </span>
-              </span>
+              {data.slice(32,37).map((form, i)=>(
+                <>
+                 <InputTypes key={`indemitor_form_section_1_${i}`}
+               name={form.name}
+               type={form.type}
+               label={form.label as any}
+               value={inputTypes[form.name]}
+               errorMsg={form.errorMessage}
+               valErrorMsg={form.valErrorMsg}
+               required={form.required}
+               handleChange={handleChange}
+               errors={errors}
+               open={true}
+               formType
+               
+              />
+                </>
+              ))}
             </span>
           </div>
         </div>
         {/*---------------------- maritial -----------*/}
         <div>
+          
           <span className="flex justify-between font-bold mt-3 mb-1">
-            <h1 className="mt-7 font-bold">4. MARITAL STATUS</h1>
-            <span>
-              <input type="radio" />
-              Married
-              <input type="radio" />
-              Divorced
-              <input type="radio" />
-              Separated
-              <input type="radio" />
-              Widowed
-              <input type="radio" />
-              Sinlge
-              <input type="radio" /> Cohab
-            </span>
-            <span>
-              How Long married/together
-              <input />
-            </span>
+            
+
+            {data.slice(65, 67).map((form, i)=>(
+              
+              <>
+              
+            <InputTypes
+                key={`indemitor_form_section_3_${i}`}
+                name={form.name}
+                type={form.type}
+                label={form.label as any}
+                value={inputTypes[form.name]}
+                errorMsg={form.errorMessage}
+                required={form.required}
+                handleChange={handleChange}
+                handleSelect={handleChange}
+                errors={errors}
+                open={true}
+                formType
+                itype={form.itype}
+                inputs={form.inputs}
+                className={classNames('col-span-2', {
+                  [`col-span-${form.width}`]: form.width,
+                })}
+              />
+              </>
+             ))}
+            
+         
           </span>
+          <h1 className="mt-7 font-bold inline">4. MARITAL STATUS</h1>
+
           <div className="border-2 border-black p-2 ">
             <span className="flex items-end justify-between">
-              <span className="w-2/3">
-                Spouse/girl/boyfriend's Name <input className="w-9/12" />
-              </span>
-              <span className="w-1/3 flex">
-                <p className="w-1/3">Social Security #</p>
-                <input className="w-full" />
-              </span>
+             {data.slice(37, 39).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
             </span>
 
             <span className="flex items-end justify-between">
-              <span className="w-3/5">
-                Address (if different)
-                <input className="w-9/12" />
-              </span>
-              <span className="w-2/5 flex">
-                <p>Email</p>
-                <input className="w-full" />
-              </span>
+            {data.slice(40, 43).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
+            </span>
+
+
+            <span className="flex items-end justify-between">
+            {data.slice(44, 46).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
             </span>
 
             <span className="flex items-end justify-between">
-              <span className="w-1/3">
-                Home Phone #(if different)
-                <input className="w-2/4" />
-              </span>
-              <span className="w-1/3">
-                Cell Phone #<input className="w-9/12" />
-              </span>
-              <span className="w-1/3 flex">
-                <p className="w-1/4"> Work Phone #</p>
-                <input className="w-full" />
-              </span>
-            </span>
-
-            <span className="flex items-end justify-between">
-              <span className="w-2/3">
-                Employer
-                <input className="w-10/12" />
-              </span>
-              <span className="w-2/3">
-                Position
-                <input className="w-10/12" />
-              </span>
-              <span className="w-1/3 flex">
-                <p className="w-1/3">How Long</p>
-                <input className="w-full" />
-              </span>
-            </span>
-
-            <span className="flex items-end justify-between">
-              <span className="w-1/4 flex">
-                <p className="w-1/4">Childs Name</p>
-                <input className="w-11/12" />
-              </span>
-              <span className="w-1/4 flex">
-                <p className="w-2/6">Date of Birth</p>
-                <input className="w-11/12" />
-              </span>
-              <span className="w-1/4 flex">
-                <p>School/Employer</p>
-                <input className="w-11/12" />
-              </span>
-              <span className="w-1/4 border-t-1 flex">
-                <p className="w-3/5">Other Parent's Name</p>{' '}
-                <input className="w-full" />
-              </span>
+              {data.slice(47, 50).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
             </span>
           </div>
           <span className="flex justify-between">
@@ -404,37 +453,42 @@ const Form8: FC = () => {
           <h1 className="mt-7 font-bold">5. VEHICLE</h1>
           <div className="border-2 border-black p-2 ">
             <span className="flex items-end justify-between">
-              <span className="w-1/6">
-                Year <input className="w-2/6" />
-              </span>
-              <span className="w-1/6">
-                Make
-                <input className="w-9/12" />
-              </span>
-              <span className="w-1/6">
-                Modle
-                <input className="w-9/12" />
-              </span>
-              <span className="w-1/6">
-                Color
-                <input className="w-9/12" />
-              </span>
-              <span className="w-1/6">
-                Plate #<input className="w-9/12" />
-              </span>
-              <span className="w-1/6 flex">
-                <p>State</p> <input className="w-full" />
-              </span>
+            {data.slice(51, 56).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
             </span>
             <span className="flex items-end justify-between">
-              <span className="w-3/6 flex">
-                <p className="w-1/6">Where Financed </p>
-                <input className="w-full" />
-              </span>
-              <span className="w-3/6 flex">
-                <p className="w-1/6">Amount Owed $ </p>
-                <input className="w-full" />
-              </span>
+            {data.slice(56, 58).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
             </span>
             {/* <span className="flex items-end justify-between">
             <span className="w-1/3">
@@ -454,40 +508,64 @@ const Form8: FC = () => {
             <h1 className="mt-7 font-bold">6. REFERENCES</h1>
             <div className="border-2 border-black p-2 ">
               <span className="flex items-end justify-between">
-                <span className="w-2/4 flex">
-                  <p>Name</p>
-                  <input className="w-full" />
-                </span>
-                <span className="w-2/4 flex">
-                  <p>Relationship</p>
-                  <input className="w-full" />
-                </span>
+              {data.slice(58, 60).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
               </span>
 
               <span className="flex items-end justify-between">
-                <span className="w-1/2 flex">
-                  <p>Address</p>
-                  <input className="w-full" />
-                </span>
-                <span className="w-1/2 flex">
-                  <p>Employer</p>
-                  <input className="w-full" />
-                </span>
+              {data.slice(60, 62).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
               </span>
+              
 
               <span className="flex items-end justify-between">
-                <span className="w-1/3 flex">
-                  <p className="w-1/4">Home Phone #</p>
-                  <input className="w-full" />
-                </span>
-                <span className="w-1/3 flex">
-                  <p className="w-1/4">Cell Phone #</p>
-                  <input className="w-full" />
-                </span>
-                <span className="w-1/3 flex">
-                  <p className="w-1/4">Work Phone</p>
-                  <input className="w-full" />
-                </span>
+              {data.slice(62, 65).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
               </span>
             </div>
             {refrence.map((com, i) => {
@@ -496,42 +574,66 @@ const Form8: FC = () => {
                   <h1 className="mt-7 font-bold ">REFERENCE {i + 1}</h1>
 
                   <div key={i} className="border-2 border-black p-2 mt-5">
-                    <span className="flex items-end justify-between">
-                      <span className="w-2/4 flex">
-                        <p>Name</p>
-                        <input className="w-full" />
-                      </span>
-                      <span className="w-2/4 flex">
-                        <p>Relationship</p>
-                        <input className="w-full" />
-                      </span>
-                    </span>
+                  <span className="flex items-end justify-between">
+              {data.slice(58, 60).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
+              </span>
 
-                    <span className="flex items-end justify-between">
-                      <span className="w-1/2 flex">
-                        <p>Address</p>
-                        <input className="w-full" />
-                      </span>
-                      <span className="w-1/2 flex">
-                        <p>Employer</p>
-                        <input className="w-full" />
-                      </span>
-                    </span>
+              <span className="flex items-end justify-between">
+              {data.slice(60, 62).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
+              </span>
+              
 
-                    <span className="flex items-end justify-between">
-                      <span className="w-1/3 flex">
-                        <p className="w-1/4">Home Phone #</p>
-                        <input className="w-full" />
-                      </span>
-                      <span className="w-1/3 flex">
-                        <p className="w-1/4">Cell Phone #</p>
-                        <input className="w-full" />
-                      </span>
-                      <span className="w-1/3 flex">
-                        <p className="w-1/4">Work Phone</p>
-                        <input className="w-full" />
-                      </span>
-                    </span>
+              <span className="flex items-end justify-between">
+              {data.slice(62, 65).map((form, i)=>(
+              <>
+              <Input
+              name={form.name}
+              type={form.type}
+              label={form.label as any}
+              value={inputTypes[form.name]}
+              errorMsg={form.errorMessage}
+              valErrorMsg={form.valErrorMsg}
+              required={form.required}
+              handleChange={handleChange}
+              errors={errors}
+              open={true}
+              formType
+              />
+              </>
+             ))}
+              </span>
                   </div>
                   <button onClick={(e) => deleteRefrence(e)}>Delete</button>
                 </>
